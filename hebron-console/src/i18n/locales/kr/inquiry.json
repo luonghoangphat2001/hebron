@@ -1,0 +1,104 @@
+{
+  "page": {
+    "description": "고객 문의, 담당자 배정, 답변을 관리합니다."
+  },
+  "confirm": {
+    "delete_title": "문의 삭제",
+    "delete_desc": "이 문의를 삭제하시겠습니까?"
+  },
+  "button": {
+    "export_excel": "엑셀 다운로드",
+    "view_detail": "상세 보기",
+    "send_response": "답변 전송",
+    "update_response": "답변 수정",
+    "add_memo": "+ 메모 추가",
+    "add_attachments": "파일 첨부"
+  },
+  "field": {
+    "inquiry_type": "문의 유형",
+    "customer_name": "고객사명",
+    "inquirer_name": "문의자명",
+    "status": "상태",
+    "person_in_charge": "담당자",
+    "registration_date": "등록일",
+    "response_content": "답변 내용",
+    "contact_phone": "연락처",
+    "send_via": "전송 방식",
+    "send_notification": "답변 알림 발송",
+    "attachments": "첨부파일",
+    "customer": "고객사",
+    "inquirer": "문의자",
+    "email": "이메일",
+    "phone": "전화번호",
+    "department": "부서",
+    "order": "주문",
+    "design_draft": "시안",
+    "product_code": "상품 코드",
+    "product_name": "상품명",
+    "category": "카테고리",
+    "manager": "담당자",
+    "image": "이미지",
+    "price": "가격"
+  },
+  "placeholder": {
+    "all_types": "전체 유형",
+    "all_status": "전체 상태",
+    "all_managers": "전체 담당자",
+    "enter_customer_name": "고객사명 입력",
+    "enter_inquirer_name": "문의자명 입력",
+    "enter_search_term": "검색어 입력",
+    "write_response": "고객에게 답변을 입력해 주세요...",
+    "write_memo": "내부 메모를 입력해 주세요...",
+    "customer_contact_phone": "고객 연락처",
+    "select_send_channel": "최소 하나 이상의 전송 방식을 선택해 주세요."
+  },
+  "column": {
+    "no": "No.",
+    "inquiry_type": "문의 유형",
+    "inquiry_history": "문의 내역",
+    "customer_name": "고객사명",
+    "inquirer_name": "문의자명",
+    "status": "상태",
+    "registration_date": "등록일",
+    "person_in_charge": "담당자",
+    "attachments": "첨부파일"
+  },
+  "section": {
+    "inquiry_content": "문의 내용",
+    "attached_files": "첨부 파일",
+    "register_answer": "답변 등록",
+    "response_history": "답변 이력",
+    "internal_memos": "내부 메모",
+    "activity_log": "활동 로그",
+    "inquiry_information": "문의 정보",
+    "product_information": "상품 정보",
+    "related_inquiries": "관련 문의",
+    "timeline": "타임라인"
+  },
+  "label": {
+    "replies": "답변: {{count}}건",
+    "registered_at": "등록일시",
+    "updated_at": "수정일시",
+    "updated_at_short": "수정: {{date}}",
+    "created_by_at": "{{date}} · {{by}} 작성",
+    "actor": "처리자",
+    "email": "이메일",
+    "kakao_talk": "카카오톡",
+    "attachment_limit": "{{count}}개 파일 · 파일당 최대 10MB",
+    "send_notification_hint": "답변 등록 시 선택한 채널로 고객에게 알림을 발송합니다",
+    "related_inquiries_description": "고객/주문/시안 기준의 관련 문의 목록입니다."
+  },
+  "empty": {
+    "no_inquiries": "문의 내역이 없습니다.",
+    "no_attachments": "첨부파일이 없습니다.",
+    "no_replies": "아직 답변이 없습니다.",
+    "no_memos": "내부 메모가 없습니다.",
+    "no_related": "관련 문의가 없습니다.",
+    "no_content": "내용이 없습니다."
+  },
+  "timeline": {
+    "inquiry_created": "문의 접수",
+    "inquiry_answered": "답변 완료",
+    "comment_added": "메모 추가"
+  }
+}

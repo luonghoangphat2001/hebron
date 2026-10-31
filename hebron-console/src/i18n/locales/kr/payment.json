@@ -1,0 +1,80 @@
+{
+  "history": {
+    "title": "결제 내역",
+    "description": "결제 거래 내역을 검색, 정렬 및 내보낼 수 있습니다.",
+    "field": {
+      "order_number": "주문 번호",
+      "customer_name": "고객명",
+      "payment_method": "결제 방법",
+      "status": "상태",
+      "payment_date": "결제일"
+    },
+    "placeholder": {
+      "order_number": "주문 번호 검색",
+      "customer_name": "고객명 검색",
+      "all_methods": "전체 방법",
+      "all_statuses": "전체 상태"
+    },
+    "column": {
+      "no": "번호",
+      "transaction_id": "거래 ID",
+      "order_id": "주문 ID",
+      "payment_method": "결제 방법",
+      "status": "상태",
+      "amount": "금액",
+      "paid_at": "결제 시각",
+      "created_at": "생성 시각",
+      "actions": "작업"
+    },
+    "button": {
+      "print": "인쇄",
+      "refund": "환불",
+      "export_excel": "엑셀 다운로드",
+      "apply_search": "검색 적용",
+      "reset_filters": "필터 초기화"
+    },
+    "empty": "결제 내역이 없습니다.",
+    "refund_modal": {
+      "title": "결제 환불",
+      "reason": "환불 사유",
+      "reason_placeholder": "환불 사유를 입력해 주세요 (최대 500자)",
+      "amount": "환불 금액",
+      "amount_placeholder": "비워두면 전액 환불됩니다",
+      "toss_notice_title": "토스페이먼츠 환불 안내",
+      "toss_notice_description": "토스페이먼츠를 통해 고객의 원래 결제 수단으로 환불이 진행됩니다.",
+      "transfer_notice_title": "무통장입금 환불 안내",
+      "transfer_notice_description": "환불 처리 전 고객 계좌 이체 여부를 확인해 주세요. 필요한 경우 관리자가 고객 계좌로 별도 이체해야 합니다.",
+      "success": "환불 처리가 완료되었습니다.",
+      "fail": "환불 처리에 실패했습니다."
+    }
+  },
+  "settlement": {
+    "title": "정산 보고서",
+    "description": "날짜 범위별 정산 내역을 조회하고 보고서를 내보낼 수 있습니다.",
+    "field": {
+      "settlement_date": "정산일"
+    },
+    "placeholder": {
+      "settlement_date": "날짜 범위 선택"
+    },
+    "column": {
+      "no": "번호",
+      "settlement_date": "정산일",
+      "order_number": "주문 번호",
+      "customer": "고객",
+      "product": "상품",
+      "category": "카테고리",
+      "payment_amount": "결제 금액",
+      "supply_price": "공급가",
+      "vat": "부가세",
+      "commission": "수수료",
+      "status": "상태"
+    },
+    "button": {
+      "export_excel": "엑셀 다운로드",
+      "apply_search": "검색 적용",
+      "reset_filters": "필터 초기화"
+    },
+    "empty": "정산 내역이 없습니다."
+  }
+}

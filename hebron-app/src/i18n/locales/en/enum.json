@@ -1,0 +1,19 @@
+{
+  "payment_status": {
+    "pending": "Pending",
+    "processing": "Processing",
+    "paid": "Paid",
+    "failed": "Failed",
+    "cancelled": "Cancelled",
+    "refunded": "Refunded",
+    "partially_refunded": "Partially Refunded",
+    "expired": "Expired"
+  },
+  "faq_category": {
+    "product_information": "Product Information",
+    "order_production": "Order/Production",
+    "payment_delivery": "Payment/Delivery",
+    "draft_design": "Draft/Design",
+    "etc": "Etc"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "shopping_setting": {
+    "precaution": "일반 주의사항",
+    "production_guide": "일반 제작 가이드",
+    "shipping": "출고 및 배송 안내",
+    "usage_guide": "이용 가이드"
+  }
+}

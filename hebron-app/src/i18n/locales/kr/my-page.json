@@ -1,0 +1,19 @@
+{
+  "title": "마이페이지",
+  "status": {
+    "production": "생산현황",
+    "design": "디자인현황",
+    "shipping": "배송 현황"
+  },
+  "recent_orders": {
+    "title": "최근 주문 내역",
+    "view_all": "더보기",
+    "order_date": "주문일",
+    "product": "제목",
+    "quantity": "수량",
+    "amount": "주문금액",
+    "status": "주문현황",
+    "print_order": "주문서 인쇄",
+    "empty": "최근 주문내역이 없습니다."
+  }
+}

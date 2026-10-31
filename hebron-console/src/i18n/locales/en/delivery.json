@@ -1,0 +1,67 @@
+{
+  "shipment": {
+    "description": "Manage shipments: search, update invoice / tracking information, and export delivery data.",
+    "field": {
+      "search_term": "Keyword",
+      "order_number": "Order Number",
+      "customer_name": "Customer Name",
+      "product_name": "Product Name",
+      "invoice_number": "Invoice Number",
+      "tracking_number": "Tracking Number",
+      "carrier_name": "Carrier",
+      "shipping_manager": "Shipping Manager",
+      "status": "Status",
+      "shipment_date": "Shipment Date"
+    },
+    "placeholder": {
+      "search_term": "Shipment date, order, customer, product, shipping manager",
+      "order_number": "Order Number",
+      "customer_name": "Customer Name",
+      "product_name": "Product Name",
+      "invoice_number": "Invoice Number",
+      "tracking_number": "Tracking Number",
+      "carrier_name": "Carrier",
+      "shipping_manager": "All shipping managers",
+      "all_statuses": "All statuses"
+    },
+    "column": {
+      "order_number": "Order Number",
+      "customer_name": "Customer Name",
+      "product_name": "Product Name",
+      "quantity": "Quantity",
+      "status": "Status",
+      "invoice_number": "Invoice Number",
+      "tracking_number": "Tracking Number",
+      "carrier_name": "Carrier",
+      "delivery_manager": "Delivery Manager",
+      "shipping_method": "Shipping Method",
+      "shipping_fee": "Shipping Fee",
+      "shipping_name": "Recipient",
+      "shipping_phone": "Phone",
+      "shipping_postcode": "Postcode",
+      "shipping_address": "Shipping Address",
+      "shipped_at": "Shipped At",
+      "delivered_at": "Delivered At"
+    },
+    "button": {
+      "track": "Track",
+      "register": "Register",
+      "edit": "Edit"
+    },
+    "modal": {
+      "detail_title": "Shipment Detail",
+      "edit_title": "Update Shipment Information",
+      "section": {
+        "order_info": "Order Information",
+        "shipping_info": "Shipping Information",
+        "tracking_history": "Tracking History"
+      },
+      "field": {
+        "current_status": "Current Status",
+        "last_updated": "Last Updated"
+      },
+      "no_tracking_history": "No tracking history yet."
+    },
+    "empty": "No shipment records found."
+  }
+}

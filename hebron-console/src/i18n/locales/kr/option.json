@@ -1,0 +1,103 @@
+{
+  "group": {
+    "button_add": "옵션 그룹 추가",
+    "empty": "옵션 그룹이 없습니다.",
+    "button_detail": "상세",
+    "button_delete": "삭제",
+    "confirm_delete_title": "옵션 그룹 삭제",
+    "confirm_delete_description": "이 옵션 그룹을 삭제하시겠습니까? 이 작업은 되돌릴 수 없습니다.",
+    "column": {
+      "code": "코드",
+      "name": "이름",
+      "options": "옵션",
+      "created_at": "생성일",
+      "updated_at": "수정일",
+      "action": "작업"
+    },
+    "filter": {
+      "code": "코드",
+      "name": "이름",
+      "display_type": "표시 유형",
+      "required": "필수 여부",
+      "code_placeholder": "코드로 검색",
+      "name_placeholder": "이름으로 검색",
+      "all": "전체",
+      "option_required": "필수",
+      "option_not_required": "선택"
+    },
+    "modal": {
+      "create_title": "옵션 그룹 생성",
+      "edit_title": "옵션 그룹 수정",
+      "field_code": "코드",
+      "field_name": "이름",
+      "field_display_type": "표시 유형",
+      "field_status": "상태",
+      "code_placeholder": "예: O00000AA",
+      "name_placeholder": "예: 종이 종류",
+      "display_type_select": "선택형",
+      "display_type_radio": "라디오",
+      "display_type_checkbox": "체크박스",
+      "required": "필수",
+      "not_required": "선택"
+    }
+  },
+  "detail": {
+    "title": "옵션 그룹 상세",
+    "button_edit": "수정",
+    "field_code": "코드",
+    "field_name": "이름",
+    "field_display_type": "표시 유형",
+    "field_required": "필수 여부",
+    "field_products": "상품 수",
+    "field_updated_at": "수정일",
+    "yes": "예",
+    "no": "아니오",
+    "section_options": "옵션 ({{count}})",
+    "section_products": "상품 ({{count}})",
+    "button_add_option": "옵션 추가",
+    "button_assign_products": "상품 지정",
+    "empty_options": "옵션이 없습니다.",
+    "products_column_name": "상품명",
+    "products_column_slug": "슬러그",
+    "empty_products": "상품이 없습니다.",
+    "confirm_delete_option_title": "옵션 삭제",
+    "confirm_delete_option_description": "이 옵션을 삭제하시겠습니까? 이 작업은 되돌릴 수 없습니다."
+  },
+  "option": {
+    "column": {
+      "name": "이름",
+      "additional_price": "쇼핑몰 추가금액",
+      "brand_site_price": "브랜드·무지 사이트 추가금액",
+      "active": "사용 여부",
+      "sort_order": "정렬 순서",
+      "action": "작업"
+    },
+    "status_active": "사용",
+    "status_inactive": "미사용",
+    "filter": {
+      "name": "이름",
+      "status": "상태",
+      "name_placeholder": "이름으로 검색",
+      "all": "전체"
+    },
+    "modal": {
+      "create_title": "옵션 생성",
+      "edit_title": "옵션 수정",
+      "field_name": "이름",
+      "field_sort_order": "정렬 순서",
+      "field_additional_price": "추가 금액",
+      "field_default": "쇼핑몰 추가금액",
+      "field_brand_site": "브랜드·무지 사이트 추가금액",
+      "field_status": "상태",
+      "name_placeholder": "예: BLACK",
+      "active": "사용",
+      "inactive": "미사용"
+    }
+  },
+  "assign_products": {
+    "title": "상품 지정",
+    "search_placeholder": "상품명, 상품 코드 또는 SKU로 검색",
+    "selected_count": "{{count}}개 선택됨",
+    "remove_product": "{{name}} 제거"
+  }
+}

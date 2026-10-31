@@ -1,0 +1,179 @@
+{
+  "operation": {
+    "description": "Real-time operating indicators and notifications for staff roles.",
+    "overview_title": "Overview statistics",
+    "notification_title": "Key notifications",
+    "error_title": "Could not load the operations dashboard"
+  },
+  "filter": {
+    "period": {
+      "7d": "Last 7 days",
+      "30d": "Last 30 days"
+    },
+    "group_by": {
+      "daily": "Daily",
+      "weekly": "Weekly"
+    },
+    "payment_period": {
+      "monthly": "Monthly",
+      "quarterly": "Quarterly",
+      "yearly": "Yearly"
+    }
+  },
+  "metric": {
+    "sales": "Sales",
+    "members": "Members",
+    "orders": "Orders",
+    "payments": "Payments",
+    "payment_success": "Successful payments",
+    "outstanding": "Outstanding payments",
+    "reviews": "Reviews"
+  },
+  "notification": {
+    "inquiries_in_progress": {
+      "label": "Inquiries in progress",
+      "desc": "Support requests still waiting to be closed."
+    },
+    "product_out_stock_total": {
+      "label": "Out of stock products",
+      "desc": "Products with no stock left."
+    },
+    "product_near_out_stock_total": {
+      "label": "Products about to sell out",
+      "desc": "Products under the configured stock threshold."
+    }
+  },
+  "error": {
+    "description": "Something went wrong while loading the data. Please try again.",
+    "retry": "Retry"
+  },
+  "statistics": {
+    "description": "Member, customer, order, payment, product, and inquiry analytics.",
+    "error_title": "Could not load customer statistics",
+    "search_sales_rep": "Search by sales representative",
+    "total": "Total",
+    "trend": "Trend",
+    "activity_title": "Customer activity status",
+    "activity_desc": "Active, new, inactive, and dormant customers.",
+    "sales_rep_title": "Sales representative",
+    "sales_rep_desc": "Customers grouped by the assigned sales representative.",
+    "assigned_customers": "Assigned customers",
+    "unassigned": "Unassigned",
+    "detail_title": "Customer details",
+    "empty": "No customers found",
+    "tab": {
+      "member": "Members",
+      "customer": "Customers",
+      "order": "Orders",
+      "product": "Products",
+      "inquiry": "Inquiries",
+      "payment": "Payments"
+    },
+    "activity": {
+      "active": "Active",
+      "new": "New",
+      "inactive": "Inactive",
+      "dormant": "Dormant"
+    },
+    "summary": {
+      "total_customers": "Total customers",
+      "new_customers": "New customers",
+      "active_rate": "Active rate",
+      "avg_ltv": "Avg. LTV"
+    },
+    "column": {
+      "customer": "Customer",
+      "status": "Status",
+      "orders": "Orders",
+      "cumulative_sales": "Cumulative sales",
+      "aov": "AOV",
+      "sales_rep": "Sales rep",
+      "last_order": "Last order"
+    },
+    "member": {
+      "error_title": "Could not load member statistics",
+      "account_title": "New / withdrawn members",
+      "account_desc": "New, withdrawn, and active members over the selected period.",
+      "path_title": "Registration path",
+      "path_desc": "Member signups by registration path.",
+      "level_title": "Member level",
+      "level_desc": "Members grouped by their level.",
+      "total_new": "Total new accounts",
+      "total_members": "Total members",
+      "net_growth": "Net growth",
+      "avg_new_per_day": "Avg. new / day",
+      "avg_active_per_day": "Avg. active / day",
+      "new": "New",
+      "active": "Active",
+      "withdrawn": "Withdrawn",
+      "no_level": "No level",
+      "level_value": "Level {{level}}",
+      "path": {
+        "direct": "Direct signup",
+        "social_login": "Social login"
+      }
+    },
+    "order": {
+      "error_title": "Could not load order statistics",
+      "orders_title": "Order count and sales",
+      "orders_desc": "Orders, sales, cancellations, and returns for the selected period.",
+      "product_title": "Sales by product",
+      "product_desc": "Top products by sales amount.",
+      "category_title": "Sales by category",
+      "category_desc": "Top categories by sales amount.",
+      "customer_title": "Sales by customer",
+      "customer_desc": "Top customers by sales amount.",
+      "total_orders": "Total orders",
+      "order_amount": "Order amount",
+      "orders": "Orders",
+      "sales": "Sales",
+      "cancellations_returns": "Cancellations / returns",
+      "product_sales": "Product sales",
+      "category_sales": "Category sales",
+      "customer_sales": "Customer sales"
+    },
+    "payment": {
+      "error_title": "Could not load payment statistics",
+      "status_title": "Payment success / failure",
+      "status_desc": "Successful, failed, and refunded payments over the selected range.",
+      "method_title": "Sales by payment method",
+      "method_desc": "Payment amount per method.",
+      "total_payments": "Total payments",
+      "total_amount": "Total amount",
+      "successful": "Successful",
+      "failed": "Failed",
+      "refunded": "Refunded"
+    },
+    "product": {
+      "error_title": "Could not load product statistics",
+      "top_title": "Top selling products",
+      "top_desc": "Top {{count}} products by quantity sold.",
+      "revenue_title": "Product sales",
+      "revenue_desc": "Products by sales amount.",
+      "ctr_title": "Promoted product CTR",
+      "ctr_desc": "Click-through rate of promoted products (clicks ÷ exposures).",
+      "total_quantity": "Total quantity sold",
+      "total_revenue": "Total sales",
+      "sold_products": "Products sold",
+      "total_exposure": "Total exposures",
+      "total_clicks": "Total clicks",
+      "avg_ctr": "Avg. CTR",
+      "limit": "Limit",
+      "ctr_hint": "{{clicks}} clicks / {{exposures}} exposures"
+    },
+    "inquiry": {
+      "error_title": "Could not load inquiry statistics",
+      "type_title": "Inquiries by type",
+      "type_desc": "Inquiries received in the selected period, split by type.",
+      "status_title": "Processing status",
+      "status_desc": "Answered versus pending inquiries.",
+      "person_title": "Person in charge",
+      "person_desc": "Inquiries handled per assignee.",
+      "total_inquiries": "Total inquiries",
+      "resolution_rate": "Resolution rate",
+      "avg_processing_time": "Avg. process time",
+      "unassigned": "Unassigned",
+      "handled": "Assigned inquiries"
+    }
+  }
+}

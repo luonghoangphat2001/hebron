@@ -1,0 +1,104 @@
+{
+  "page": {
+    "description": "Manage customer inquiries, assignments, and responses."
+  },
+  "confirm": {
+    "delete_title": "Delete Inquiry",
+    "delete_desc": "Are you sure you want to delete this inquiry?"
+  },
+  "button": {
+    "export_excel": "Export Excel",
+    "view_detail": "View Detail",
+    "send_response": "Send Response",
+    "update_response": "Update Response",
+    "add_memo": "Add Memo",
+    "add_attachments": "Add attachments"
+  },
+  "field": {
+    "inquiry_type": "Inquiry Type",
+    "customer_name": "Customer Name",
+    "inquirer_name": "Inquirer Name",
+    "status": "Status",
+    "person_in_charge": "Person In Charge",
+    "registration_date": "Registration Date",
+    "response_content": "Response Content",
+    "contact_phone": "Contact Phone",
+    "send_via": "Send via",
+    "send_notification": "Send Notification",
+    "attachments": "Attachments",
+    "customer": "Customer",
+    "inquirer": "Inquirer",
+    "email": "Email",
+    "phone": "Phone",
+    "department": "Department",
+    "order": "Order",
+    "design_draft": "Design Draft",
+    "product_code": "Product Code",
+    "product_name": "Product Name",
+    "category": "Category",
+    "manager": "Manager",
+    "image": "Image",
+    "price": "Price"
+  },
+  "placeholder": {
+    "all_types": "All types",
+    "all_status": "All status",
+    "all_managers": "All managers",
+    "enter_customer_name": "Enter customer name",
+    "enter_inquirer_name": "Enter inquirer name",
+    "enter_search_term": "Enter search keyword...",
+    "write_response": "Write a response to the customer...",
+    "write_memo": "Write an internal memo...",
+    "customer_contact_phone": "Customer contact phone",
+    "select_send_channel": "Please select at least one send channel."
+  },
+  "column": {
+    "no": "No.",
+    "inquiry_type": "Inquiry Type",
+    "inquiry_history": "Inquiry History",
+    "customer_name": "Customer Name",
+    "inquirer_name": "Inquirer Name",
+    "status": "Status",
+    "registration_date": "Registration Date",
+    "person_in_charge": "Person In Charge",
+    "attachments": "Attachments"
+  },
+  "section": {
+    "inquiry_content": "Inquiry Content",
+    "attached_files": "Attached Files",
+    "register_answer": "Register Answer",
+    "response_history": "Response History",
+    "internal_memos": "Internal Memos",
+    "activity_log": "Activity Log",
+    "inquiry_information": "Inquiry Information",
+    "product_information": "Product Information",
+    "related_inquiries": "Related Inquiries",
+    "timeline": "Timeline"
+  },
+  "label": {
+    "replies": "Replies: {{count}}",
+    "registered_at": "Registered at",
+    "updated_at": "Updated at",
+    "updated_at_short": "Updated at {{date}}",
+    "created_by_at": "Created at {{date}} by {{by}}",
+    "actor": "Actor",
+    "email": "Email",
+    "kakao_talk": "KakaoTalk",
+    "attachment_limit": "{{count}} files · max 10MB each",
+    "send_notification_hint": "Notify customer via selected channels",
+    "related_inquiries_description": "Related records based on customer/order/draft context."
+  },
+  "empty": {
+    "no_inquiries": "No inquiries found.",
+    "no_attachments": "No attachments.",
+    "no_replies": "No responses yet.",
+    "no_memos": "No internal memos.",
+    "no_related": "No related inquiries.",
+    "no_content": "No content provided."
+  },
+  "timeline": {
+    "inquiry_created": "Inquiry created",
+    "inquiry_answered": "Inquiry answered",
+    "comment_added": "Comment added"
+  }
+}

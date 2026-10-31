@@ -1,0 +1,77 @@
+{
+  "button": {
+    "add_parent": "카테고리 추가",
+    "add_child": "하위 카테고리 추가"
+  },
+  "tree": {
+    "search": "카테고리 검색...",
+    "search_slug": "슬러그로 검색...",
+    "empty": "카테고리가 없습니다",
+    "empty_filtered": "필터와 일치하는 카테고리가 없습니다",
+    "depth_large": "대분류",
+    "depth_medium": "중분류",
+    "depth_small": "소분류",
+    "filter_status": "상태",
+    "reorder_disabled_by_filter": "필터를 해제해야 드래그로 순서를 변경할 수 있습니다."
+  },
+  "tab": {
+    "info": "기본 정보",
+    "products": "상품"
+  },
+  "product": {
+    "total": "총 {{count}}개",
+    "drag_hint": "카드를 드래그하거나 #을 클릭하여 노출 순서를 변경하세요",
+    "edit_position": "노출 순서 #{{position}} 변경",
+    "position": "노출 순서",
+    "position_range": "1부터 {{total}}까지의 정수를 입력하세요.",
+    "columns": "{{count}}열 보기",
+    "empty": "이 카테고리에 등록된 상품이 없습니다",
+    "load_fail": "상품 목록을 불러오지 못했습니다"
+  },
+  "detail": {
+    "empty_hint": "왼쪽 트리에서 카테고리를 선택하면 상세 정보가 표시됩니다",
+    "subcategory_count": "하위 카테고리 {{count}}개",
+    "parent_label": "상위 카테고리",
+    "section_basic": "기본 정보",
+    "section_exposure": "노출 설정",
+    "edit": "수정",
+    "save": "저장",
+    "cancel": "취소"
+  },
+  "field": {
+    "name": "이름",
+    "name_en": "이름 (영문)",
+    "slug": "슬러그",
+    "description": "설명",
+    "subtitle": "부제목",
+    "status": "상태",
+    "order": "노출 순서",
+    "icon": "아이콘",
+    "icon_image": "노출 아이콘",
+    "banner_image": "배너 이미지",
+    "expose_start": "노출 시작일",
+    "expose_end": "노출 종료일",
+    "expose_period": "노출 기간"
+  },
+  "placeholder": {
+    "name": "카테고리명을 입력하세요",
+    "slug": "카테고리 슬러그를 입력하세요",
+    "description": "설명을 입력하세요",
+    "subtitle": "부제목을 입력하세요",
+    "select_status": "상태 선택",
+    "icon": "https://..."
+  },
+  "modal": {
+    "title_create_parent": "카테고리 추가",
+    "title_edit_parent": "카테고리 수정",
+    "title_create_child": "하위 카테고리 추가",
+    "title_edit_child": "하위 카테고리 수정",
+    "section_basic": "기본 정보",
+    "section_exposure": "노출 설정"
+  },
+  "confirm": {
+    "delete_title": "카테고리 삭제",
+    "delete_description": "이 카테고리를 삭제하시겠습니까? 이 작업은 되돌릴 수 없습니다."
+  },
+  "empty": "카테고리가 없습니다"
+}

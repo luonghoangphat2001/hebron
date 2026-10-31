@@ -1,0 +1,18 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: hebron_app
+    restart: unless-stopped
+    working_dir: /var/www
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/var/www
+    networks:
+      - hebron
+
+networks:
+  hebron:
+    driver: bridge

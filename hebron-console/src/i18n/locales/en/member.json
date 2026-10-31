@@ -1,0 +1,141 @@
+{
+  "button": {
+    "export_excel": "Export Excel",
+    "register": "Register",
+    "change_password": "Change Password",
+    "report_spam_post": "Report Spam Post"
+  },
+  "field": {
+    "keyword": "Keyword",
+    "status": "Status",
+    "company_name": "Company Name",
+    "master_id": "Master ID",
+    "email": "Email",
+    "new_password": "New Password",
+    "temporary_password": "Temporary Password",
+    "malicious_words": "Malicious Words",
+    "bank_name": "Bank Name",
+    "account_number": "Account Number",
+    "account_holder": "Account Holder",
+    "outstanding_balance": "Outstanding Balance",
+    "member_type": "Member Type",
+    "individual_member": "Individual",
+    "business_member": "Business",
+    "name": "Name",
+    "username": "Username",
+    "password": "Password",
+    "mobile": "Mobile Phone",
+    "phone": "Phone",
+    "postcode": "Postcode",
+    "address": "Address",
+    "detailed_address": "Detailed Address",
+    "business_registration_number": "Business Registration No.",
+    "representative_name": "Representative Name",
+    "industry_type": "Industry Type",
+    "business_type": "Business Type",
+    "business_postcode": "Business Postcode",
+    "business_address": "Business Address",
+    "business_address_detail": "Business Detailed Address",
+    "tax_invoice_email": "Tax Invoice Email",
+    "homepage_url": "Homepage URL",
+    "business_registration_file": "Business Registration Certificate"
+  },
+  "placeholder": {
+    "enter_keyword": "Search by name, ID, phone, email",
+    "all_status": "All status",
+    "all_approval_status": "All approval status",
+    "generate_to_view": "Click generate to view",
+    "enter_malicious_words": "Enter words separated by commas (,)",
+    "enter_name": "Enter name",
+    "enter_username": "Enter username",
+    "enter_password": "Enter password",
+    "enter_email": "user@example.com",
+    "enter_mobile": "010-0000-0000",
+    "enter_phone": "02-0000-0000",
+    "enter_company_name": "Enter company name",
+    "enter_business_number": "000-00-00000",
+    "enter_representative_name": "Enter representative name",
+    "enter_industry_type": "e.g. Manufacturing",
+    "enter_business_type": "e.g. Software Development",
+    "enter_postcode": "Postcode",
+    "enter_address": "Enter address",
+    "enter_detailed_address": "Enter detailed address",
+    "enter_tax_invoice_email": "tax@example.com",
+    "enter_homepage_url": "https://example.com"
+  },
+  "filter": {
+    "login_date_range": "Login Date Range",
+    "order_date_range": "Order Date Range",
+    "modification_date_range": "Modification Date Range"
+  },
+  "column": {
+    "name_id": "Name / ID",
+    "id": "Username",
+    "no": "No.",
+    "name": "Name",
+    "email": "Email",
+    "phone": "Phone",
+    "mobile": "Mobile Phone",
+    "sign_up_date": "Sign-up Date",
+    "last_login_date": "Last Login Date",
+    "status": "Status",
+    "role": "Role",
+    "transaction_date": "Transaction Date",
+    "type": "Type",
+    "amount": "Amount",
+    "balance_after": "Balance",
+    "memo": "Memo",
+    "description": "Description",
+    "changes": "Changes"
+  },
+  "tab": {
+    "basic_information": "Basic Information",
+    "members": "Members",
+    "payment_information": "Payment Information",
+    "ledger_management": "Ledger Management"
+  },
+  "section": {
+    "member_settings": "Member Settings",
+    "modification_log": "Modification Log",
+    "basic_info": "Basic Information",
+    "business_info": "Business Information",
+    "recent_logins": "Recent Logins",
+    "recent_orders": "Recent Orders"
+  },
+  "title": {
+    "registration": "Client Registration",
+    "change_password": "Change Member Password",
+    "report_spam_post": "Report Spam Post"
+  },
+  "description": {
+    "registration": "A master account will be created automatically for this client."
+  },
+  "label": {
+    "sign_up_at": "Sign-up Date",
+    "last_login_at": "Last Login Date",
+    "actor": "Actor",
+    "set_password_directly": "Set password directly",
+    "generate_temporary_password": "Generate temporary password",
+    "block_post_author_ip": "Block post author's IP",
+    "delete_post": "Delete post",
+    "comma_separated": "Comma (,) separated",
+    "malicious_member": "Malicious Member",
+    "block_purchase": "Block Purchases",
+    "block_login": "Block Logins",
+    "registered_malicious_words": "Registered malicious words"
+  },
+  "log": {
+    "password_changed_directly": "Password changed directly by administrator",
+    "password_changed_temporary": "Temporary password issued by administrator",
+    "block_author_ip": "Blocked post author's IP",
+    "delete_post": "Deleted spam post",
+    "register_malicious_words": "Registered malicious words"
+  },
+  "empty": {
+    "no_members": "No members found.",
+    "no_ledger_entries": "No ledger entries yet.",
+    "no_activity_log": "No modification log yet.",
+    "no_recent_logins": "No recent logins found.",
+    "no_recent_orders": "No recent orders found."
+  }
+}

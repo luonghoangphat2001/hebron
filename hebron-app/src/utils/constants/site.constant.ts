@@ -1,0 +1,5 @@
+export const SITE_TYPE = {
+  SHOPPING_MALL: 'SHOPPING_MALL',
+  BRAND_SITE: 'BRAND_SITE',
+  PLAIN_SITE: 'PLAIN_SITE',
+} as const;

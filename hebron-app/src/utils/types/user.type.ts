@@ -1,0 +1,37 @@
+import type { MemberType, UserAuthority, UserStatus } from '../enums/common.enum';
+
+export type User = {
+  id: number;
+  status?: UserStatus;
+  member_type?: MemberType;
+  username: string;
+  name: string;
+  email: string;
+  phone: string;
+  mobile: string;
+  postcode: string;
+  address: string;
+  detailed_address: string | null;
+  authority?: UserAuthority;
+  role?: UserAuthority;
+  is_admin: boolean;
+  is_super_admin?: boolean;
+  is_store_admin?: boolean;
+  is_normal_user: boolean;
+  headquarters?: string | null;
+  business_office?: string | null;
+  team?: string | null;
+  position?: string | null;
+  last_login_at?: string | null;
+  company_name?: string | null;
+  business_registration_number?: string | null;
+  representative_name?: string | null;
+  business_type?: string | null;
+  industry_type?: string | null;
+  business_postcode?: string | null;
+  business_address?: string | null;
+  business_address_detail?: string | null;
+  tax_invoice_email?: string | null;
+  homepage_url?: string | null;
+  business_registration_file?: string | null;
+};

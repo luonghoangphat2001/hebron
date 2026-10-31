@@ -1,0 +1,17 @@
+<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="10" cy="10" r="10" fill="url(#star_bg)"/>
+  <circle cx="10" cy="10" r="9.6" stroke="url(#star_border)" stroke-width="0.8"/>
+  <circle cx="10" cy="10" r="3.8" fill="white"/>
+  <defs>
+    <linearGradient id="star_bg" x1="10" y1="0" x2="10" y2="36.5" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFCC25"/>
+      <stop offset="0.5" stop-color="#83C3FF"/>
+      <stop offset="0.534" stop-color="#00E0FF"/>
+    </linearGradient>
+    <linearGradient id="star_border" x1="10" y1="0" x2="10" y2="21.5" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#A6D8FF"/>
+      <stop offset="0.8" stop-color="#83C3FF"/>
+      <stop offset="1" stop-color="#FFCC25" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+</svg>

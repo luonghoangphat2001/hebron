@@ -1,0 +1,141 @@
+{
+  "button": {
+    "export_excel": "엑셀 다운로드",
+    "register": "등록",
+    "change_password": "비밀번호 변경",
+    "report_spam_post": "스팸 게시물 신고"
+  },
+  "field": {
+    "keyword": "검색어",
+    "status": "상태",
+    "company_name": "회사명",
+    "master_id": "마스터 ID",
+    "email": "이메일",
+    "new_password": "새 비밀번호",
+    "temporary_password": "임시 비밀번호",
+    "malicious_words": "악성 단어",
+    "bank_name": "은행명",
+    "account_number": "계좌번호",
+    "account_holder": "예금주",
+    "outstanding_balance": "미결제 잔액",
+    "member_type": "회원 구분",
+    "individual_member": "개인 회원",
+    "business_member": "사업자 회원",
+    "name": "이름",
+    "username": "사용자 이름",
+    "password": "비밀번호",
+    "mobile": "휴대폰 번호",
+    "phone": "전화번호",
+    "postcode": "우편번호",
+    "address": "주소",
+    "detailed_address": "상세 주소",
+    "business_registration_number": "사업자 등록번호",
+    "representative_name": "대표자명",
+    "industry_type": "업태",
+    "business_type": "종목",
+    "business_postcode": "사업장 우편번호",
+    "business_address": "사업장 주소",
+    "business_address_detail": "사업장 상세 주소",
+    "tax_invoice_email": "세금계산서 이메일",
+    "homepage_url": "홈페이지 URL",
+    "business_registration_file": "사업자 등록증 파일"
+  },
+  "placeholder": {
+    "enter_keyword": "이름, ID, 전화번호, 이메일로 검색",
+    "all_status": "전체 상태",
+    "all_approval_status": "전체 승인 상태",
+    "generate_to_view": "생성 버튼을 클릭하세요",
+    "enter_malicious_words": "쉼표(,)로 구분하여 입력하세요",
+    "enter_name": "이름을 입력하세요",
+    "enter_username": "사용자명을 입력하세요",
+    "enter_password": "비밀번호를 입력하세요",
+    "enter_email": "user@example.com",
+    "enter_mobile": "010-0000-0000",
+    "enter_phone": "02-0000-0000",
+    "enter_company_name": "회사명을 입력하세요",
+    "enter_business_number": "000-00-00000",
+    "enter_representative_name": "대표자명을 입력하세요",
+    "enter_industry_type": "예: 제조업",
+    "enter_business_type": "예: 소프트웨어 개발",
+    "enter_postcode": "우편번호",
+    "enter_address": "주소를 입력하세요",
+    "enter_detailed_address": "상세 주소를 입력하세요",
+    "enter_tax_invoice_email": "tax@example.com",
+    "enter_homepage_url": "https://example.com"
+  },
+  "filter": {
+    "login_date_range": "로그인 기간",
+    "order_date_range": "주문 기간",
+    "modification_date_range": "수정 기간"
+  },
+  "column": {
+    "name_id": "이름 / ID",
+    "id": "ID",
+    "no": "No.",
+    "name": "이름",
+    "email": "이메일",
+    "phone": "전화번호",
+    "mobile": "휴대폰 번호",
+    "sign_up_date": "가입일",
+    "last_login_date": "최근 로그인일",
+    "status": "상태",
+    "role": "역할",
+    "transaction_date": "거래일시",
+    "type": "구분",
+    "amount": "금액",
+    "balance_after": "잔액",
+    "memo": "메모",
+    "description": "설명",
+    "changes": "변경 사항"
+  },
+  "tab": {
+    "basic_information": "기본 정보",
+    "members": "회원",
+    "payment_information": "결제 정보",
+    "ledger_management": "원장 관리"
+  },
+  "section": {
+    "member_settings": "회원 설정",
+    "modification_log": "수정 이력",
+    "basic_info": "기본 정보",
+    "business_info": "사업자 정보",
+    "recent_logins": "최근 로그인 이력",
+    "recent_orders": "최근 주문 내역"
+  },
+  "title": {
+    "registration": "고객사 등록",
+    "change_password": "회원 비밀번호 변경",
+    "report_spam_post": "스팸 게시물 신고"
+  },
+  "description": {
+    "registration": "마스터 계정이 자동으로 생성됩니다."
+  },
+  "label": {
+    "sign_up_at": "가입일",
+    "last_login_at": "최근 로그인일",
+    "actor": "처리자",
+    "set_password_directly": "비밀번호 직접 설정",
+    "generate_temporary_password": "임시 비밀번호 생성",
+    "block_post_author_ip": "게시물 작성자 IP 차단",
+    "delete_post": "게시물 삭제",
+    "comma_separated": "쉼표(,)로 구분",
+    "malicious_member": "악성 회원 설정",
+    "block_purchase": "구매 차단",
+    "block_login": "로그인 차단",
+    "registered_malicious_words": "등록된 악성 단어"
+  },
+  "log": {
+    "password_changed_directly": "관리자가 비밀번호를 직접 변경함",
+    "password_changed_temporary": "관리자가 임시 비밀번호를 발급함",
+    "block_author_ip": "게시물 작성자 IP 차단됨",
+    "delete_post": "스팸 게시물 삭제됨",
+    "register_malicious_words": "악성 단어 등록됨"
+  },
+  "empty": {
+    "no_members": "회원이 없습니다.",
+    "no_ledger_entries": "원장 내역이 없습니다.",
+    "no_activity_log": "수정 이력이 없습니다.",
+    "no_recent_logins": "최근 로그인 이력이 없습니다.",
+    "no_recent_orders": "최근 주문 내역이 없습니다."
+  }
+}

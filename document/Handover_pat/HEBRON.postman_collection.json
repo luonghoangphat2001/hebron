@@ -1,0 +1,652 @@
+{
+  "auth": {
+    "bearer": [
+      {
+        "key": "token",
+        "type": "string",
+        "value": "{{auth_secret_0dvn}}"
+      }
+    ],
+    "type": "bearer"
+  },
+  "event": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "exec": [
+          ""
+        ],
+        "packages": {},
+        "requests": {},
+        "type": "text/javascript"
+      }
+    },
+    {
+      "listen": "test",
+      "script": {
+        "exec": [
+          ""
+        ],
+        "packages": {},
+        "requests": {},
+        "type": "text/javascript"
+      }
+    }
+  ],
+  "info": {
+    "_exporter_id": "38135800",
+    "_postman_id": "328cb6fd-bc6d-44a9-9715-47ca0a71029f",
+    "name": "HEBRON",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "item": [
+        {
+          "name": "companylist",
+          "request": {
+            "header": [],
+            "method": "GET",
+            "url": {
+              "host": [
+                "info",
+                "sweettracker",
+                "co",
+                "kr"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "companylist"
+              ],
+              "protocol": "https",
+              "query": [
+                {
+                  "key": "t_key",
+                  "value": "{{t_key}}"
+                },
+                {
+                  "key": "Accept",
+                  "value": "application/json"
+                }
+              ],
+              "raw": "https://info.sweettracker.co.kr/api/v1/companylist?t_key={{t_key}}&Accept=application/json"
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "webhook",
+          "request": {
+            "body": {
+              "mode": "raw",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              },
+              "raw": "{\n  \"invoiceNo\": \"1234567890123\",\n  \"companyCode\": \"04\",\n  \"status\": \"DELIVERED\",\n  \"remark\": \"배송완료\"\n}"
+            },
+            "header": [],
+            "method": "POST",
+            "url": {
+              "host": [
+                "localhost"
+              ],
+              "path": [
+                "api",
+                "webhooks",
+                "sweettracker",
+                "tracking"
+              ],
+              "port": "8000",
+              "protocol": "http",
+              "query": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "Accept",
+                  "value": "application/json"
+                }
+              ],
+              "raw": "http://localhost:8000/api/webhooks/sweettracker/tracking?Content-Type=application/json&Accept=application/json"
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "get info shipping",
+          "request": {
+            "header": [],
+            "method": "GET",
+            "url": {
+              "host": [
+                "info",
+                "sweettracker",
+                "co",
+                "kr"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "trackingInfo"
+              ],
+              "protocol": "https",
+              "query": [
+                {
+                  "key": "t_key",
+                  "value": "{{t_key}}"
+                },
+                {
+                  "key": "t_code",
+                  "value": "택배사코드"
+                },
+                {
+                  "key": "t_invoice",
+                  "value": "운송장번호"
+                }
+              ],
+              "raw": "https://info.sweettracker.co.kr/api/v1/trackingInfo?t_key={{t_key}}&t_code=택배사코드&t_invoice=운송장번호"
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "New Request",
+          "request": {
+            "header": [],
+            "method": "GET",
+            "url": {
+              "raw": ""
+            }
+          },
+          "response": []
+        }
+      ],
+      "name": "sweettracker"
+    },
+    {
+      "item": [
+        {
+          "name": "GET Board",
+          "request": {
+            "auth": {
+              "bearer": [
+                {
+                  "key": "token",
+                  "type": "string",
+                  "value": "{{token}}"
+                }
+              ],
+              "type": "bearer"
+            },
+            "header": [],
+            "method": "GET",
+            "url": {
+              "host": [
+                "hebron21",
+                "cafe24api",
+                "com"
+              ],
+              "path": [
+                "api",
+                "v2",
+                "admin",
+                "boards",
+                "7",
+                "articles"
+              ],
+              "protocol": "https",
+              "query": [
+                {
+                  "key": "shop_no",
+                  "value": "1"
+                },
+                {
+                  "key": "offset",
+                  "value": "0"
+                },
+                {
+                  "key": "limit",
+                  "value": "10"
+                }
+              ],
+              "raw": "https://hebron21.cafe24api.com/api/v2/admin/boards/7/articles?shop_no=1&offset=0&limit=10"
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "GET category",
+          "request": {
+            "auth": {
+              "bearer": [
+                {
+                  "key": "token",
+                  "type": "string",
+                  "value": "{{token}}"
+                }
+              ],
+              "type": "bearer"
+            },
+            "header": [],
+            "method": "GET",
+            "url": {
+              "host": [
+                "hebron21",
+                "cafe24api",
+                "com"
+              ],
+              "path": [
+                "api",
+                "v2",
+                "admin",
+                "boards",
+                "7"
+              ],
+              "protocol": "https",
+              "raw": "https://hebron21.cafe24api.com/api/v2/admin/boards/7"
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Token Cafe24h",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "oauth2": [
+                {
+                  "key": "scope",
+                  "type": "string",
+                  "value": "mall.read_product mall.read_design mall.read_community"
+                },
+                {
+                  "key": "clientId",
+                  "type": "string",
+                  "value": "{{vault:auth_secret_0ehh}}"
+                },
+                {
+                  "key": "accessTokenUrl",
+                  "type": "string",
+                  "value": "https://hebron21.cafe24api.com/api/v2/oauth/token"
+                },
+                {
+                  "key": "authUrl",
+                  "type": "string",
+                  "value": "https://hebron21.cafe24.com/api/v2/oauth/authorize"
+                },
+                {
+                  "key": "addTokenTo",
+                  "type": "string",
+                  "value": "header"
+                },
+                {
+                  "key": "clientSecret",
+                  "type": "string",
+                  "value": "{{vault:auth_secret_0uzq}}"
+                },
+                {
+                  "key": "client_authentication",
+                  "type": "string",
+                  "value": "header"
+                },
+                {
+                  "key": "redirect_uri",
+                  "type": "string",
+                  "value": "https://oauth.pstmn.io/v1/callback"
+                },
+                {
+                  "key": "useBrowser",
+                  "type": "string",
+                  "value": "false"
+                }
+              ],
+              "type": "oauth2"
+            },
+            "body": {
+              "mode": "urlencoded",
+              "urlencoded": [
+                {
+                  "key": "grant_type",
+                  "value": "authorization_code"
+                },
+                {
+                  "key": "code",
+                  "value": "RUIlWVHFIJQhUaVdUgrAdB"
+                },
+                {
+                  "key": "redirect_uri",
+                  "value": "https://oauth.pstmn.io/v1/callback"
+                }
+              ]
+            },
+            "header": [],
+            "method": "GET",
+            "url": {
+              "host": [
+                "hebron21",
+                "cafe24api",
+                "com"
+              ],
+              "path": [
+                "api",
+                "v2",
+                "oauth",
+                "token"
+              ],
+              "protocol": "https",
+              "raw": "https://hebron21.cafe24api.com/api/v2/oauth/token"
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Product",
+          "request": {
+            "auth": {
+              "bearer": [
+                {
+                  "key": "token",
+                  "type": "string",
+                  "value": "{{token}}"
+                }
+              ],
+              "type": "bearer"
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "url": {
+              "host": [
+                "hebron21",
+                "cafe24api",
+                "com"
+              ],
+              "path": [
+                "api",
+                "v2",
+                "admin",
+                "products"
+              ],
+              "protocol": "https",
+              "query": [
+                {
+                  "key": "limit",
+                  "value": "100"
+                },
+                {
+                  "key": "custom_product_code",
+                  "value": "HB-1173"
+                }
+              ],
+              "raw": "https://hebron21.cafe24api.com/api/v2/admin/products?limit=100&custom_product_code=HB-1173"
+            }
+          },
+          "response": []
+        },
+        {
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "pm.test(\"Status code is 200\", function () {\n    pm.response.to.have.status(200);\n});\n\npm.test(\"Response time is less than 2000ms\", function () {\n    pm.expect(pm.response.responseTime).to.be.below(2000);\n});\n\npm.test(\"Response has JSON body\", function () {\n    pm.response.to.be.json;\n});\n\npm.test(\"Response contains product object\", function () {\n    const jsonData = pm.response.json();\n    pm.expect(jsonData).to.have.property(\"product\");\n});\n\npm.test(\"Product has required fields\", function () {\n    const product = pm.response.json().product;\n    pm.expect(product).to.have.property(\"product_no\");\n    pm.expect(product).to.have.property(\"product_name\");\n    pm.expect(product).to.have.property(\"price\");\n});"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "name": "Image",
+          "request": {
+            "auth": {
+              "bearer": [
+                {
+                  "key": "token",
+                  "type": "string",
+                  "value": "{{token}}"
+                }
+              ],
+              "type": "bearer"
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "url": {
+              "host": [
+                "hebron21",
+                "cafe24api",
+                "com"
+              ],
+              "path": [
+                "api",
+                "v2",
+                "admin",
+                "products",
+                "1",
+                ""
+              ],
+              "protocol": "https",
+              "raw": "https://hebron21.cafe24api.com/api/v2/admin/products/1/"
+            }
+          },
+          "response": [
+            {
+              "_postman_previewlanguage": "json",
+              "body": "",
+              "cookie": [],
+              "header": null,
+              "name": "Image",
+              "originalRequest": {
+                "auth": {
+                  "bearer": [
+                    {
+                      "key": "token",
+                      "type": "string",
+                      "value": "{{token}}"
+                    }
+                  ],
+                  "type": "bearer"
+                },
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "url": {
+                  "host": [
+                    "hebron21",
+                    "cafe24api",
+                    "com"
+                  ],
+                  "path": [
+                    "api",
+                    "v2",
+                    "admin",
+                    "products",
+                    "1",
+                    ""
+                  ],
+                  "protocol": "https",
+                  "raw": "https://hebron21.cafe24api.com/api/v2/admin/products/1/"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "name": "Desgin",
+          "request": {
+            "auth": {
+              "bearer": [
+                {
+                  "key": "token",
+                  "type": "string",
+                  "value": "{{token}}"
+                }
+              ],
+              "type": "bearer"
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "url": {
+              "host": [
+                "hebron21",
+                "cafe24api",
+                "com"
+              ],
+              "path": [
+                "api",
+                "v2",
+                "admin",
+                "themes"
+              ],
+              "protocol": "https",
+              "raw": "https://hebron21.cafe24api.com/api/v2/admin/themes"
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "New Request",
+          "request": {
+            "header": [],
+            "method": "GET",
+            "url": {
+              "raw": ""
+            }
+          },
+          "response": []
+        }
+      ],
+      "name": "Cafe24h"
+    },
+    {
+      "item": [
+        {
+          "name": "send order",
+          "request": {
+            "body": {
+              "mode": "raw",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              },
+              "raw": "{\n    \"orderInfo\": {\n        \"sid\": \"withaward\",\n        \"demand\": \"\",\n        \"order_id\": \"PRINTLY20260922-17341\",\n        \"send_name\": \"PAt\",\n        \"order_date\": \"2026-09-22 06:48:38\",\n        \"recive_date\": \"\",\n        \"send_hphone\": \"01021311232\",\n        \"total_price\": 55000\n    },\n    \"productInfo\": [\n        {\n            \"amount\": 1,\n            \"prdname\": \"크리스탈 시계 HB-3120\",\n            \"sellPrice\": 50000\n        }\n    ]\n}"
+            },
+            "header": [],
+            "method": "POST",
+            "url": {
+              "host": [
+                "test-hebron",
+                "happyai",
+                "co",
+                "kr"
+              ],
+              "path": [
+                "mes",
+                "project",
+                "api",
+                "order_fromMall.php"
+              ],
+              "protocol": "http",
+              "raw": "http://test-hebron.happyai.co.kr/mes/project/api/order_fromMall.php"
+            }
+          },
+          "response": []
+        }
+      ],
+      "name": "Mes"
+    },
+    {
+      "name": "New Request",
+      "request": {
+        "body": {
+          "mode": "raw",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          },
+          "raw": "{\n    \"sid\": \"withaward\",\n     \"stock_request_no\": \"stock_20261019013053343677732\"\n}"
+        },
+        "header": [],
+        "method": "POST",
+        "url": {
+          "host": [
+            "test-hebron",
+            "happyai",
+            "co",
+            "kr"
+          ],
+          "path": [
+            "mes",
+            "project",
+            "api",
+            "stock_info.php"
+          ],
+          "protocol": "http",
+          "query": [
+            {
+              "disabled": true,
+              "key": "sid",
+              "value": "withaward"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "raw": "http://test-hebron.happyai.co.kr/mes/project/api/stock_info.php?Content-Type=application/json"
+        }
+      },
+      "response": []
+    }
+  ],
+  "variable": [
+    {
+      "key": "auth_secret_0ehh",
+      "secret": true
+    },
+    {
+      "key": "auth_secret_0uzq",
+      "secret": true
+    }
+  ]
+}

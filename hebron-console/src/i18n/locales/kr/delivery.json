@@ -1,0 +1,67 @@
+{
+  "shipment": {
+    "description": "출고 내역을 조회하고 송장·운송장 정보를 수정하며 배송 데이터를 내보낼 수 있습니다.",
+    "field": {
+      "search_term": "키워드",
+      "order_number": "주문 번호",
+      "customer_name": "고객명",
+      "product_name": "상품명",
+      "invoice_number": "송장 번호",
+      "tracking_number": "운송장 번호",
+      "carrier_name": "택배사",
+      "shipping_manager": "출고 담당자",
+      "status": "상태",
+      "shipment_date": "출고일"
+    },
+    "placeholder": {
+      "search_term": "출고일, 주문, 고객, 상품, 출고 담당자 검색",
+      "order_number": "주문 번호",
+      "customer_name": "고객명",
+      "product_name": "상품명",
+      "invoice_number": "송장 번호",
+      "tracking_number": "운송장 번호",
+      "carrier_name": "택배사",
+      "shipping_manager": "전체 출고 담당자",
+      "all_statuses": "전체 상태"
+    },
+    "column": {
+      "order_number": "주문 번호",
+      "customer_name": "고객명",
+      "product_name": "상품명",
+      "quantity": "수량",
+      "status": "상태",
+      "invoice_number": "송장 번호",
+      "tracking_number": "운송장 번호",
+      "carrier_name": "택배사",
+      "delivery_manager": "배송 담당자",
+      "shipping_method": "배송 방법",
+      "shipping_fee": "배송비",
+      "shipping_name": "수취인",
+      "shipping_phone": "연락처",
+      "shipping_postcode": "우편번호",
+      "shipping_address": "배송 주소",
+      "shipped_at": "발송일",
+      "delivered_at": "배송 완료일"
+    },
+    "button": {
+      "track": "배송 조회",
+      "register": "등록",
+      "edit": "수정"
+    },
+    "modal": {
+      "detail_title": "출고 상세",
+      "edit_title": "출고 정보 수정",
+      "section": {
+        "order_info": "주문 정보",
+        "shipping_info": "배송 정보",
+        "tracking_history": "배송 추적 내역"
+      },
+      "field": {
+        "current_status": "현재 상태",
+        "last_updated": "최종 갱신"
+      },
+      "no_tracking_history": "배송 추적 내역이 없습니다."
+    },
+    "empty": "출고 내역이 없습니다."
+  }
+}

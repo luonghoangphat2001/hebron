@@ -1,0 +1,267 @@
+{
+  "everaward": {
+    "wrapperRequired": "The HTML must contain a .view_design_wrap element.",
+    "replaceImage": "Replace image",
+    "mode": "Description editing mode",
+    "visual": "Visual",
+    "html": "HTML (advanced)",
+    "format": "Text formatting",
+    "b": "Bold",
+    "i": "Italic",
+    "u": "Underline",
+    "color": "Text color",
+    "fontSize": "Font size",
+    "left": "Align left",
+    "center": "Align center",
+    "right": "Align right",
+    "undo": "Undo",
+    "redo": "Redo",
+    "uploading": "Uploading image…",
+    "uploadFailed": "Image upload failed. Please try again."
+  },
+  "calligraphy": {
+    "title": "Calligraphy Management",
+    "action": {
+      "add": "Add calligraphy",
+      "upload": "Upload image",
+      "change_type": "Change type"
+    },
+    "type": {
+      "calligraphy": "Calligraphy",
+      "smog_only": "Smog only",
+      "wood_case_gold_only": "Wood case only (gold color)"
+    },
+    "filter": {
+      "type": "Type",
+      "search": "Search",
+      "search_placeholder": "Search by text"
+    },
+    "editor": {
+      "create_title": "Add calligraphy",
+      "edit_title": "Edit calligraphy",
+      "image": "Image",
+      "type": "Type",
+      "text_placeholder": "Enter text"
+    },
+    "pagination": { "total": "{{count}} calligraphies" },
+    "delete": {
+      "title": "Delete selected calligraphies",
+      "description": "Delete {{count}} selected calligraphies? This action cannot be undone."
+    },
+    "message": {
+      "created": "Calligraphy added.",
+      "created_multiple": "{{count}} calligraphies added.",
+      "updated": "Calligraphy updated.",
+      "deleted": "Calligraphies deleted.",
+      "bulk_updated": "Calligraphy types updated.",
+      "empty": "No calligraphies found.",
+      "load_failed": "Unable to load calligraphies.",
+      "save_failed": "Unable to save the calligraphy.",
+      "delete_failed": "Unable to delete calligraphies.",
+      "bulk_update_failed": "Unable to update calligraphy types.",
+      "invalid_type": "Only JPG, JPEG, PNG and WEBP images are supported.",
+      "too_large": "The image must not exceed 10 MB."
+    }
+  },
+  "background": {
+    "title": "Background Management",
+    "action": {
+      "add": "Add background",
+      "select_page": "Select current page"
+    },
+    "filter": {
+      "sort_by": "Sort by",
+      "created_at": "Created date",
+      "updated_at": "Last modified",
+      "order": "Order",
+      "desc": "Descending",
+      "asc": "Ascending"
+    },
+    "card": {
+      "templates": "{{count}} templates"
+    },
+    "pagination": {
+      "total": "{{count}} backgrounds"
+    },
+    "delete": {
+      "title": "Delete selected backgrounds",
+      "description": "Delete {{count}} selected backgrounds? This action cannot be undone.",
+      "blocked_title": "Backgrounds are in use",
+      "blocked_description": "Nothing was deleted. Remove these backgrounds from the following templates first:"
+    },
+    "message": {
+      "created": "Background added.",
+      "deleted": "Backgrounds deleted.",
+      "status_updated": "Background statuses updated.",
+      "empty": "No backgrounds found.",
+      "load_failed": "Unable to load backgrounds.",
+      "upload_failed": "Unable to upload the background.",
+      "delete_failed": "Unable to delete backgrounds.",
+      "invalid_type": "Only JPG, JPEG, PNG and WEBP images are supported.",
+      "too_large": "The image must not exceed 50 MB."
+    }
+  },
+  "button_add": "Add Product",
+  "empty": "No products found.",
+  "confirm_delete_title": "Delete Product",
+  "confirm_delete_description": "Are you sure you want to delete this product? This action is irreversible.",
+  "column": {
+    "image": "Image",
+    "name": "Product Name",
+    "sku": "SKU",
+    "category": "Category",
+    "price": "Selling Price",
+    "stock": "Stock",
+    "status": "Status",
+    "created_at": "Registration Date",
+    "action": "Action"
+  },
+  "filter": {
+    "search_term": "Search",
+    "search_term_placeholder": "Name or code",
+    "product_name": "Product Name",
+    "product_name_placeholder": "Search by name",
+    "product_code": "Product Code",
+    "product_code_placeholder": "Search by code",
+    "category": "Category",
+    "status": "Status",
+    "availability": "Availability",
+    "promotional": "Promotional",
+    "product_type": "Product Type",
+    "all": "All"
+  },
+  "status": {
+    "sold": "Sold",
+    "hidden": "Hidden"
+  },
+  "availability": {
+    "in_stock": "In Stock",
+    "out_of_stock": "Out of Stock"
+  },
+  "promotional": {
+    "true": "Promotional",
+    "false": "Non-Promotional"
+  },
+  "type": {
+    "template": "Template",
+    "custom": "Custom",
+    "promotional": "Promotional",
+    "file_order": "File Order"
+  },
+  "modal": {
+    "create_title": "Create Product",
+    "edit_title": "Edit Product",
+    "detail_title": "Product detail",
+    "section_basic": "Basic Information",
+    "section_status": "Status & Organization",
+    "section_price": "Pricing",
+    "section_inventory": "Inventory",
+    "section_images": "Images",
+    "section_ai_file": "Design Draft File",
+    "ai_file_empty": "No design draft file uploaded.",
+    "ai_file_format": "AI file (.ai) · Maximum 5MB",
+    "ai_file_upload": "Upload File",
+    "ai_file_change": "Change File",
+    "ai_file_uploading": "Uploading design draft file",
+    "section_option": "Options",
+    "section_template": "Templates",
+    "section_specification": "Specification",
+    "field_name": "Product Name (KO)",
+    "field_name_en": "Product Name (EN)",
+    "field_slug": "Slug",
+    "field_sku": "SKU",
+    "field_categories": "Categories",
+    "field_visible_roles": "Visible To",
+    "field_description": "Description",
+    "field_short_description": "Short Description",
+    "field_selling_price": "Selling Price",
+    "field_supply_price": "Supply Price",
+    "field_brand_site_price": "Brand Site Price",
+    "field_plain_site_price": "Plain Site Price",
+    "field_shipping_fee": "Shipping Fee",
+    "field_price_content": "Price Notes",
+    "field_stock_quantity": "Stock Quantity",
+    "field_min_quantity": "Min Quantity",
+    "field_max_quantity": "Max Quantity",
+    "max_quantity_hint": "0 = unlimited purchase quantity",
+    "stock_inventory_enabled": "Use Inventory Management",
+    "stock_inventory_enabled_hint": "When disabled, customers can purchase this product regardless of its stock quantity.",
+    "price_relation_hint": "Selling price is like a discounted price, supply price is like the original price. Selling price must be less than or equal to supply price.",
+    "field_sort_order": "Sort Order",
+    "field_option_groups": "Option Groups",
+    "field_templates": "Templates",
+    "field_size": "Size",
+    "field_materials": "Materials",
+    "field_case": "Case",
+    "field_product_period": "Production Period",
+    "field_total_product_amount": "Total Amount",
+    "field_shipping_info": "Shipping Info",
+    "field_weight": "Weight",
+    "field_notes": "Notes",
+    "name_placeholder": "e.g. Premium Business Card",
+    "slug_placeholder": "Auto-generated when left empty",
+    "sku_placeholder": "e.g. BC-PREMIUM-001",
+    "select_placeholder": "Select",
+    "ph_name_en": "e.g. Premium Business Card",
+    "ph_categories": "Select categories",
+    "visible_role": { "ALL": "Everyone", "MEMBER": "Members", "MANAGER": "Managers" },
+    "ph_option_groups": "Select option groups",
+    "edit_option_group": "Edit option group (opens in a new tab)",
+    "remove_option_group": "Remove option group",
+    "option_group_required": "Required",
+    "option_group_options": "Options ({{count}})",
+    "ph_templates": "Select templates",
+    "no_templates": "No templates available.",
+    "template_search_placeholder": "Search by template name",
+    "ph_short_description": "One line shown on the product card",
+    "ph_description": "Full product description",
+    "ph_amount": "100.000",
+    "ph_price_content": "Notes shown with the price",
+    "ph_quantity": "100",
+    "ph_size": "e.g. 90 x 50 mm",
+    "ph_materials": "e.g. 350gsm Art Card",
+    "ph_case": "e.g. Velvet case",
+    "ph_product_period": "e.g. 2-3 business days",
+    "ph_total_product_amount": "e.g. 100 pcs",
+    "ph_shipping_info": "e.g. Standard",
+    "ph_weight": "e.g. 0.3 kg",
+    "ph_notes": "Extra notes",
+    "images_hint": "Up to 5 images, JPEG/PNG/WEBP, 5MB each.",
+    "ai_file_hint": "Upload one Adobe Illustrator (.ai) design draft for customers to download on the product detail page. Maximum 5MB.",
+    "is_active": "Active",
+    "is_popular": "Popular",
+    "is_featured": "Featured",
+    "is_top_product": "Steady Seller",
+    "has_option": "Has Options"
+  },
+  "unsaved_changes": {
+    "title": "Unsaved changes",
+    "description": "You have changes that haven't been saved. Save before leaving this page, or leave and discard them.",
+    "leave": "Leave",
+    "stay": "Stay",
+    "edit_option_group_description": "This product has unsaved changes. Please save the product before editing the option group. If you open it anyway, your changes here stay in this tab until you save.",
+    "open": "Open"
+  },
+  "copy_modal": {
+    "title": "Copy Product",
+    "field_copy_title": "Copy Title",
+    "ph_copy_title": "Enter a title for the copy"
+  },
+  "bulk": {
+    "actions": "Bulk Actions",
+    "delete": "Delete Selected",
+    "confirm_delete_title": "Delete Products",
+    "confirm_delete_description": "Are you sure you want to delete {{count}} selected products? This action is irreversible.",
+    "success_status": "Status updated for {{count}} products",
+    "success_delete": "{{count}} products deleted",
+    "update": "Edit Selected",
+    "update_modal_title": "Bulk Edit Products",
+    "update_hint": "Only the fields you fill in are applied to the {{count}} selected products.",
+    "success_update": "{{count}} products updated",
+    "status_modal_title": "Update Status",
+    "current_status": "Currently on for {{onCount}}/{{total}} selected",
+    "keep": "Keep",
+    "on": "On",
+    "off": "Off"
+  }
+}

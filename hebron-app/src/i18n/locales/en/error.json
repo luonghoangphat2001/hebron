@@ -1,0 +1,8 @@
+{
+  "FIELD_REQUIRED": "This field is required.",
+  "PASSWORD_REQUIRED": "Password is required.",
+  "PASSWORD_INVALID": "8 to 20 characters including English letters, numbers, and special characters.",
+  "LOGIN_FAILED": "Incorrect email or password",
+  "order_inquiry.validation.order_code_required": "Please enter your order number.",
+  "order_inquiry.validation.phone_required": "Please enter your mobile phone number."
+}

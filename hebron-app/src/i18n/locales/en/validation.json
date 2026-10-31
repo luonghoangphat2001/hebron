@@ -1,0 +1,12 @@
+{
+  "required": "Please enter {{field}}.",
+  "select_required": "Please select {{field}}.",
+  "file_required": "Please upload at least one file.",
+  "invalid_email": "Please enter a valid email address.",
+  "min_length": "{{field}} must be at least {{length}} characters long.",
+  "max_length": "{{field}} must be at most {{length}} characters long.",
+  "password_not_match": "Passwords don't match",
+  "recaptcha_required": "Please verify that you are not a robot.",
+  "recaptcha_failed": "Captcha verification failed. Please try again.",
+  "invalid_url": "Please enter a valid URL."
+}

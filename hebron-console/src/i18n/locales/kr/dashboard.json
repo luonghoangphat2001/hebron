@@ -1,0 +1,179 @@
+{
+  "operation": {
+    "description": "직원용 실시간 운영 지표와 주요 알림입니다.",
+    "overview_title": "통계 개요",
+    "notification_title": "주요 알림",
+    "error_title": "운영 대시보드를 불러오지 못했습니다"
+  },
+  "filter": {
+    "period": {
+      "7d": "최근 7일",
+      "30d": "최근 30일"
+    },
+    "group_by": {
+      "daily": "일별",
+      "weekly": "주별"
+    },
+    "payment_period": {
+      "monthly": "월별",
+      "quarterly": "분기별",
+      "yearly": "연도별"
+    }
+  },
+  "metric": {
+    "sales": "매출",
+    "members": "회원",
+    "orders": "주문",
+    "payments": "결제",
+    "payment_success": "결제 성공",
+    "outstanding": "미결제",
+    "reviews": "리뷰"
+  },
+  "notification": {
+    "inquiries_in_progress": {
+      "label": "처리 중 문의",
+      "desc": "아직 완료되지 않은 문의입니다."
+    },
+    "product_out_stock_total": {
+      "label": "품절 상품",
+      "desc": "재고가 모두 소진된 상품입니다."
+    },
+    "product_near_out_stock_total": {
+      "label": "품절 임박 상품",
+      "desc": "설정한 재고 기준 이하인 상품입니다."
+    }
+  },
+  "error": {
+    "description": "데이터를 불러오는 중 문제가 발생했습니다. 다시 시도해 주세요.",
+    "retry": "다시 시도"
+  },
+  "statistics": {
+    "description": "회원, 고객, 주문, 결제, 상품, 문의 통계입니다.",
+    "error_title": "고객 통계를 불러오지 못했습니다",
+    "search_sales_rep": "담당자명으로 검색",
+    "total": "합계",
+    "trend": "추이",
+    "activity_title": "고객 활동 상태",
+    "activity_desc": "활성, 신규, 비활성, 휴면 고객 현황입니다.",
+    "sales_rep_title": "담당자",
+    "sales_rep_desc": "영업 담당자별 고객 분포입니다.",
+    "assigned_customers": "담당자 배정 고객",
+    "unassigned": "미지정",
+    "detail_title": "고객 상세",
+    "empty": "고객이 없습니다",
+    "tab": {
+      "member": "회원",
+      "customer": "고객",
+      "order": "주문",
+      "product": "상품",
+      "inquiry": "문의",
+      "payment": "결제"
+    },
+    "activity": {
+      "active": "활성",
+      "new": "신규",
+      "inactive": "비활성",
+      "dormant": "휴면"
+    },
+    "summary": {
+      "total_customers": "전체 고객",
+      "new_customers": "신규 고객",
+      "active_rate": "활성 비율",
+      "avg_ltv": "평균 LTV"
+    },
+    "column": {
+      "customer": "고객",
+      "status": "상태",
+      "orders": "주문 수",
+      "cumulative_sales": "누적 매출",
+      "aov": "평균 주문 금액",
+      "sales_rep": "담당자",
+      "last_order": "최근 주문"
+    },
+    "member": {
+      "error_title": "회원 통계를 불러오지 못했습니다",
+      "account_title": "신규 / 탈퇴 회원",
+      "account_desc": "선택 기간의 신규, 탈퇴, 활성 회원 현황입니다.",
+      "path_title": "가입 경로",
+      "path_desc": "가입 경로별 회원 수입니다.",
+      "level_title": "회원 등급",
+      "level_desc": "등급별 회원 분포입니다.",
+      "total_new": "신규 가입 합계",
+      "total_members": "전체 회원",
+      "net_growth": "순증감",
+      "avg_new_per_day": "일평균 신규",
+      "avg_active_per_day": "일평균 활성",
+      "new": "신규",
+      "active": "활성",
+      "withdrawn": "탈퇴",
+      "no_level": "등급 없음",
+      "level_value": "{{level}}등급",
+      "path": {
+        "direct": "직접 가입",
+        "social_login": "소셜 로그인"
+      }
+    },
+    "order": {
+      "error_title": "주문 통계를 불러오지 못했습니다",
+      "orders_title": "주문 건수 및 매출",
+      "orders_desc": "선택 기간의 주문, 매출, 취소, 반품 현황입니다.",
+      "product_title": "상품별 매출",
+      "product_desc": "매출액 상위 상품입니다.",
+      "category_title": "카테고리별 매출",
+      "category_desc": "매출액 상위 카테고리입니다.",
+      "customer_title": "고객별 매출",
+      "customer_desc": "매출액 상위 고객입니다.",
+      "total_orders": "전체 주문",
+      "order_amount": "주문 금액",
+      "orders": "주문",
+      "sales": "매출",
+      "cancellations_returns": "취소 / 반품",
+      "product_sales": "상품 매출",
+      "category_sales": "카테고리 매출",
+      "customer_sales": "고객 매출"
+    },
+    "payment": {
+      "error_title": "결제 통계를 불러오지 못했습니다",
+      "status_title": "결제 성공 / 실패",
+      "status_desc": "선택 기간의 결제 성공, 실패, 환불 현황입니다.",
+      "method_title": "결제 수단별 매출",
+      "method_desc": "결제 수단별 결제 금액입니다.",
+      "total_payments": "전체 결제",
+      "total_amount": "전체 금액",
+      "successful": "성공",
+      "failed": "실패",
+      "refunded": "환불"
+    },
+    "product": {
+      "error_title": "상품 통계를 불러오지 못했습니다",
+      "top_title": "판매 상위 상품",
+      "top_desc": "판매 수량 기준 상위 {{count}}개 상품입니다.",
+      "revenue_title": "상품별 매출",
+      "revenue_desc": "매출액 기준 상품 현황입니다.",
+      "ctr_title": "추천 상품 CTR",
+      "ctr_desc": "추천 상품의 클릭률입니다 (클릭 ÷ 노출).",
+      "total_quantity": "총 판매 수량",
+      "total_revenue": "총 매출",
+      "sold_products": "판매 상품 수",
+      "total_exposure": "총 노출",
+      "total_clicks": "총 클릭",
+      "avg_ctr": "평균 CTR",
+      "limit": "표시 개수",
+      "ctr_hint": "클릭 {{clicks}}회 / 노출 {{exposures}}회"
+    },
+    "inquiry": {
+      "error_title": "문의 통계를 불러오지 못했습니다",
+      "type_title": "문의 유형별 현황",
+      "type_desc": "선택 기간에 접수된 문의를 유형별로 나눈 현황입니다.",
+      "status_title": "처리 상태",
+      "status_desc": "답변 완료와 답변 대기 비율입니다.",
+      "person_title": "담당자별 처리",
+      "person_desc": "담당자별 처리 문의 건수입니다.",
+      "total_inquiries": "전체 문의",
+      "resolution_rate": "처리율",
+      "avg_processing_time": "평균 처리 시간",
+      "unassigned": "미배정",
+      "handled": "배정된 문의"
+    }
+  }
+}

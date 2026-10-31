@@ -1,0 +1,27 @@
+stages:
+  - build
+  - deploy
+
+before_script:
+  - cp "$ENV_FILE" .env
+
+build:
+  stage: build
+  tags:
+    - hebron
+  script:
+    - docker compose build
+  only:
+    - develop
+
+deploy:
+  stage: deploy
+  tags:
+    - hebron
+  script:
+    - docker compose up -d --force-recreate
+    - docker ps
+    - docker image prune -f
+    - docker builder prune -f
+  only:
+    - develop

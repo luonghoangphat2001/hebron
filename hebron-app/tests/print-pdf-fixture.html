@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="en"><head><meta charset="UTF-8"><title>Vector print PDF acceptance fixture</title><style>body{font-family:system-ui}#reference{border:1px solid #999;width:900px;height:500px}</style></head>
+<body>
+  <h1>Vector print PDF acceptance fixture</h1>
+  <p>Uses the production builder. PDFs must contain outline paths, not a full-page image.</p>
+  <button id="vector">Generate vector only (90 x 50 mm)</button>
+  <button id="mixed">Generate two-sided mixed (90 x 50 / 50 x 90 mm)</button>
+  <button id="two-vector">Generate two vector-only sides</button>
+  <button id="fallback">Generate resolved Arial alias</button>
+  <button id="stretch">Export legacy frame defensively (85 x 170 mm)</button>
+  <button id="all-fonts">Generate every local family with mixed scripts</button>
+  <button id="legacy-load">Load legacy template then export immediately (85 x 170 mm)</button>
+  <button id="checks">Run registry, glyph, layout and state checks</button>
+  <button id="image">Generate image only (no masks/text)</button>
+  <button id="clip">Generate circle image only</button>
+  <button id="custom">Generate custom mask image only</button>
+  <button id="svg">Generate vector SVG letterbox asset</button>
+  <button id="bg-cover">Export background cover</button>
+  <button id="bg-contain">Export background contain</button>
+  <button id="bg-fill">Export background fill</button>
+  <button id="bg-two">Export two-sided backgrounds</button>
+  <button id="bg-svg">Export vector SVG background</button>
+  <button id="bg-expanded">Export expanded surface with fixed background bounds</button>
+  <button id="bg-real">Export calibrated legacy specimen (85 x 170 mm)</button>
+  <button id="bg-missing">Reject missing background with actionable error</button>
+  <button id="svg-style">Check unsupported SVG ID style error</button>
+  <pre id="result" role="status">Ready</pre>
+  <script>
+    document.getElementById('result').textContent='HTML parsed; waiting for fixture module';
+    window.addEventListener('error',event=>{document.getElementById('result').textContent=`GLOBAL ERROR: ${event.message} ${event.filename}:${event.lineno}`});
+    window.addEventListener('unhandledrejection',event=>{document.getElementById('result').textContent=`UNHANDLED: ${event.reason?.stack || event.reason}`});
+  </script>
+  <h2>Konva reference (same scene/font, 900 x 500 cut-local pixels)</h2>
+  <pre id="reference-status">Reference not started</pre>
+  <div id="reference"></div>
+  <script type="module">
+    import '/src/assets/fonts/editor/fonts.css';
+    import { EDITOR_FONT_FAMILIES, resolveFontFamily, resolveFontWeight, fontFallbackFamily } from '/src/utils/helper/editor-fonts.ts';
+    import { layoutEditorText } from '/src/utils/helper/editor-text-layout.ts';
+    import { prepareStageText } from '/src/utils/helper/canvas-text-renderer.ts';
+    document.getElementById('result').textContent='Fixture module running';
+    const base = { rotation: 0, opacity: 1, visible: true, locked: false, zIndex: 0 };
+    const text = (id, content, x, y, weight = '400', extra = {}) => ({ ...base, id, type: 'text', content, position: { x, y }, size: { width: 820, height: 70 }, fontFamily: 'Pretendard', fontSize: 38, fontWeight: weight, fontStyle: 'normal', textDecoration: 'none', color: '#152d45', align: 'left', lineHeight: 1.2, letterSpacing: 0, ...extra });
+    const shape = (name, index) => ({ ...base, id: name, type: 'shape', shapeType: name, position: { x: 35 + index % 4 * 215, y: 210 + Math.floor(index / 4) * 135 }, size: { width: 140, height: 90 }, fill: '#58b89a', stroke: '#152d45', strokeWidth: 3, cornerRadius: 18, polygonSides: 6, rotation: index === 1 ? 12 : 0, opacity: index === 2 ? 0.5 : 1, locked: index === 3 });
+    const shapes = ['rectangle', 'roundedRectangle', 'circle', 'doubleRectangle', 'triangle', 'star', 'polygon', 'line'].map(shape);
+    const makeFrame = (width, height, contentWidth, contentHeight) => ({ canvasSize: { width: 1700, height: 1300 }, contentSize: { width: contentWidth, height: contentHeight }, contentOffset: { x: 400, y: 350 }, contentSafeMargin: 10, templateFrameConfig: { pageWidth: width, pageHeight: height, pageUnit: 'mm' } });
+    const background = { id: 'bg', type: 'background', backgroundColor: '#ffffff', backgroundImage: `data:image/svg+xml,${encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" width="8" height="8"><path fill="white" d="M0 0H8V8H0Z"/></svg>')}`, backgroundSize: 'cover' };
+    const front = [text('heading', '한글 벡터 인쇄 · Tiếng Việt Đặng Ắ Vector', 35, 20, '700'), text('normal', 'Regular 400 / 대한민국 12345', 35, 85), text('wrapped', 'Centered and wrapped text stays vector across multiple lines.', 35, 140, '400', { fontSize: 24, size: { width: 500, height: 80 }, align: 'center', letterSpacing: 1.5 }), ...shapes, text('hidden', 'MUST NOT APPEAR', 0, 0, '400', { visible: false })];
+    front.push(text('underline','Underline 가나다',35,459,'400',{fontSize:20,textDecoration:'underline'}),text('strike','Strike 가나다',450,459,'400',{fontSize:20,textDecoration:'line-through'}));
+    async function renderReference(){
+    const status=document.getElementById('reference-status'); status.textContent='Loading Konva module...';
+    const {default: Konva}=await import('konva');
+    status.textContent='Loading reference fonts...';
+    await Promise.race([Promise.all([document.fonts.load('400 38px Pretendard'), document.fonts.load('700 38px Pretendard')]),new Promise((_,reject)=>setTimeout(()=>reject(new Error('Reference font load timed out')),10000))]);
+    status.textContent='Creating reference stage...';
+    const stage = new Konva.Stage({ container: 'reference', width: 900, height: 500 });
+    const layer = new Konva.Layer(); stage.add(layer);
+    for(const object of front.filter(value => value.visible)) {
+      const style = { x: object.position.x, y: object.position.y, rotation: object.rotation, opacity: object.opacity };
+      if(object.type === 'text') layer.add(new Konva.Text({ ...style, name:'editor-text', text:object.content, width:object.size.width, fontFamily:object.fontFamily,fontSize:object.fontSize,fontStyle:`${object.fontStyle} ${object.fontWeight}`,fill:object.color,align:object.align,lineHeight:object.lineHeight,letterSpacing:object.letterSpacing,textDecoration:object.textDecoration }));
+      else {
+        const group=new Konva.Group(style), attributes={width:object.size.width,height:object.size.height,fill:object.fill,stroke:object.stroke,strokeWidth:object.strokeWidth};layer.add(group);
+        const {width,height}=object.size;
+        if(object.shapeType==='circle')group.add(new Konva.Ellipse({...attributes,x:width/2,y:height/2,radiusX:width/2,radiusY:height/2}));
+        else if(['rectangle','roundedRectangle','doubleRectangle'].includes(object.shapeType)){group.add(new Konva.Rect({...attributes,cornerRadius:object.shapeType==='roundedRectangle'?18:0}));if(object.shapeType==='doubleRectangle')group.add(new Konva.Rect({...attributes,x:3,y:3,width:width-6,height:height-6,fill:'transparent'}));}
+        else if(object.shapeType==='line')group.add(new Konva.Line({...attributes,points:[0,height/2,width,height/2]}));
+        else {const count=object.shapeType==='triangle'?3:object.shapeType==='star'?10:6;const points=object.shapeType==='triangle'?[width/2,0,width,height,0,height]:Array.from({length:count},(_,index)=>{const radius=object.shapeType==='star'&&index%2?.44:1,angle=-Math.PI/2+index*Math.PI*2/count;return[width/2+Math.cos(angle)*width/2*radius,height/2+Math.sin(angle)*height/2*radius]}).flat();group.add(new Konva.Line({...attributes,points,closed:true,lineJoin:'round'}));}
+      }
+    }
+    await prepareStageText(stage);
+    layer.draw();
+    status.textContent='Reference rendered';
+    }
+    const state = () => ({ frontData: { objects: front, background }, backData: { objects: [text('back', '뒷면 · Back', 30, 30, '900', { size: { width: 340, height: 60 }, fontSize: 32 }), { ...shape('circle', 0), position: { x: 80, y: 170 }, size: { width: 200, height: 200 }, fill: '#fdc976' }], background }, sideFrames: { front: makeFrame(90, 50, 900, 500), back: makeFrame(50, 90, 400, 720) }, sidedness: 'SINGLE' });
+    const legacyTemplate=()=>({id:20,layout_config:{page:{width:85,height:170,unit:'mm'},side:'double',guides:{front:{cut_width:85,cut_height:170,cut_frame_width:1893,cut_frame_height:1892,cut_offset_x:227,cut_offset_y:155,safe_margin:3},back:{cut_width:85,cut_height:170,cut_frame_width:1893,cut_frame_height:1892,cut_offset_x:227,cut_offset_y:155,safe_margin:3}},background:{front_image_url:background.backgroundImage,back_image_url:background.backgroundImage},layers:['front','back'].map(side=>({id:`legacy-${side}`,type:'text',side,default_value:'한글 · Tiếng Việt Đặng Ắ · Vector',position:{x:120,y:120},size:{width:1600,height:180},style:{font_family:'Pretendard',font_size:18,font_weight:'700',color:'#152d45'}}))}});
+    const source = document.createElement('canvas'); source.width = 120; source.height = 80;
+    const cx = source.getContext('2d'); cx.fillStyle = '#e84b37'; cx.fillRect(0, 0, 60, 80); cx.fillStyle = '#3b6fde'; cx.fillRect(60, 0, 60, 80);
+    const raster = source.toDataURL('image/png');
+    const mask = document.createElement('canvas'); mask.width = mask.height = 80;
+    const mx = mask.getContext('2d'); mx.fillStyle = '#000'; mx.fillRect(0, 0, 80, 80); mx.fillStyle = '#fff'; mx.beginPath(); mx.moveTo(40, 5); mx.lineTo(75, 75); mx.lineTo(5, 75); mx.fill();
+    for (const mode of ['vector', 'mixed', 'two-vector', 'fallback', 'image', 'clip', 'custom', 'svg', 'svg-style', 'stretch', 'all-fonts', 'checks', 'legacy-load', 'bg-cover', 'bg-contain', 'bg-fill', 'bg-two', 'bg-svg', 'bg-missing', 'bg-real', 'bg-expanded']) document.getElementById(mode).onclick = async () => {
+      const resultNode = document.getElementById('result'); resultNode.textContent = 'Loading production PDF module...';
+      try {
+        const { buildPrintPdf, downloadPrintPdf, getPrintPageGeometry, hasPhysicalPrintAspect, getPrintBackgroundGeometry }=await import('/src/utils/helper/print-pdf.helper.ts');
+        resultNode.textContent='Production module loaded; preparing scene...';
+        await new Promise(resolve=>setTimeout(resolve,50));
+        const value = state();
+        if(mode==='checks') {
+          const assert = (condition, message) => { if(!condition) throw new Error(message); };
+          const aliases = {'Arial':'Arimo','Helvetica':'Arimo','Times New Roman':'Tinos','Courier New':'Cousine','Lucida Console':'Cousine','Georgia':'Gelasio','Verdana':'PT Sans','Trebuchet MS':'Cabin','Impact':'Oswald','Comic Sans MS':'Comic Neue','Palatino':'Crimson Text','Garamond':'EB Garamond','Bookman':'Libre Baskerville','Tahoma':'Source Sans 3','Gungsuh':'Nanum Myeongjo'};
+          for(const [legacy, actual] of Object.entries(aliases)) assert(resolveFontFamily(legacy)===actual, `Alias ${legacy}`);
+          assert(resolveFontWeight('Nanum Gothic','600')===700,'Nearest weight');
+          assert(resolveFontWeight('Nanum Gothic','750')===700,'Weight tie chooses lower');
+          assert(resolveFontWeight('Pretendard','900')===900,'True Pretendard Black');
+          assert(fontFallbackFamily('Tinos')==='Nanum Myeongjo','Serif fallback');
+          assert(fontFallbackFamily('Cousine')==='Nanum Gothic Coding','Mono fallback');
+          const sample=text('sample','한글 Tiếng Việt Đặng Ắ ệ Latin',0,0,'700',{fontFamily:'Tinos',size:{width:270,height:100}});
+          const before=JSON.stringify(sample), a=await layoutEditorText(sample), b=await layoutEditorText({...sample,fontFamily:'Times New Roman'});
+          assert(JSON.stringify(a)===JSON.stringify(b),'Legacy and actual family produce identical glyph paths and metrics');
+          assert(a.paths.join('').length>1000 && a.height>sample.fontSize,'Mixed script outlines and wrapping');
+          assert(before===JSON.stringify(sample),'Layout must preserve state');
+          const justified=await layoutEditorText({...sample,content:'One two three four five six seven eight nine ten final.',align:'justify',textDecoration:'underline',size:{width:210,height:400}});
+          assert(justified.decorations.length>1,'Justified sample must wrap');
+          assert(justified.decorations.slice(0,-1).some(line=>line.width===210),'Wrapped lines expand to text box width');
+          assert(justified.decorations.at(-1).width<210,'Last paragraph line must remain natural');
+          let failed=false;try{await layoutEditorText({...sample,content:'\u{10FFFF}'})}catch(error){failed=String(error).includes('글자')}
+          assert(failed,'Missing glyph must be actionable');
+          const legacy={...makeFrame(85,170,1893,1892),canvasSize:{width:2366,height:2365},contentOffset:{x:227,y:155}};
+          assert(!hasPhysicalPrintAspect(legacy),'Legacy mismatch identified');
+          let mismatchFailed=false;try{getPrintPageGeometry(legacy)}catch(error){mismatchFailed=String(error).includes('실제 인쇄 크기')}
+          assert(mismatchFailed,'Legacy export requires synchronized dimensions');
+          const geometry=getPrintPageGeometry(makeFrame(85,170,1893,3786));
+          assert(geometry.scale===85/1893,'Uniform physical scaling');
+          const missing=state();missing.frontData.objects=[];missing.frontData.background={...background,backgroundImage:'data:image/png;base64,AA=='};
+          let missingFailed=false;try{await buildPrintPdf(missing)}catch(error){missingFailed=String(error).includes('배경')}
+          assert(missingFailed,'Missing background must fail explicitly');
+          const bgFrame={...makeFrame(80,60,400,300),canvasSize:{width:800,height:600},contentOffset:{x:100,y:220}};
+          assert(JSON.stringify(getPrintBackgroundGeometry(bgFrame,{width:400,height:100},'cover'))===JSON.stringify({x:-900,y:-220,width:2400,height:600}),'Background cover uses full backing before off-center trim');
+          assert(JSON.stringify(getPrintBackgroundGeometry(bgFrame,{width:400,height:100},'contain'))===JSON.stringify({x:-100,y:-20,width:800,height:200}),'Background contain placement');
+          assert(JSON.stringify(getPrintBackgroundGeometry(bgFrame,{width:400,height:100},'fill'))===JSON.stringify({x:-100,y:-220,width:800,height:600}),'Background fill placement');
+          const expanded={...bgFrame,canvasSize:{width:800,height:1500}};
+          assert(JSON.stringify(getPrintBackgroundGeometry(expanded,{width:400,height:100},'fill',{width:800,height:600}))===JSON.stringify({x:-100,y:-220,width:800,height:600}),'Expanded print surface retains original background bounds');
+          const {useWebEditorStore}=await import('/src/stores/useWebEditorStore.ts');
+          const store=useWebEditorStore;
+          const initial=store.getState();
+          const persisted={...state(),sideFrames:{front:legacy,back:legacy},sidedness:'DOUBLE'};
+          const savedBefore=JSON.stringify(persisted);
+          store.getState().loadDesign(persisted);
+          assert(hasPhysicalPrintAspect(store.getState().sideFrames.front)&&hasPhysicalPrintAspect(store.getState().sideFrames.back),'Persisted legacy sides normalize on load');
+          assert(store.getState().contentSize.width===1893&&store.getState().contentSize.height===3786,'Physical mm determines hydrated aspect');
+          assert(store.getState().templateFrameConfig.pageWidth===85&&store.getState().templateFrameConfig.pageHeight===170,'Original physical dimensions retained');
+          assert(JSON.stringify(store.getState().frontData.objects)===JSON.stringify(persisted.frontData.objects),'Pixel artwork unchanged on persisted load');
+          assert(store.getState().frontData.background.previewSize.width===2366,'Mockup natural bounds retained');
+          assert(!store.getState().isDirty&&JSON.stringify(persisted)===savedBefore,'Hydration leaves saved data untouched and clean');
+          const hydratedBefore=JSON.stringify(store.getState());
+          const immediate=await buildPrintPdf(store.getState());
+          assert(immediate.blob.size>100&&hydratedBefore===JSON.stringify(store.getState()),'Immediate two-sided export preserves canvas state');
+          const ppm=1893/85;
+          store.getState().updateTrimFrame({x:227,y:155,width:1800,height:1800});
+          assert(Math.abs(store.getState().templateFrameConfig.pageHeight-1800/ppm)<.001,'Free geometry updates physical dimensions');
+          store.getState().updateFreeEditFrame(80,170,3);
+          assert(Math.abs(store.getState().contentSize.width-80*ppm)<.001&&Math.abs(store.getState().contentSize.height-170*ppm)<.001,'Physical dimensions update geometry at one scale');
+          store.getState().undo();store.getState().redo();
+          const template=legacyTemplate(),templateBefore=JSON.stringify(template);
+          store.getState().setTemplate(template);
+          const expectedFont=18*96/72*Math.min(1893/(85*96/25.4),1892/(170*96/25.4));
+          assert(Math.abs(store.getState().frontData.objects[0].fontSize-expectedFont)<.001&&Math.abs(store.getState().backData.objects[0].fontSize-expectedFont)<.001,'Template fonts use original legacy scale on both sides');
+          assert(hasPhysicalPrintAspect(store.getState().sideFrames.front)&&hasPhysicalPrintAspect(store.getState().sideFrames.back),'Template sides normalized before editing');
+          store.getState().resolveTemplateFrame({width:2366,height:2365});
+          assert(store.getState().contentSize.height===3786&&store.getState().frontData.background.previewSize.height===2365,'Mockup load preserves normalized frame and natural preview bounds');
+          const templateStateBefore=JSON.stringify(store.getState());
+          const templateExport=await buildPrintPdf(store.getState());
+          assert(templateExport.blob.size>100&&templateStateBefore===JSON.stringify(store.getState())&&templateBefore===JSON.stringify(template),'Original template exports immediately without editing or mutations');
+          const race={...persisted,frontData:{...persisted.frontData,objects:[]},backData:{...persisted.backData,objects:[]}};
+          const raceBefore=JSON.stringify(race);await buildPrintPdf(race);
+          assert(JSON.stringify(race)===raceBefore,'Defensive export normalizes only local frame copies');
+          let invalid=false;try{await buildPrintPdf({...race,sideFrames:{front:{...legacy,templateFrameConfig:{pageWidth:-85,pageHeight:170,pageUnit:'mm'}},back:legacy}})}catch{invalid=true}
+          assert(invalid,'Invalid physical dimensions still fail');
+          for(const invalidWidth of [0,NaN,Infinity,-1]) {
+            let rejected=false;try{getPrintPageGeometry({...legacy,templateFrameConfig:{pageWidth:invalidWidth,pageHeight:170,pageUnit:'mm'}})}catch{rejected=true}
+            assert(rejected,`Explicit invalid width ${invalidWidth} cannot fall back to pixels`);
+          }
+          const absent=getPrintPageGeometry({...makeFrame(85,170,900,500),templateFrameConfig:null});
+          assert(absent.width>0&&absent.height>0,'Absent physical configuration retains pixel fallback');
+          const {resizeTrimFromCorner}=await import('/src/utils/helper/trim-frame.helper.ts');
+          const start={x:100,y:200,width:400,height:800}, surface={width:2000,height:2500};
+          for(const corner of ['top-left','top-right','bottom-left','bottom-right']) {
+            const left=corner.includes('left'),top=corner.includes('top');
+            const anchor={x:left?500:100,y:top?1000:200};
+            const pointer={x:anchor.x+(left?-450:450),y:anchor.y+(top?-900:900)};
+            const resized=resizeTrimFromCorner(start,corner,pointer,surface);
+            assert(resized.width===450&&resized.height===900,`${corner} follows pointer uniformly`);
+            assert(Math.abs((left?resized.x+resized.width:resized.x)-anchor.x)<.001&&Math.abs((top?resized.y+resized.height:resized.y)-anchor.y)<.001,`${corner} preserves opposite anchor`);
+            assert(JSON.stringify(resized)===JSON.stringify(resizeTrimFromCorner(start,corner,pointer,surface)),`${corner} dragend does not drift`);
+          }
+          store.setState(initial);
+          resultNode.textContent='PASS: fonts/glyphs/layout; uniform 85×170 geometry; immediate original legacy template and persisted double-sided export; fonts preserved; physical frame hydrated; background cover/contain/fill with preserved backing bounds; geometry/mm synchronization; export invariance; four-corner fixed anchors and stable dragend';return;
+        }
+        if(mode==='legacy-load') {
+          const {useWebEditorStore}=await import('/src/stores/useWebEditorStore.ts');
+          useWebEditorStore.getState().setTemplate(legacyTemplate());
+          Object.assign(value,{frontData:useWebEditorStore.getState().frontData,backData:useWebEditorStore.getState().backData,sideFrames:useWebEditorStore.getState().sideFrames,sidedness:'DOUBLE'});
+          document.getElementById('reference-status').textContent='Original template loaded then exported immediately: both sides 85×170mm; original text pixel sizes retained, without any resize action.';
+        }
+        if(mode==='stretch') value.sideFrames.front=makeFrame(85,170,1893,1892);
+        if(mode==='all-fonts') {
+          value.frontData.objects=EDITOR_FONT_FAMILIES.map((family,index)=>text(`family-${index}`,`${family}: 한글 Tiếng Việt Đặng Ắ ệ`,25,15+index*43,'700',{fontFamily:family,fontSize:22,size:{width:850,height:40}}));
+          value.sideFrames.front=makeFrame(90,100,900,1000);
+        }
+        if(mode==='two-vector')value.sidedness='DOUBLE';
+        if (mode === 'mixed') {
+          value.sidedness = 'DOUBLE';
+          for (const [index, maskShape] of ['circle', 'rectangle', 'custom'].entries()) value.backData.objects.push({ ...base, id: `image-${index}`, type: 'image', src: raster, position: { x: 20 + index * 125, y: 450 }, size: { width: 110, height: 110 }, originalWidth: 120, originalHeight: 80, cropX: 0, cropY: 0, cropWidth: 0, cropHeight: 0, maskShape, maskImageUrl: mask.toDataURL('image/png') });
+        }
+        if (mode === 'fallback') value.frontData = { ...value.frontData, objects: [text('fallback', 'Arial alias → Arimo · 한글 Tiếng Việt Đặng', 35, 40, '400', { fontFamily: 'Arial' })] };
+        if(['image','clip','custom'].includes(mode)) value.frontData={...value.frontData,objects:[{...base,id:'isolated-image',type:'image',src:raster,position:{x:100,y:100},size:{width:300,height:300},originalWidth:120,originalHeight:80,cropX:0,cropY:0,cropWidth:0,cropHeight:0,maskShape:mode==='clip'?'circle':mode==='custom'?'custom':'none',maskImageUrl:mask.toDataURL('image/png')}]};
+        if(mode==='svg'||mode==='svg-style'){
+          const source=`<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 200 100">${mode==='svg-style'?'<style>#art{fill:red}</style>':''}<path id="art" fill="#0d9488" d="M0 0H200V100H0Z"/></svg>`;
+          const src=`data:image/svg+xml,${encodeURIComponent(source)}`;
+          value.frontData={...value.frontData,objects:[{...base,id:'vector-svg',type:'image',src,position:{x:100,y:100},size:{width:300,height:300},originalWidth:100,originalHeight:100,cropX:0,cropY:0,cropWidth:0,cropHeight:0,maskShape:'none'}]};
+          const expected=document.createElement('img');expected.src=src;expected.width=expected.height=300;expected.alt='Source SVG must remain letterboxed (green horizontal band inside square viewport)';document.getElementById('reference').replaceChildren(expected);
+        }
+        if(mode.startsWith('bg-')&&mode!=='bg-real') {
+          const art='<svg xmlns="http://www.w3.org/2000/svg" width="400" height="100"><path fill="#ef4444" d="M0 0H100V100H0Z"/><path fill="#22c55e" d="M100 0H200V100H100Z"/><path fill="#3b82f6" d="M200 0H300V100H200Z"/><path fill="#eab308" d="M300 0H400V100H300Z"/><path fill="#111827" d="M160 35H240V65H160Z"/></svg>';
+          const svgSource=`data:image/svg+xml,${encodeURIComponent(art)}`;
+          const image=await new Promise((resolve,reject)=>{const image=new Image();image.onload=()=>resolve(image);image.onerror=reject;image.src=svgSource});
+          const bitmap=document.createElement('canvas');bitmap.width=400;bitmap.height=100;bitmap.getContext('2d').drawImage(image,0,0);
+          const src=mode==='bg-svg'?svgSource:bitmap.toDataURL('image/png');
+          value.sideFrames.front={...makeFrame(80,60,400,300),canvasSize:{width:800,height:600},contentOffset:{x:100,y:220}};
+          value.sideFrames.back={...makeFrame(60,80,300,400),canvasSize:{width:600,height:800},contentOffset:{x:240,y:70}};
+          value.frontData={objects:[],background:{...background,backgroundImage:mode==='bg-missing'?'data:image/png;base64,AA==':src,backgroundSize:mode==='bg-contain'?'contain':mode==='bg-fill'||mode==='bg-expanded'?'fill':'cover'}};
+          value.backData={objects:[],background:{...background,backgroundImage:src,backgroundSize:'contain'}};
+          if(mode==='bg-two')value.sidedness='DOUBLE';
+          // Cut-local vector marker must appear over the background at 20, 20.
+          value.frontData.objects.push({...shape('rectangle',0),id:'cut-local-marker',position:{x:20,y:20},size:{width:30,height:30},fill:'#d946ef',stroke:'transparent',strokeWidth:0});
+          const reference=document.getElementById('reference');reference.replaceChildren();reference.style.width='auto';reference.style.height='auto';
+          for(const side of value.sidedness==='DOUBLE'?['front','back']:['front']) {
+            const frame=value.sideFrames[side],data=side==='front'?value.frontData:value.backData;
+            const canvas=document.createElement('canvas');canvas.width=frame.contentSize.width;canvas.height=frame.contentSize.height;canvas.title=`${side} expected cut (${data.background.backgroundSize})`;reference.appendChild(canvas);
+            const context=canvas.getContext('2d');context.fillStyle='white';context.fillRect(0,0,canvas.width,canvas.height);
+            const factor=(data.background.backgroundSize==='contain'?Math.min:Math.max)(frame.canvasSize.width/400,frame.canvasSize.height/100);
+            const w=data.background.backgroundSize==='fill'?frame.canvasSize.width:400*factor,h=data.background.backgroundSize==='fill'?frame.canvasSize.height:100*factor;
+            context.drawImage(image,(frame.canvasSize.width-w)/2-frame.contentOffset.x,(frame.canvasSize.height-h)/2-frame.contentOffset.y,w,h);
+            if(side==='front'){context.fillStyle='#d946ef';context.fillRect(20,20,30,30)}
+          }
+          document.getElementById('reference-status').textContent='Expected cut-local backgrounds: colored stripes / black center marker; magenta vector square at 20,20. Compare with generated PDF.';
+        }
+        if(mode==='bg-real') {
+          value.sideFrames.front={...makeFrame(85,170,1893,3786),canvasSize:{width:2366,height:3941},contentOffset:{x:227,y:155}};
+          value.frontData={objects:[
+            text('legacy-mixed','한글 · Tiếng Việt Đặng Ắ · Vector',120,120,'700',{fontSize:75,size:{width:1650,height:180}}),
+            {...shape('rectangle',0),id:'calibrated-square',position:{x:120,y:400},size:{width:500,height:500},strokeWidth:8},
+            {...shape('circle',0),id:'calibrated-circle',position:{x:800,y:400},size:{width:500,height:500},fill:'#fdc976',strokeWidth:8},
+            text('calibration-caption','500 × 500 canvas units = 22.45 × 22.45 mm',120,1050,'400',{fontSize:55,size:{width:1650,height:150}})
+          ],background:{...background,backgroundImage:'https://hebron-storage.s3.ap-northeast-2.amazonaws.com/backgrounds/XyiQsbdyZ3taLKKDojgLxtPI8TncZh9A9hLoeuHN.jpg',backgroundSize:'fill',previewSize:{width:2366,height:2365}}};
+          document.getElementById('reference-status').textContent='85×170 mm calibrated print region: 1893×3786 canvas units. Square and circle must both measure 22.45×22.45 mm. Original 2366×2365 background prints at its original bounds; expanded print surface must not stretch it.';
+        }
+        if(mode==='bg-expanded') {
+          value.frontData.background.previewSize={width:800,height:600};
+          value.sideFrames.front={...value.sideFrames.front,canvasSize:{width:800,height:1200},contentSize:{width:400,height:800},templateFrameConfig:{pageWidth:80,pageHeight:160,pageUnit:'mm'}};
+        }
+        const before = JSON.stringify(value);
+        resultNode.textContent='Building vector PDF (font parsing, paths, SVG renderer)...';
+        await new Promise(resolve=>setTimeout(resolve,50));
+        const progress=[];
+        const result = await buildPrintPdf(value,{onProgress:message=>{console.info('[Print PDF progress]',message);progress.push(message);resultNode.textContent=progress.join('\n')}});
+        if (before !== JSON.stringify(value)) throw new Error('Builder mutated input state');
+        resultNode.textContent = JSON.stringify({ status: 'PASS: input unchanged', bytes: result.blob.size, geometry: getPrintPageGeometry(value.sideFrames.front), warnings: result.warnings }, null, 2);
+        downloadPrintPdf(result.blob, `print-fixture-${mode}.pdf`);
+      } catch (error) { resultNode.textContent = mode==='bg-missing' && String(error).includes('배경') ? `PASS: missing background rejected: ${error.message}` : mode==='stretch' && String(error).includes('실제 인쇄 크기') ? `PASS: legacy mismatch blocked: ${error.message}` : mode==='svg-style' && String(error).includes('ID 스타일') ? `PASS: rejected unsupported SVG ID style with actionable message: ${error.message}` : `FAIL: ${error.stack || error}`; }
+    };
+    document.getElementById('result').textContent='Ready: click a button to load the production PDF module';
+    renderReference().catch(error=>{document.getElementById('reference-status').textContent=`Reference FAIL: ${error.stack || error}`});
+  </script>
+</body></html>

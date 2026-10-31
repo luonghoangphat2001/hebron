@@ -1,0 +1,36 @@
+<?php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+return new class extends Migration
+{
+    /**
+     * Add the reply comment relationship to attachments.
+     *
+     * Existing inquiry attachments remain valid because the relationship is
+     * nullable; only attachments created for a reply need comment_id.
+     */
+    public function up(): void
+    {
+        Schema::table('inquiry_attachments', function (Blueprint $table) {
+            $table->foreignId('comment_id')
+                ->nullable()
+                ->after('inquiry_id')
+                ->constrained('inquiry_comments')
+                ->nullOnDelete();
+        });
+    }
+
+    /**
+     * Reverse the migration.
+     */
+    public function down(): void
+    {
+        Schema::table('inquiry_attachments', function (Blueprint $table) {
+            $table->dropForeign(['comment_id']);
+            $table->dropColumn('comment_id');
+        });
+    }
+};

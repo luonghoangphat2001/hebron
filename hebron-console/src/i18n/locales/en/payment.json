@@ -1,0 +1,80 @@
+{
+  "history": {
+    "title": "Payment History",
+    "description": "Search, sort, and export payment transaction records.",
+    "field": {
+      "order_number": "Order Number",
+      "customer_name": "Customer Name",
+      "payment_method": "Payment Method",
+      "status": "Status",
+      "payment_date": "Payment Date"
+    },
+    "placeholder": {
+      "order_number": "Search order number",
+      "customer_name": "Search customer name",
+      "all_methods": "All methods",
+      "all_statuses": "All statuses"
+    },
+    "column": {
+      "no": "No",
+      "transaction_id": "Transaction ID",
+      "order_id": "Order ID",
+      "payment_method": "Payment Method",
+      "status": "Status",
+      "amount": "Amount",
+      "paid_at": "Paid At",
+      "created_at": "Created At",
+      "actions": "Actions"
+    },
+    "button": {
+      "print": "Print",
+      "refund": "Refund",
+      "export_excel": "Export Excel",
+      "apply_search": "Apply Search",
+      "reset_filters": "Reset Filters"
+    },
+    "empty": "No payment records found.",
+    "refund_modal": {
+      "title": "Refund Payment",
+      "reason": "Refund Reason",
+      "reason_placeholder": "Enter the refund reason (max 500 characters)",
+      "amount": "Refund Amount",
+      "amount_placeholder": "Leave empty for a full refund",
+      "toss_notice_title": "Toss Payments refund",
+      "toss_notice_description": "The refund is processed through Toss Payments to the customer's original payment method.",
+      "transfer_notice_title": "Direct deposit refund",
+      "transfer_notice_description": "Confirm the customer's bank transfer before processing the refund. An administrator may need to transfer the amount to the customer's bank account separately.",
+      "success": "Refund processed successfully.",
+      "fail": "Failed to process the refund."
+    }
+  },
+  "settlement": {
+    "title": "Settlement Report",
+    "description": "Review settlement records and export reports by date range.",
+    "field": {
+      "settlement_date": "Settlement Date"
+    },
+    "placeholder": {
+      "settlement_date": "Select date range"
+    },
+    "column": {
+      "no": "No",
+      "settlement_date": "Settlement Date",
+      "order_number": "Order Number",
+      "customer": "Customer",
+      "product": "Product",
+      "category": "Category",
+      "payment_amount": "Payment Amount",
+      "supply_price": "Supply Price",
+      "vat": "VAT",
+      "commission": "Commission",
+      "status": "Status"
+    },
+    "button": {
+      "export_excel": "Export Excel",
+      "apply_search": "Apply Search",
+      "reset_filters": "Reset Filters"
+    },
+    "empty": "No settlement records found."
+  }
+}

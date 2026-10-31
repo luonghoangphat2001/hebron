@@ -1,0 +1,8 @@
+{
+  "FIELD_REQUIRED": "이 필드는 필수입니다.",
+  "PASSWORD_REQUIRED": "비밀번호는 필수 항목입니다.",
+  "PASSWORD_INVALID": "영문, 숫자, 특수문자 혼합 8~20자.",
+  "LOGIN_FAILED": "잘못된 이메일 또는 비밀번호.",
+  "order_inquiry.validation.order_code_required": "주문번호를 입력해주세요.",
+  "order_inquiry.validation.phone_required": "핸드폰번호를 입력해주세요."
+}

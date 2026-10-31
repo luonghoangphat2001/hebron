@@ -1,0 +1,388 @@
+.product-description {
+  width: 100%;
+  margin-inline: auto;
+  overflow: hidden;
+  overflow-wrap: anywhere;
+}
+
+.product-description .view_design_wrap {
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  margin-inline: auto;
+  overflow: hidden;
+}
+
+.product-description .view_design_wrap::after,
+.product-description .title_1_box::before,
+.product-description .title_1_box::after,
+.product-description .img_2_box::after,
+.product-description .img_both_box::after,
+.product-description .clear_both::after {
+  display: block;
+  clear: both;
+  content: '';
+}
+
+.product-description img {
+  display: block;
+  max-width: 100% !important;
+  height: auto;
+  margin-inline: auto;
+}
+
+.product-description iframe,
+.product-description video {
+  max-width: 100%;
+}
+
+.product-description .img_1_box,
+.product-description .img_9_box,
+.product-description .img_10_box {
+  position: relative;
+  width: 100%;
+  margin-inline: auto;
+  overflow: hidden;
+  text-align: center;
+}
+
+.product-description .img_10_box {
+  clear: both;
+  margin-top: 30px;
+}
+
+.product-description .title_1_box {
+  position: relative;
+  padding-block: 80px;
+  text-align: center;
+}
+
+.product-description .title_1_box .category {
+  display: inline-block;
+  padding: 3px 20px;
+  border: 3px solid #e4d4c5;
+  border-radius: 999px;
+  color: #8e5300;
+  font-family: 'Pretendard', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.product-description .title_1_box h1 {
+  margin: 0;
+  color: #333;
+  font-family: 'Pretendard', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+  font-size: 45px;
+  font-weight: 600;
+  line-height: 70px;
+  letter-spacing: -2px;
+}
+
+.product-description .title_1_box p {
+  margin: 0;
+  color: #999;
+  font-family: 'Pretendard', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.product-description .img_2_box {
+  position: relative;
+  overflow: hidden;
+  background: #f4f1ef;
+}
+
+.product-description .img_2_box.brown {
+  background: #242424;
+}
+
+.product-description .img_2_box > .img_wrap {
+  position: relative;
+  float: left;
+  width: 50%;
+  height: 500px;
+}
+
+.product-description .img_2_box > .img_wrap img {
+  width: 100%;
+  height: 500px !important;
+  object-fit: cover;
+}
+
+.product-description .img_2_box .spec_wrap {
+  float: right;
+  width: 50%;
+  padding: 50px 5%;
+  box-sizing: border-box;
+  text-align: left;
+}
+
+.product-description .img_2_box .spec_wrap table {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  border-collapse: collapse;
+}
+
+.product-description .img_2_box .spec_wrap caption {
+  margin-bottom: 20px;
+  border-bottom: 2px dotted #6f605c;
+  color: #6a493a;
+  font-family: 'Pretendard', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+  font-size: 32px;
+  font-weight: 300;
+  line-height: 54px;
+  text-align: left;
+}
+
+.product-description .img_2_box .spec_wrap th {
+  padding: 10px 0 10px 10px;
+  color: #8d654f;
+  font-family: 'Pretendard', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: justify;
+  text-align-last: justify;
+}
+
+.product-description .img_2_box .spec_wrap td {
+  padding: 10px 0;
+  color: #402d28;
+  font-family: 'Pretendard', 'Nanum Gothic', 'Malgun Gothic', sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 24px;
+  opacity: 0.7;
+}
+
+.product-description .img_2_box.brown .spec_wrap caption,
+.product-description .img_2_box.brown .spec_wrap th,
+.product-description .img_2_box.brown .delivery_memo {
+  border-color: #c49071;
+  color: #e3a682;
+}
+
+.product-description .img_2_box.brown .spec_wrap td {
+  color: #fff;
+}
+
+.product-description .img_2_box .delivery_memo {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 5px 20px;
+  border: 2px solid #cbb5af;
+  border-radius: 999px;
+  color: #8e5300;
+  font-family: 'Pretendard', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 22px;
+  word-break: keep-all;
+}
+
+.product-description .img_both_box {
+  position: relative;
+  overflow: hidden;
+}
+
+.product-description .clear_both {
+  position: relative;
+  clear: both;
+  overflow: hidden;
+}
+
+.product-description .img_3_box,
+.product-description .img_6_box {
+  position: relative;
+  width: 100%;
+  margin: 5px auto;
+  overflow: hidden;
+}
+
+.product-description .img_4_box,
+.product-description .img_7_box {
+  position: relative;
+  float: left;
+  width: 49.75%;
+  overflow: hidden;
+}
+
+.product-description .img_5_box,
+.product-description .img_8_box {
+  position: relative;
+  float: right;
+  width: 49.75%;
+  overflow: hidden;
+}
+
+.product-description .img_3_box::before,
+.product-description .img_4_box::before,
+.product-description .img_5_box::before,
+.product-description .img_6_box::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  display: inline-block;
+  width: 90px;
+  height: 120px;
+  padding-top: 50px;
+  box-sizing: border-box;
+  background: rgb(0 0 0 / 70%);
+  color: #fff;
+  font-family: 'Pretendard', 'Malgun Gothic', sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 3px;
+  text-align: center;
+}
+
+.product-description .img_3_box::before {
+  content: '정면';
+}
+
+.product-description .img_4_box::before {
+  content: '뒷면';
+}
+
+.product-description .img_5_box::before,
+.product-description .img_6_box::before {
+  content: '측면';
+}
+
+.product-description .img_3_box::after,
+.product-description .img_4_box::after,
+.product-description .img_5_box::after,
+.product-description .img_6_box::after {
+  position: absolute;
+  top: 80px;
+  right: 15px;
+  z-index: 2;
+  display: inline-block;
+  width: 60px;
+  box-sizing: border-box;
+  border-top: 1px dotted #fff;
+  color: #f9bc2b;
+  font-family: 'Pretendard', 'Malgun Gothic', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  text-align: center;
+}
+
+.product-description .img_3_box::after {
+  content: 'FRONT';
+}
+
+.product-description .img_4_box::after {
+  content: 'BACK';
+  letter-spacing: 2px;
+}
+
+.product-description .img_5_box::after,
+.product-description .img_6_box::after {
+  content: 'SIDE';
+  letter-spacing: 4px;
+}
+
+.product-description .delivery_box {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  margin: 90px auto;
+  color: #333;
+  font-family: 'Pretendard', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: -1px;
+  text-align: center;
+  vertical-align: top;
+}
+
+.product-description [data-resize-container] {
+  display: flex;
+  max-width: 100%;
+  justify-content: center;
+}
+
+.product-description [data-resize-wrapper] {
+  display: inline-block;
+  max-width: 100%;
+}
+
+@media (max-width: 768px) {
+  .product-description .title_1_box {
+    padding-block: 48px;
+  }
+
+  .product-description .title_1_box .category {
+    padding: 2px 14px;
+    border-width: 2px;
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  .product-description .title_1_box h1 {
+    font-size: 30px;
+    line-height: 48px;
+    letter-spacing: -1px;
+  }
+
+  .product-description .title_1_box p {
+    padding-inline: 16px;
+    font-size: 15px;
+    line-height: 22px;
+  }
+
+  .product-description .img_2_box {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .product-description .img_2_box > .img_wrap {
+    float: none;
+    width: 100%;
+    height: auto;
+  }
+
+  .product-description .img_2_box > .img_wrap img {
+    height: auto !important;
+    object-fit: contain;
+  }
+
+  .product-description .img_2_box .spec_wrap {
+    float: none;
+    width: 100%;
+    padding: 30px 5%;
+  }
+
+  .product-description .img_2_box .spec_wrap caption {
+    font-size: 27px;
+    line-height: 44px;
+  }
+
+  .product-description .img_3_box::before,
+  .product-description .img_3_box::after,
+  .product-description .img_4_box::before,
+  .product-description .img_4_box::after,
+  .product-description .img_5_box::before,
+  .product-description .img_5_box::after,
+  .product-description .img_6_box::before,
+  .product-description .img_6_box::after {
+    display: none;
+  }
+
+  .product-description .delivery_box {
+    margin-block: 56px;
+    padding-inline: 16px;
+    box-sizing: border-box;
+    font-size: 15px;
+    line-height: 22px;
+  }
+}

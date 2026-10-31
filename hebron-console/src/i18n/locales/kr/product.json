@@ -1,0 +1,267 @@
+{
+  "everaward": {
+    "wrapperRequired": "HTML에는 .view_design_wrap 요소가 있어야 합니다.",
+    "replaceImage": "이미지 교체",
+    "mode": "설명 편집 방식",
+    "visual": "화면 편집",
+    "html": "HTML (고급)",
+    "format": "텍스트 서식",
+    "b": "굵게",
+    "i": "기울임",
+    "u": "밑줄",
+    "color": "글자 색상",
+    "fontSize": "글자 크기",
+    "left": "왼쪽 정렬",
+    "center": "가운데 정렬",
+    "right": "오른쪽 정렬",
+    "undo": "실행 취소",
+    "redo": "다시 실행",
+    "uploading": "이미지 업로드 중…",
+    "uploadFailed": "이미지 업로드에 실패했습니다. 다시 시도해 주세요."
+  },
+  "calligraphy": {
+    "title": "캘리그라피 관리",
+    "action": {
+      "add": "캘리그라피 추가",
+      "upload": "이미지 업로드",
+      "change_type": "유형 변경"
+    },
+    "type": {
+      "calligraphy": "캘리그라피",
+      "smog_only": "스모그전용",
+      "wood_case_gold_only": "우드케이스 전용(골드컬러)"
+    },
+    "filter": {
+      "type": "유형",
+      "search": "검색",
+      "search_placeholder": "텍스트로 검색"
+    },
+    "editor": {
+      "create_title": "캘리그라피 추가",
+      "edit_title": "캘리그라피 수정",
+      "image": "이미지",
+      "type": "유형",
+      "text_placeholder": "텍스트 입력"
+    },
+    "pagination": { "total": "총 {{count}}개" },
+    "delete": {
+      "title": "선택한 캘리그라피 삭제",
+      "description": "선택한 {{count}}개 캘리그라피를 삭제하시겠습니까? 이 작업은 되돌릴 수 없습니다."
+    },
+    "message": {
+      "created": "캘리그라피가 추가되었습니다.",
+      "created_multiple": "캘리그라피 {{count}}개가 추가되었습니다.",
+      "updated": "캘리그라피가 수정되었습니다.",
+      "deleted": "캘리그라피가 삭제되었습니다.",
+      "bulk_updated": "캘리그라피 유형이 변경되었습니다.",
+      "empty": "등록된 캘리그라피가 없습니다.",
+      "load_failed": "캘리그라피를 불러올 수 없습니다.",
+      "save_failed": "캘리그라피를 저장할 수 없습니다.",
+      "delete_failed": "캘리그라피를 삭제할 수 없습니다.",
+      "bulk_update_failed": "캘리그라피 유형을 변경할 수 없습니다.",
+      "invalid_type": "JPG, JPEG, PNG, WEBP 이미지만 지원합니다.",
+      "too_large": "이미지는 10MB를 초과할 수 없습니다."
+    }
+  },
+  "background": {
+    "title": "배경 관리",
+    "action": {
+      "add": "배경 추가",
+      "select_page": "현재 페이지 전체 선택"
+    },
+    "filter": {
+      "sort_by": "정렬 기준",
+      "created_at": "등록일",
+      "updated_at": "최종 수정일",
+      "order": "정렬 순서",
+      "desc": "내림차순",
+      "asc": "오름차순"
+    },
+    "card": {
+      "templates": "템플릿 {{count}}개"
+    },
+    "pagination": {
+      "total": "배경 {{count}}개"
+    },
+    "delete": {
+      "title": "선택한 배경 삭제",
+      "description": "선택한 배경 {{count}}개를 삭제하시겠습니까? 이 작업은 되돌릴 수 없습니다.",
+      "blocked_title": "사용 중인 배경이 있습니다",
+      "blocked_description": "아무 항목도 삭제되지 않았습니다. 먼저 다음 템플릿에서 배경 연결을 해제하세요:"
+    },
+    "message": {
+      "created": "배경이 추가되었습니다.",
+      "deleted": "배경이 삭제되었습니다.",
+      "status_updated": "배경 상태가 변경되었습니다.",
+      "empty": "등록된 배경이 없습니다.",
+      "load_failed": "배경을 불러올 수 없습니다.",
+      "upload_failed": "배경 이미지를 업로드할 수 없습니다.",
+      "delete_failed": "배경을 삭제할 수 없습니다.",
+      "invalid_type": "JPG, JPEG, PNG, WEBP 이미지만 업로드할 수 있습니다.",
+      "too_large": "이미지 크기는 50MB를 초과할 수 없습니다."
+    }
+  },
+  "button_add": "제품 등록",
+  "empty": "제품이 없습니다.",
+  "confirm_delete_title": "제품 삭제",
+  "confirm_delete_description": "이 제품을 삭제하시겠습니까? 이 작업은 되돌릴 수 없습니다.",
+  "column": {
+    "image": "이미지",
+    "name": "제품명",
+    "sku": "SKU",
+    "category": "카테고리",
+    "price": "판매가",
+    "stock": "재고",
+    "status": "상태",
+    "created_at": "등록일",
+    "action": "관리"
+  },
+  "filter": {
+    "search_term": "통합검색",
+    "search_term_placeholder": "제품명, 코드",
+    "product_name": "제품명",
+    "product_name_placeholder": "제품명 검색",
+    "product_code": "제품코드",
+    "product_code_placeholder": "제품코드 검색",
+    "category": "카테고리",
+    "status": "상태",
+    "availability": "재고 상태",
+    "promotional": "판촉물",
+    "product_type": "제품 유형",
+    "all": "전체"
+  },
+  "status": {
+    "sold": "판매중",
+    "hidden": "숨김"
+  },
+  "availability": {
+    "in_stock": "재고 있음",
+    "out_of_stock": "품절"
+  },
+  "promotional": {
+    "true": "판촉물",
+    "false": "일반"
+  },
+  "type": {
+    "template": "템플릿",
+    "custom": "커스텀",
+    "promotional": "판촉물",
+    "file_order": "파일주문"
+  },
+  "modal": {
+    "create_title": "제품 등록",
+    "edit_title": "제품 수정",
+    "detail_title": "제품 상세",
+    "section_basic": "기본 정보",
+    "section_status": "상태 및 분류",
+    "section_price": "가격 정보",
+    "section_inventory": "재고 정보",
+    "section_images": "이미지",
+    "section_ai_file": "시안 파일",
+    "ai_file_empty": "업로드된 시안 파일이 없습니다.",
+    "ai_file_format": "AI 파일 (.ai) · 최대 5MB",
+    "ai_file_upload": "파일 업로드",
+    "ai_file_change": "파일 변경",
+    "ai_file_uploading": "시안 파일 업로드 중",
+    "section_option": "옵션",
+    "section_template": "템플릿",
+    "section_specification": "상세 사양",
+    "field_name": "제품명 (한국어)",
+    "field_name_en": "제품명 (영문)",
+    "field_slug": "슬러그",
+    "field_sku": "SKU",
+    "field_categories": "카테고리",
+    "field_visible_roles": "노출 대상",
+    "field_description": "상세 설명",
+    "field_short_description": "간단 설명",
+    "field_selling_price": "판매가",
+    "field_supply_price": "공급가",
+    "field_brand_site_price": "브랜드사이트 가격",
+    "field_plain_site_price": "일반사이트 가격",
+    "field_shipping_fee": "배송비",
+    "field_price_content": "판매가 대체문구",
+    "field_stock_quantity": "재고 수량",
+    "field_min_quantity": "최소 수량",
+    "field_max_quantity": "최대 수량",
+    "max_quantity_hint": "0 = 구매 수량 무제한",
+    "stock_inventory_enabled": "재고관리 사용",
+    "stock_inventory_enabled_hint": "사용하지 않으면 재고 수량과 관계없이 고객이 이 제품을 구매할 수 있습니다.",
+    "price_relation_hint": "판매가는 할인가, 공급가는 정가와 같은 관계입니다. 판매가는 공급가보다 작거나 같아야 합니다.",
+    "field_sort_order": "정렬 순서",
+    "field_option_groups": "옵션 그룹",
+    "field_templates": "템플릿",
+    "field_size": "규격",
+    "field_materials": "재질",
+    "field_case": "케이스",
+    "field_product_period": "제작 기간",
+    "field_total_product_amount": "총 금액",
+    "field_shipping_info": "배송 안내",
+    "field_weight": "중량",
+    "field_notes": "비고",
+    "name_placeholder": "예: 우드금속 상패 HB-7200",
+    "slug_placeholder": "비워두면 자동 생성됩니다",
+    "sku_placeholder": "예: HB-7200_1",
+    "select_placeholder": "선택",
+    "ph_name_en": "예: Premium Business Card",
+    "ph_categories": "카테고리를 선택하세요",
+    "visible_role": { "ALL": "전체", "MEMBER": "회원", "MANAGER": "관리자" },
+    "ph_option_groups": "옵션 그룹을 선택하세요",
+    "edit_option_group": "옵션 그룹 편집 (새 탭에서 열림)",
+    "remove_option_group": "옵션 그룹 제거",
+    "option_group_required": "필수",
+    "option_group_options": "옵션 ({{count}})",
+    "ph_templates": "템플릿을 선택하세요",
+    "no_templates": "사용 가능한 템플릿이 없습니다.",
+    "template_search_placeholder": "템플릿 이름으로 검색",
+    "ph_short_description": "제품 카드에 표시되는 한 줄 설명",
+    "ph_description": "제품 상세 설명",
+    "ph_amount": "100.000",
+    "ph_price_content": "가격 관련 안내 문구",
+    "ph_quantity": "100",
+    "ph_size": "예: 90 x 50 mm",
+    "ph_materials": "예: 나무, 금속",
+    "ph_case": "예: 벨벳 케이스",
+    "ph_product_period": "예: 영업일 2-3일",
+    "ph_total_product_amount": "예: 100개",
+    "ph_shipping_info": "예: 일반 배송",
+    "ph_weight": "예: 0.3 kg",
+    "ph_notes": "추가 비고",
+    "images_hint": "최대 5장, JPEG/PNG/WEBP, 각 5MB 이하.",
+    "ai_file_hint": "제품 상세 페이지에서 다운로드할 시안 AI 파일을 1개만 업로드할 수 있습니다. 최대 5MB 이하.",
+    "is_active": "활성",
+    "is_popular": "인기",
+    "is_featured": "추천",
+    "is_top_product": "스테디셀러",
+    "has_option": "옵션 사용"
+  },
+  "unsaved_changes": {
+    "title": "저장되지 않은 변경 사항",
+    "description": "저장하지 않은 변경 사항이 있습니다. 페이지를 나가기 전에 저장하세요. 나가면 변경 사항이 사라집니다.",
+    "leave": "나가기",
+    "stay": "머무르기",
+    "edit_option_group_description": "저장하지 않은 제품 변경 사항이 있습니다. 옵션 그룹을 수정하기 전에 제품을 먼저 저장하세요. 그래도 열면 이 탭의 변경 사항은 저장할 때까지 유지됩니다.",
+    "open": "열기"
+  },
+  "copy_modal": {
+    "title": "제품 복사",
+    "field_copy_title": "복사 제목",
+    "ph_copy_title": "복사본 제목을 입력하세요"
+  },
+  "bulk": {
+    "actions": "일괄 작업",
+    "delete": "선택 삭제",
+    "confirm_delete_title": "제품 삭제",
+    "confirm_delete_description": "선택한 {{count}}개 제품을 삭제하시겠습니까? 이 작업은 되돌릴 수 없습니다.",
+    "success_status": "{{count}}개 제품의 상태가 변경되었습니다",
+    "success_delete": "{{count}}개 제품이 삭제되었습니다",
+    "update": "선택 수정",
+    "update_modal_title": "제품 일괄 수정",
+    "update_hint": "입력한 항목만 선택한 {{count}}개 제품에 적용됩니다.",
+    "success_update": "{{count}}개 제품이 수정되었습니다",
+    "status_modal_title": "상태 변경",
+    "current_status": "선택한 {{total}}개 중 {{onCount}}개 켜짐",
+    "keep": "유지",
+    "on": "켜짐",
+    "off": "꺼짐"
+  }
+}

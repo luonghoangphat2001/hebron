@@ -1,0 +1,19 @@
+{
+  "title": "My Page",
+  "status": {
+    "production": "Production Status",
+    "design": "Design Status",
+    "shipping": "Shipping Status"
+  },
+  "recent_orders": {
+    "title": "Recent Orders",
+    "view_all": "See more",
+    "order_date": "Order Date",
+    "product": "Title",
+    "quantity": "Qty",
+    "amount": "Amount",
+    "status": "Status",
+    "print_order": "Print Order",
+    "empty": "No recent orders."
+  }
+}

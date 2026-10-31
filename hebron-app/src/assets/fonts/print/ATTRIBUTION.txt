@@ -1,0 +1,17 @@
+Hebron Print Sans - static PDF outline fonts
+
+Derived mechanically from ../PretendardVariable.ttf, the project's existing
+Pretendard Variable version 1.301 (font metadata: Copyright (c) 2022 Kil Hyung-jin).
+Upstream: https://github.com/orioncactus/pretendard
+Upstream license: https://github.com/orioncactus/pretendard/blob/main/LICENSE
+
+These files contain the original source's outlines instantiated at weights
+400 and 700, compressed as WOFF1. Internal primary family/PostScript names
+were changed to Hebron Print Sans to distinguish the derived files and avoid
+using a Reserved Font Name as their primary font name. Copyright, designer,
+trademark and license records are retained. Licensed under SIL OFL 1.1;
+see LICENSE.txt in this folder. No endorsement is implied.
+
+Reproduce with: python scripts/build-print-fonts.py (requires fonttools).
+The PDF builder maps editor Pretendard to these equivalent outline sources.
+Other unavailable editor fonts produce an explicit replacement warning.

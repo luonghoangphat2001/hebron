@@ -1,0 +1,125 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: hebron_app
+    restart: unless-stopped
+    working_dir: /var/www
+    ports:
+      - "8000:8000"
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    volumes:
+      - .:/var/www
+    depends_on:
+      mysql:
+        condition: service_healthy
+      redis:
+        condition: service_started
+    networks:
+      - hebron
+
+
+  queue:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: hebron_queue
+    restart: unless-stopped
+    working_dir: /var/www
+    command: php -d memory_limit=512M artisan queue:work --queue=default,export,migrations --memory=512 --timeout=600 --tries=1
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    volumes:
+      - .:/var/www
+    depends_on:
+      mysql:
+        condition: service_healthy
+      redis:
+        condition: service_started
+    networks:
+      - hebron
+
+  scheduler:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: hebron_scheduler
+    restart: unless-stopped
+    working_dir: /var/www
+    command: php artisan schedule:work
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    volumes:
+      - .:/var/www
+    depends_on:
+      mysql:
+        condition: service_healthy
+      redis:
+        condition: service_started
+    networks:
+      - hebron
+
+  reverb:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: hebron_reverb
+    restart: unless-stopped
+    working_dir: /var/www
+    command: php artisan reverb:start --host=0.0.0.0 --port=8080
+    ports:
+      - "8081:8080"
+    volumes:
+      - .:/var/www
+    depends_on:
+      redis:
+        condition: service_started
+    networks:
+      - hebron
+
+
+  mysql:
+    image: mysql:8.0
+    container_name: hebron_mysql
+    restart: unless-stopped
+    environment:
+      MYSQL_DATABASE: ${DB_DATABASE:-hebron}
+      MYSQL_ROOT_PASSWORD: ${DB_ROOT_PASSWORD:-root}
+      MYSQL_PASSWORD: ${DB_PASSWORD:-secret}
+      MYSQL_USER: ${DB_USERNAME:-hebron}
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+    networks:
+      - hebron
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+
+  redis:
+    image: redis:7-alpine
+    container_name: hebron_redis
+    restart: unless-stopped
+    command: redis-server --requirepass 123456
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    networks:
+      - hebron
+
+
+networks:
+  hebron:
+    driver: bridge
+
+
+volumes:
+  mysql_data:
+  redis_data:

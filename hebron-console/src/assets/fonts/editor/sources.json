@@ -1,0 +1,370 @@
+[
+  {
+    "family": "Arimo",
+    "url": "https://raw.githubusercontent.com/google/fonts/ddf386ba1b9fbc6b2c818f1ddcd9148f54ced94b/ofl/arimo/Arimo-Italic%5Bwght%5D.ttf",
+    "revision": "ddf386ba1b9fbc6b2c818f1ddcd9148f54ced94b",
+    "sha256": "a80fc54fd0233c1dfe298577c4d00f5ae81d5bb83510975e473c47e699b7f4ed",
+    "license_url": "https://raw.githubusercontent.com/google/fonts/ddf386ba1b9fbc6b2c818f1ddcd9148f54ced94b/ofl/arimo/OFL.txt",
+    "license_sha256": "11cce536cd2f3864d767003af5dcd739e2e15818cf2279b6175edeadd3960992"
+  },
+  {
+    "family": "Arimo",
+    "url": "https://raw.githubusercontent.com/google/fonts/ddf386ba1b9fbc6b2c818f1ddcd9148f54ced94b/ofl/arimo/Arimo%5Bwght%5D.ttf",
+    "revision": "ddf386ba1b9fbc6b2c818f1ddcd9148f54ced94b",
+    "sha256": "e43898b143ec826ac8cb4034816458a7047fbe0836558de2a1f8c6223ae3e0ca",
+    "license_url": "https://raw.githubusercontent.com/google/fonts/ddf386ba1b9fbc6b2c818f1ddcd9148f54ced94b/ofl/arimo/OFL.txt",
+    "license_sha256": "11cce536cd2f3864d767003af5dcd739e2e15818cf2279b6175edeadd3960992"
+  },
+  {
+    "family": "Tinos",
+    "url": "https://raw.githubusercontent.com/google/fonts/ddf386ba1b9fbc6b2c818f1ddcd9148f54ced94b/ofl/tinos/Tinos-Bold.ttf",
+    "revision": "ddf386ba1b9fbc6b2c818f1ddcd9148f54ced94b",
+    "sha256": "393269dbab8899f938db19783eca5eac92eb431f7ae0ab45b8349ca895f1a06b",
+    "license_url": "https://raw.githubusercontent.com/googlefonts/tinos/3b4482a99b80ea5fc75f187b1be3120a3f5905b3/OFL.txt",
+    "license_sha256": "cb3382d4643e8b02c12e322c220a3c76a5020d667e4fd4e7c75e744cca6caa6b"
+  },
+  {
+    "family": "Tinos",
+    "url": "https://raw.githubusercontent.com/google/fonts/ddf386ba1b9fbc6b2c818f1ddcd9148f54ced94b/ofl/tinos/Tinos-BoldItalic.ttf",
+    "revision": "ddf386ba1b9fbc6b2c818f1ddcd9148f54ced94b",
+    "sha256": "a5de79f0fe863ea0954757acb3d47b3ccd0a930ce3dd5b97230cd3866790a06e",
+    "license_url": "https://raw.githubusercontent.com/googlefonts/tinos/3b4482a99b80ea5fc75f187b1be3120a3f5905b3/OFL.txt",
+    "license_sha256": "cb3382d4643e8b02c12e322c220a3c76a5020d667e4fd4e7c75e744cca6caa6b"
+  },
+  {
+    "family": "Tinos",
+    "url": "https://raw.githubusercontent.com/google/fonts/ddf386ba1b9fbc6b2c818f1ddcd9148f54ced94b/ofl/tinos/Tinos-Italic.ttf",
+    "revision": "ddf386ba1b9fbc6b2c818f1ddcd9148f54ced94b",
+    "sha256": "5942266ed398b155d7dc23e36833e7ec6be988f2439bdbeb8ef1bede808eaa91",
+    "license_url": "https://raw.githubusercontent.com/googlefonts/tinos/3b4482a99b80ea5fc75f187b1be3120a3f5905b3/OFL.txt",
+    "license_sha256": "cb3382d4643e8b02c12e322c220a3c76a5020d667e4fd4e7c75e744cca6caa6b"
+  },
+  {
+    "family": "Tinos",
+    "url": "https://raw.githubusercontent.com/google/fonts/ddf386ba1b9fbc6b2c818f1ddcd9148f54ced94b/ofl/tinos/Tinos-Regular.ttf",
+    "revision": "ddf386ba1b9fbc6b2c818f1ddcd9148f54ced94b",
+    "sha256": "60a0e8ef0c04dd5dd69ffe91025fa2ae5836cbd35600a82ba031977557e2cb61",
+    "license_url": "https://raw.githubusercontent.com/googlefonts/tinos/3b4482a99b80ea5fc75f187b1be3120a3f5905b3/OFL.txt",
+    "license_sha256": "cb3382d4643e8b02c12e322c220a3c76a5020d667e4fd4e7c75e744cca6caa6b"
+  },
+  {
+    "family": "Cousine",
+    "url": "https://raw.githubusercontent.com/google/fonts/ddf386ba1b9fbc6b2c818f1ddcd9148f54ced94b/ofl/cousine/Cousine-Bold.ttf",
+    "revision": "ddf386ba1b9fbc6b2c818f1ddcd9148f54ced94b",
+    "sha256": "17c8a7245156d2253531c9e529474937b09d9f641c5ae7695c5e33f22822eef4",
+    "license_url": "https://raw.githubusercontent.com/google/fonts/ddf386ba1b9fbc6b2c818f1ddcd9148f54ced94b/ofl/cousine/OFL.txt",
+    "license_sha256": "b81c4d4dc0a9f72c9155e78187316e016e2012a8102468804173dc61468b906d"
+  },
+  {
+    "family": "Cousine",
+    "url": "https://raw.githubusercontent.com/google/fonts/ddf386ba1b9fbc6b2c818f1ddcd9148f54ced94b/ofl/cousine/Cousine-BoldItalic.ttf",
+    "revision": "ddf386ba1b9fbc6b2c818f1ddcd9148f54ced94b",
+    "sha256": "848e858726fee0ae27b754e4cd6a2755209bf1428a8c91f747696d58c33906c3",
+    "license_url": "https://raw.githubusercontent.com/google/fonts/ddf386ba1b9fbc6b2c818f1ddcd9148f54ced94b/ofl/cousine/OFL.txt",
+    "license_sha256": "b81c4d4dc0a9f72c9155e78187316e016e2012a8102468804173dc61468b906d"
+  },
+  {
+    "family": "Cousine",
+    "url": "https://raw.githubusercontent.com/google/fonts/ddf386ba1b9fbc6b2c818f1ddcd9148f54ced94b/ofl/cousine/Cousine-Italic.ttf",
+    "revision": "ddf386ba1b9fbc6b2c818f1ddcd9148f54ced94b",
+    "sha256": "ea2a76ae3d0ece9cd59f0d30fdc08dd70e8f5f457beee5b0852a7b50c2286c7c",
+    "license_url": "https://raw.githubusercontent.com/google/fonts/ddf386ba1b9fbc6b2c818f1ddcd9148f54ced94b/ofl/cousine/OFL.txt",
+    "license_sha256": "b81c4d4dc0a9f72c9155e78187316e016e2012a8102468804173dc61468b906d"
+  },
+  {
+    "family": "Cousine",
+    "url": "https://raw.githubusercontent.com/google/fonts/ddf386ba1b9fbc6b2c818f1ddcd9148f54ced94b/ofl/cousine/Cousine-Regular.ttf",
+    "revision": "ddf386ba1b9fbc6b2c818f1ddcd9148f54ced94b",
+    "sha256": "1da22250675fc4c42fcf3a9736c44bc0570516105331443b663fd5cfbd1412fe",
+    "license_url": "https://raw.githubusercontent.com/google/fonts/ddf386ba1b9fbc6b2c818f1ddcd9148f54ced94b/ofl/cousine/OFL.txt",
+    "license_sha256": "b81c4d4dc0a9f72c9155e78187316e016e2012a8102468804173dc61468b906d"
+  },
+  {
+    "family": "Gelasio",
+    "url": "https://raw.githubusercontent.com/google/fonts/ddf386ba1b9fbc6b2c818f1ddcd9148f54ced94b/ofl/gelasio/Gelasio-Italic%5Bwght%5D.ttf",
+    "revision": "ddf386ba1b9fbc6b2c818f1ddcd9148f54ced94b",
+    "sha256": "52559e845a4d33514e5f93bb9ae7dbeae1894a53f2c565a15f18af40cd337c09",
+    "license_url": "https://raw.githubusercontent.com/google/fonts/ddf386ba1b9fbc6b2c818f1ddcd9148f54ced94b/ofl/gelasio/OFL.txt",
+    "license_sha256": "b393cb01867c919b44381512120dc3e4c954c7b47e2035c405f3a324799a4d29"
+  },
+  {
+    "family": "Gelasio",
+    "url": "https://raw.githubusercontent.com/google/fonts/ddf386ba1b9fbc6b2c818f1ddcd9148f54ced94b/ofl/gelasio/Gelasio%5Bwght%5D.ttf",
+    "revision": "ddf386ba1b9fbc6b2c818f1ddcd9148f54ced94b",
+    "sha256": "4daecea457258c9ebeb8bc99ed3fd24353618bfad3ea4b93fa0b5d0468fc04e4",
+    "license_url": "https://raw.githubusercontent.com/google/fonts/ddf386ba1b9fbc6b2c818f1ddcd9148f54ced94b/ofl/gelasio/OFL.txt",
+    "license_sha256": "b393cb01867c919b44381512120dc3e4c954c7b47e2035c405f3a324799a4d29"
+  },
+  {
+    "family": "PT Sans",
+    "url": "https://raw.githubusercontent.com/google/fonts/ddf386ba1b9fbc6b2c818f1ddcd9148f54ced94b/ofl/ptsans/PT_Sans-Web-Bold.ttf",
+    "revision": "ddf386ba1b9fbc6b2c818f1ddcd9148f54ced94b",
+    "sha256": "3128bd5ecf01816e59a23d54c57a7a6b14615b07db53ff277c77376010265b05",
+    "license_url": "https://raw.githubusercontent.com/google/fonts/ddf386ba1b9fbc6b2c818f1ddcd9148f54ced94b/ofl/ptsans/OFL.txt",
+    "license_sha256": "2758cf7a872827f39661cf8cc24188113c030447aefb5ca7145993650076ca8c"
+  },
+  {
+    "family": "PT Sans",
+    "url": "https://raw.githubusercontent.com/google/fonts/ddf386ba1b9fbc6b2c818f1ddcd9148f54ced94b/ofl/ptsans/PT_Sans-Web-BoldItalic.ttf",
+    "revision": "ddf386ba1b9fbc6b2c818f1ddcd9148f54ced94b",
+    "sha256": "81ac221cdd02bccfa679c74adb122478e9d092e65a722e31ca11469961483785",
+    "license_url": "https://raw.githubusercontent.com/google/fonts/ddf386ba1b9fbc6b2c818f1ddcd9148f54ced94b/ofl/ptsans/OFL.txt",
+    "license_sha256": "2758cf7a872827f39661cf8cc24188113c030447aefb5ca7145993650076ca8c"
+  },
+  {
+    "family": "PT Sans",
+    "url": "https://raw.githubusercontent.com/google/fonts/ddf386ba1b9fbc6b2c818f1ddcd9148f54ced94b/ofl/ptsans/PT_Sans-Web-Italic.ttf",
+    "revision": "ddf386ba1b9fbc6b2c818f1ddcd9148f54ced94b",
+    "sha256": "5a90fe2d0cd798700935240580bdcc12c0ffc9102c0c7163b3418e13bc21debd",
+    "license_url": "https://raw.githubusercontent.com/google/fonts/ddf386ba1b9fbc6b2c818f1ddcd9148f54ced94b/ofl/ptsans/OFL.txt",
+    "license_sha256": "2758cf7a872827f39661cf8cc24188113c030447aefb5ca7145993650076ca8c"
+  },
+  {
+    "family": "PT Sans",
+    "url": "https://raw.githubusercontent.com/google/fonts/ddf386ba1b9fbc6b2c818f1ddcd9148f54ced94b/ofl/ptsans/PT_Sans-Web-Regular.ttf",
+    "revision": "ddf386ba1b9fbc6b2c818f1ddcd9148f54ced94b",
+    "sha256": "9cc831490532009bae2b3ce0d39c62adfc889060beb421593bfd9d2396d0f10a",
+    "license_url": "https://raw.githubusercontent.com/google/fonts/ddf386ba1b9fbc6b2c818f1ddcd9148f54ced94b/ofl/ptsans/OFL.txt",
+    "license_sha256": "2758cf7a872827f39661cf8cc24188113c030447aefb5ca7145993650076ca8c"
+  },
+  {
+    "family": "Cabin",
+    "url": "https://raw.githubusercontent.com/google/fonts/ddf386ba1b9fbc6b2c818f1ddcd9148f54ced94b/ofl/cabin/Cabin-Italic%5Bwdth%2Cwght%5D.ttf",
+    "revision": "ddf386ba1b9fbc6b2c818f1ddcd9148f54ced94b",
+    "sha256": "f033cc4391bdcbb674169c997e3cafbf3417b1fd790a1d9bd31eafa0ca8afea4",
+    "license_url": "https://raw.githubusercontent.com/google/fonts/ddf386ba1b9fbc6b2c818f1ddcd9148f54ced94b/ofl/cabin/OFL.txt",
+    "license_sha256": "965bf33673aec648a3b399185639e502b58e52693d004fc03f6bbdf21b1a0094"
+  },
+  {
+    "family": "Cabin",
+    "url": "https://raw.githubusercontent.com/google/fonts/ddf386ba1b9fbc6b2c818f1ddcd9148f54ced94b/ofl/cabin/Cabin%5Bwdth%2Cwght%5D.ttf",
+    "revision": "ddf386ba1b9fbc6b2c818f1ddcd9148f54ced94b",
+    "sha256": "a16576e6cec01cf994c46838ed1c17ffdb62cf6da8430edfbcb011f57dd62457",
+    "license_url": "https://raw.githubusercontent.com/google/fonts/ddf386ba1b9fbc6b2c818f1ddcd9148f54ced94b/ofl/cabin/OFL.txt",
+    "license_sha256": "965bf33673aec648a3b399185639e502b58e52693d004fc03f6bbdf21b1a0094"
+  },
+  {
+    "family": "Oswald",
+    "url": "https://raw.githubusercontent.com/google/fonts/ddf386ba1b9fbc6b2c818f1ddcd9148f54ced94b/ofl/oswald/Oswald%5Bwght%5D.ttf",
+    "revision": "ddf386ba1b9fbc6b2c818f1ddcd9148f54ced94b",
+    "sha256": "5b38c246e255a12f5712d640d56bcced0472466fc68983d2d0410ec0457c2817",
+    "license_url": "https://raw.githubusercontent.com/google/fonts/ddf386ba1b9fbc6b2c818f1ddcd9148f54ced94b/ofl/oswald/OFL.txt",
+    "license_sha256": "0fd731a904b729a4e02eaf5e8ebd06783edd9abe400e8882760160230675b652"
+  },
+  {
+    "family": "Comic Neue",
+    "url": "https://raw.githubusercontent.com/google/fonts/ddf386ba1b9fbc6b2c818f1ddcd9148f54ced94b/ofl/comicneue/ComicNeue-Bold.ttf",
+    "revision": "ddf386ba1b9fbc6b2c818f1ddcd9148f54ced94b",
+    "sha256": "3e7e5fccfd7e0788f317b43312151c1bd5cf058c9697a8d83eac3939050bd61e",
+    "license_url": "https://raw.githubusercontent.com/google/fonts/ddf386ba1b9fbc6b2c818f1ddcd9148f54ced94b/ofl/comicneue/OFL.txt",
+    "license_sha256": "7c38a22e5878e60fe423360553e63dd7be23d29f1f60336034935dbfc96e8320"
+  },
+  {
+    "family": "Comic Neue",
+    "url": "https://raw.githubusercontent.com/google/fonts/ddf386ba1b9fbc6b2c818f1ddcd9148f54ced94b/ofl/comicneue/ComicNeue-BoldItalic.ttf",
+    "revision": "ddf386ba1b9fbc6b2c818f1ddcd9148f54ced94b",
+    "sha256": "5c312c2a2fa64eee82f3b87fcfab8f3b12a5e59b043124401d322eb323cfbf16",
+    "license_url": "https://raw.githubusercontent.com/google/fonts/ddf386ba1b9fbc6b2c818f1ddcd9148f54ced94b/ofl/comicneue/OFL.txt",
+    "license_sha256": "7c38a22e5878e60fe423360553e63dd7be23d29f1f60336034935dbfc96e8320"
+  },
+  {
+    "family": "Comic Neue",
+    "url": "https://raw.githubusercontent.com/google/fonts/ddf386ba1b9fbc6b2c818f1ddcd9148f54ced94b/ofl/comicneue/ComicNeue-Italic.ttf",
+    "revision": "ddf386ba1b9fbc6b2c818f1ddcd9148f54ced94b",
+    "sha256": "e06bfd1552f5c9464c5665733ffd69239b0593885dbb9e059688a5900f78cf98",
+    "license_url": "https://raw.githubusercontent.com/google/fonts/ddf386ba1b9fbc6b2c818f1ddcd9148f54ced94b/ofl/comicneue/OFL.txt",
+    "license_sha256": "7c38a22e5878e60fe423360553e63dd7be23d29f1f60336034935dbfc96e8320"
+  },
+  {
+    "family": "Comic Neue",
+    "url": "https://raw.githubusercontent.com/google/fonts/ddf386ba1b9fbc6b2c818f1ddcd9148f54ced94b/ofl/comicneue/ComicNeue-Light.ttf",
+    "revision": "ddf386ba1b9fbc6b2c818f1ddcd9148f54ced94b",
+    "sha256": "efb91c06dccc264f07f800c0691d40c94e8cfce6183daade0709268bec178f76",
+    "license_url": "https://raw.githubusercontent.com/google/fonts/ddf386ba1b9fbc6b2c818f1ddcd9148f54ced94b/ofl/comicneue/OFL.txt",
+    "license_sha256": "7c38a22e5878e60fe423360553e63dd7be23d29f1f60336034935dbfc96e8320"
+  },
+  {
+    "family": "Comic Neue",
+    "url": "https://raw.githubusercontent.com/google/fonts/ddf386ba1b9fbc6b2c818f1ddcd9148f54ced94b/ofl/comicneue/ComicNeue-LightItalic.ttf",
+    "revision": "ddf386ba1b9fbc6b2c818f1ddcd9148f54ced94b",
+    "sha256": "a6d36baee09c7025916ddb517835458d15ef890291507197a54875ccc096b927",
+    "license_url": "https://raw.githubusercontent.com/google/fonts/ddf386ba1b9fbc6b2c818f1ddcd9148f54ced94b/ofl/comicneue/OFL.txt",
+    "license_sha256": "7c38a22e5878e60fe423360553e63dd7be23d29f1f60336034935dbfc96e8320"
+  },
+  {
+    "family": "Comic Neue",
+    "url": "https://raw.githubusercontent.com/google/fonts/ddf386ba1b9fbc6b2c818f1ddcd9148f54ced94b/ofl/comicneue/ComicNeue-Regular.ttf",
+    "revision": "ddf386ba1b9fbc6b2c818f1ddcd9148f54ced94b",
+    "sha256": "a0ee5a37c8b27c4db0700137d928598b1e23b0089e1546a8961909176b779360",
+    "license_url": "https://raw.githubusercontent.com/google/fonts/ddf386ba1b9fbc6b2c818f1ddcd9148f54ced94b/ofl/comicneue/OFL.txt",
+    "license_sha256": "7c38a22e5878e60fe423360553e63dd7be23d29f1f60336034935dbfc96e8320"
+  },
+  {
+    "family": "Crimson Text",
+    "url": "https://raw.githubusercontent.com/google/fonts/ddf386ba1b9fbc6b2c818f1ddcd9148f54ced94b/ofl/crimsontext/CrimsonText-Bold.ttf",
+    "revision": "ddf386ba1b9fbc6b2c818f1ddcd9148f54ced94b",
+    "sha256": "a3a0765fc5e8d0b49b540a23aefe0184887dd79f06a0bdf4db7035cea6befa93",
+    "license_url": "https://raw.githubusercontent.com/google/fonts/ddf386ba1b9fbc6b2c818f1ddcd9148f54ced94b/ofl/crimsontext/OFL.txt",
+    "license_sha256": "50fd67cddc097377a5c871e8452b778bc5aedfa3480a705cb27c5e3a078218df"
+  },
+  {
+    "family": "Crimson Text",
+    "url": "https://raw.githubusercontent.com/google/fonts/ddf386ba1b9fbc6b2c818f1ddcd9148f54ced94b/ofl/crimsontext/CrimsonText-BoldItalic.ttf",
+    "revision": "ddf386ba1b9fbc6b2c818f1ddcd9148f54ced94b",
+    "sha256": "467013e913e46304760461c46661c994b2aa1769e3fbd31371026300315181b4",
+    "license_url": "https://raw.githubusercontent.com/google/fonts/ddf386ba1b9fbc6b2c818f1ddcd9148f54ced94b/ofl/crimsontext/OFL.txt",
+    "license_sha256": "50fd67cddc097377a5c871e8452b778bc5aedfa3480a705cb27c5e3a078218df"
+  },
+  {
+    "family": "Crimson Text",
+    "url": "https://raw.githubusercontent.com/google/fonts/ddf386ba1b9fbc6b2c818f1ddcd9148f54ced94b/ofl/crimsontext/CrimsonText-Italic.ttf",
+    "revision": "ddf386ba1b9fbc6b2c818f1ddcd9148f54ced94b",
+    "sha256": "4ed1699ac7c64e8b3d33f6bb8323c3d7206b0d7bacb9ee2d65c697e6014d29de",
+    "license_url": "https://raw.githubusercontent.com/google/fonts/ddf386ba1b9fbc6b2c818f1ddcd9148f54ced94b/ofl/crimsontext/OFL.txt",
+    "license_sha256": "50fd67cddc097377a5c871e8452b778bc5aedfa3480a705cb27c5e3a078218df"
+  },
+  {
+    "family": "Crimson Text",
+    "url": "https://raw.githubusercontent.com/google/fonts/ddf386ba1b9fbc6b2c818f1ddcd9148f54ced94b/ofl/crimsontext/CrimsonText-Regular.ttf",
+    "revision": "ddf386ba1b9fbc6b2c818f1ddcd9148f54ced94b",
+    "sha256": "48e6c5d5ad1d01599d374ecb817e15890d1feb3b8a3a88e527d44c90389e1f06",
+    "license_url": "https://raw.githubusercontent.com/google/fonts/ddf386ba1b9fbc6b2c818f1ddcd9148f54ced94b/ofl/crimsontext/OFL.txt",
+    "license_sha256": "50fd67cddc097377a5c871e8452b778bc5aedfa3480a705cb27c5e3a078218df"
+  },
+  {
+    "family": "Crimson Text",
+    "url": "https://raw.githubusercontent.com/google/fonts/ddf386ba1b9fbc6b2c818f1ddcd9148f54ced94b/ofl/crimsontext/CrimsonText-SemiBold.ttf",
+    "revision": "ddf386ba1b9fbc6b2c818f1ddcd9148f54ced94b",
+    "sha256": "802e84000740fec2a9fbe0ae09b6b6811bd86a78a0173b15d44450a1530e9410",
+    "license_url": "https://raw.githubusercontent.com/google/fonts/ddf386ba1b9fbc6b2c818f1ddcd9148f54ced94b/ofl/crimsontext/OFL.txt",
+    "license_sha256": "50fd67cddc097377a5c871e8452b778bc5aedfa3480a705cb27c5e3a078218df"
+  },
+  {
+    "family": "Crimson Text",
+    "url": "https://raw.githubusercontent.com/google/fonts/ddf386ba1b9fbc6b2c818f1ddcd9148f54ced94b/ofl/crimsontext/CrimsonText-SemiBoldItalic.ttf",
+    "revision": "ddf386ba1b9fbc6b2c818f1ddcd9148f54ced94b",
+    "sha256": "8f4a0db2d181ba4493a4ad53042edc3b57ab50fedd8fa32c7b2ad57173208543",
+    "license_url": "https://raw.githubusercontent.com/google/fonts/ddf386ba1b9fbc6b2c818f1ddcd9148f54ced94b/ofl/crimsontext/OFL.txt",
+    "license_sha256": "50fd67cddc097377a5c871e8452b778bc5aedfa3480a705cb27c5e3a078218df"
+  },
+  {
+    "family": "EB Garamond",
+    "url": "https://raw.githubusercontent.com/google/fonts/ddf386ba1b9fbc6b2c818f1ddcd9148f54ced94b/ofl/ebgaramond/EBGaramond-Italic%5Bwght%5D.ttf",
+    "revision": "ddf386ba1b9fbc6b2c818f1ddcd9148f54ced94b",
+    "sha256": "bba2c4499c93c9612b90b9825d32b07da52fce2fe57562a1eb6b833553f93c4e",
+    "license_url": "https://raw.githubusercontent.com/google/fonts/ddf386ba1b9fbc6b2c818f1ddcd9148f54ced94b/ofl/ebgaramond/OFL.txt",
+    "license_sha256": "0985066662eb755ed3683ae5482a81a9195b49ce3f7e165cc2388b3dbece7dd7"
+  },
+  {
+    "family": "EB Garamond",
+    "url": "https://raw.githubusercontent.com/google/fonts/ddf386ba1b9fbc6b2c818f1ddcd9148f54ced94b/ofl/ebgaramond/EBGaramond%5Bwght%5D.ttf",
+    "revision": "ddf386ba1b9fbc6b2c818f1ddcd9148f54ced94b",
+    "sha256": "ef9512f92f6d579e5dc75af59a5a4b1b8b47d2eda89e00b954d44520e5369027",
+    "license_url": "https://raw.githubusercontent.com/google/fonts/ddf386ba1b9fbc6b2c818f1ddcd9148f54ced94b/ofl/ebgaramond/OFL.txt",
+    "license_sha256": "0985066662eb755ed3683ae5482a81a9195b49ce3f7e165cc2388b3dbece7dd7"
+  },
+  {
+    "family": "Libre Baskerville",
+    "url": "https://raw.githubusercontent.com/google/fonts/ddf386ba1b9fbc6b2c818f1ddcd9148f54ced94b/ofl/librebaskerville/LibreBaskerville-Italic%5Bwght%5D.ttf",
+    "revision": "ddf386ba1b9fbc6b2c818f1ddcd9148f54ced94b",
+    "sha256": "223959683dc73ec4437bd61fabaa4b3f22209e22855ffd3aee36ba61a5116e97",
+    "license_url": "https://raw.githubusercontent.com/google/fonts/ddf386ba1b9fbc6b2c818f1ddcd9148f54ced94b/ofl/librebaskerville/OFL.txt",
+    "license_sha256": "3624eddd4c8f8a908130a417ae7cd089c9da69899c4e0ca1a5217d0a6fae16fd"
+  },
+  {
+    "family": "Libre Baskerville",
+    "url": "https://raw.githubusercontent.com/google/fonts/ddf386ba1b9fbc6b2c818f1ddcd9148f54ced94b/ofl/librebaskerville/LibreBaskerville%5Bwght%5D.ttf",
+    "revision": "ddf386ba1b9fbc6b2c818f1ddcd9148f54ced94b",
+    "sha256": "05a95421961341c5b2556285e8415df9db27dab4f4abe22b446b3c6a8b916c5d",
+    "license_url": "https://raw.githubusercontent.com/google/fonts/ddf386ba1b9fbc6b2c818f1ddcd9148f54ced94b/ofl/librebaskerville/OFL.txt",
+    "license_sha256": "3624eddd4c8f8a908130a417ae7cd089c9da69899c4e0ca1a5217d0a6fae16fd"
+  },
+  {
+    "family": "Source Sans 3",
+    "url": "https://raw.githubusercontent.com/google/fonts/ddf386ba1b9fbc6b2c818f1ddcd9148f54ced94b/ofl/sourcesans3/SourceSans3-Italic%5Bwght%5D.ttf",
+    "revision": "ddf386ba1b9fbc6b2c818f1ddcd9148f54ced94b",
+    "sha256": "39e3ab05ccd7cb94907c31005bb5bec1d5432f0b096a2b782976e217a540eb6c",
+    "license_url": "https://raw.githubusercontent.com/google/fonts/ddf386ba1b9fbc6b2c818f1ddcd9148f54ced94b/ofl/sourcesans3/OFL.txt",
+    "license_sha256": "09746787287a289323b0ec3cff4d1a4a801331b82b7207c1e186f5d26619a392"
+  },
+  {
+    "family": "Source Sans 3",
+    "url": "https://raw.githubusercontent.com/google/fonts/ddf386ba1b9fbc6b2c818f1ddcd9148f54ced94b/ofl/sourcesans3/SourceSans3%5Bwght%5D.ttf",
+    "revision": "ddf386ba1b9fbc6b2c818f1ddcd9148f54ced94b",
+    "sha256": "042fe2cc0b933e328410d7acbd0aa6a1873dca5aef81875f4bc214b08825c7b9",
+    "license_url": "https://raw.githubusercontent.com/google/fonts/ddf386ba1b9fbc6b2c818f1ddcd9148f54ced94b/ofl/sourcesans3/OFL.txt",
+    "license_sha256": "09746787287a289323b0ec3cff4d1a4a801331b82b7207c1e186f5d26619a392"
+  },
+  {
+    "family": "Nanum Gothic",
+    "url": "https://raw.githubusercontent.com/google/fonts/ddf386ba1b9fbc6b2c818f1ddcd9148f54ced94b/ofl/nanumgothic/NanumGothic-Bold.ttf",
+    "revision": "ddf386ba1b9fbc6b2c818f1ddcd9148f54ced94b",
+    "sha256": "f96298f9fb18e364d2370f4c3ce948ac67a2b61af992d7234bc15c42b033c674",
+    "license_url": "https://raw.githubusercontent.com/google/fonts/ddf386ba1b9fbc6b2c818f1ddcd9148f54ced94b/ofl/nanumgothic/OFL.txt",
+    "license_sha256": "eeacf16032901d0ed0456876ec77b8f0fda6b3fecec7d972f8543eb602e6c30f"
+  },
+  {
+    "family": "Nanum Gothic",
+    "url": "https://raw.githubusercontent.com/google/fonts/ddf386ba1b9fbc6b2c818f1ddcd9148f54ced94b/ofl/nanumgothic/NanumGothic-ExtraBold.ttf",
+    "revision": "ddf386ba1b9fbc6b2c818f1ddcd9148f54ced94b",
+    "sha256": "5c4568e5295a8c52bc30e7efa1ea6d2de43556268ef42daba93540a1ece691ae",
+    "license_url": "https://raw.githubusercontent.com/google/fonts/ddf386ba1b9fbc6b2c818f1ddcd9148f54ced94b/ofl/nanumgothic/OFL.txt",
+    "license_sha256": "eeacf16032901d0ed0456876ec77b8f0fda6b3fecec7d972f8543eb602e6c30f"
+  },
+  {
+    "family": "Nanum Gothic",
+    "url": "https://raw.githubusercontent.com/google/fonts/ddf386ba1b9fbc6b2c818f1ddcd9148f54ced94b/ofl/nanumgothic/NanumGothic-Regular.ttf",
+    "revision": "ddf386ba1b9fbc6b2c818f1ddcd9148f54ced94b",
+    "sha256": "76f45ef4a6bcff344c837c95a7dcc26e017e38b5846d5ae0cdcb5b86be2e2d31",
+    "license_url": "https://raw.githubusercontent.com/google/fonts/ddf386ba1b9fbc6b2c818f1ddcd9148f54ced94b/ofl/nanumgothic/OFL.txt",
+    "license_sha256": "eeacf16032901d0ed0456876ec77b8f0fda6b3fecec7d972f8543eb602e6c30f"
+  },
+  {
+    "family": "Nanum Myeongjo",
+    "url": "https://raw.githubusercontent.com/google/fonts/ddf386ba1b9fbc6b2c818f1ddcd9148f54ced94b/ofl/nanummyeongjo/NanumMyeongjo-Bold.ttf",
+    "revision": "ddf386ba1b9fbc6b2c818f1ddcd9148f54ced94b",
+    "sha256": "bc9ed8e60d93fe6db054b8fb988481b625f2eef8cb2317ad0e9834681b8fe3f3",
+    "license_url": "https://raw.githubusercontent.com/google/fonts/ddf386ba1b9fbc6b2c818f1ddcd9148f54ced94b/ofl/nanummyeongjo/OFL.txt",
+    "license_sha256": "8eb1c1019fe7fe6d0b6e7d7bbbba1d9cbdd969d8c5f26455708f6cfb8a77284c"
+  },
+  {
+    "family": "Nanum Myeongjo",
+    "url": "https://raw.githubusercontent.com/google/fonts/ddf386ba1b9fbc6b2c818f1ddcd9148f54ced94b/ofl/nanummyeongjo/NanumMyeongjo-ExtraBold.ttf",
+    "revision": "ddf386ba1b9fbc6b2c818f1ddcd9148f54ced94b",
+    "sha256": "60c0077fce069ba90ae97c0a3679f6eb3712e0ca637bdd0c15b72d335ec46db7",
+    "license_url": "https://raw.githubusercontent.com/google/fonts/ddf386ba1b9fbc6b2c818f1ddcd9148f54ced94b/ofl/nanummyeongjo/OFL.txt",
+    "license_sha256": "8eb1c1019fe7fe6d0b6e7d7bbbba1d9cbdd969d8c5f26455708f6cfb8a77284c"
+  },
+  {
+    "family": "Nanum Myeongjo",
+    "url": "https://raw.githubusercontent.com/google/fonts/ddf386ba1b9fbc6b2c818f1ddcd9148f54ced94b/ofl/nanummyeongjo/NanumMyeongjo-Regular.ttf",
+    "revision": "ddf386ba1b9fbc6b2c818f1ddcd9148f54ced94b",
+    "sha256": "7ed9e8653a8ed04285d51dc343ffea6eb3d9c73afc27383ea8929ee4ffd03205",
+    "license_url": "https://raw.githubusercontent.com/google/fonts/ddf386ba1b9fbc6b2c818f1ddcd9148f54ced94b/ofl/nanummyeongjo/OFL.txt",
+    "license_sha256": "8eb1c1019fe7fe6d0b6e7d7bbbba1d9cbdd969d8c5f26455708f6cfb8a77284c"
+  },
+  {
+    "family": "Nanum Gothic Coding",
+    "url": "https://raw.githubusercontent.com/google/fonts/ddf386ba1b9fbc6b2c818f1ddcd9148f54ced94b/ofl/nanumgothiccoding/NanumGothicCoding-Bold.ttf",
+    "revision": "ddf386ba1b9fbc6b2c818f1ddcd9148f54ced94b",
+    "sha256": "77a6de97c176b76ef9a683b565a1e6f4ce40b499c72a2972c4b5bdf7c6b8e7a0",
+    "license_url": "https://raw.githubusercontent.com/google/fonts/ddf386ba1b9fbc6b2c818f1ddcd9148f54ced94b/ofl/nanumgothiccoding/OFL.txt",
+    "license_sha256": "eeacf16032901d0ed0456876ec77b8f0fda6b3fecec7d972f8543eb602e6c30f"
+  },
+  {
+    "family": "Nanum Gothic Coding",
+    "url": "https://raw.githubusercontent.com/google/fonts/ddf386ba1b9fbc6b2c818f1ddcd9148f54ced94b/ofl/nanumgothiccoding/NanumGothicCoding-Regular.ttf",
+    "revision": "ddf386ba1b9fbc6b2c818f1ddcd9148f54ced94b",
+    "sha256": "787effd7efed2abca88ade231faa8191f4e9fcf85b1805a13ee1dc3724b72089",
+    "license_url": "https://raw.githubusercontent.com/google/fonts/ddf386ba1b9fbc6b2c818f1ddcd9148f54ced94b/ofl/nanumgothiccoding/OFL.txt",
+    "license_sha256": "eeacf16032901d0ed0456876ec77b8f0fda6b3fecec7d972f8543eb602e6c30f"
+  },
+  {
+    "family": "Pretendard",
+    "url": "https://github.com/orioncactus/pretendard",
+    "source": "src/assets/fonts/PretendardVariable.ttf",
+    "sha256": "7ed92e96d84922e1035bb46a2677df867b73cba9197ffc5102d1bbd9054ce4e1",
+    "license": "pretendard/OFL.txt",
+    "revision": "Version 1.301;FEAKit 1.0"
+  }
+]

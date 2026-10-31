@@ -1,0 +1,19 @@
+{
+  "payment_status": {
+    "pending": "결제 대기",
+    "processing": "결제 처리 중",
+    "paid": "결제완료",
+    "failed": "결제 실패",
+    "cancelled": "결제 취소",
+    "refunded": "환불 완료",
+    "partially_refunded": "부분 환불",
+    "expired": "결제 만료"
+  },
+  "faq_category": {
+    "product_information": "제품 정보",
+    "order_production": "주문/제작",
+    "payment_delivery": "결제/배송",
+    "draft_design": "시안/디자인",
+    "etc": "기타"
+  }
+}

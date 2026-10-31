@@ -1,0 +1,75 @@
+{
+  "site_type": "PLAIN_SITE",
+  "page_type": "home_page",
+  "slug": "home",
+  "title": "Vendor Home",
+  "sort_order": 0,
+  "is_active": true,
+  "metadata": {
+    "design_reference": "AWARD PLUS product catalog",
+    "header": {
+      "logo_text": "AWARD PLUS",
+      "support_label": "고객센터",
+      "support_link": "/support"
+    },
+    "footer": {
+      "title": "Premium Awards & Trophies Catalog",
+      "description": "본 사이트의 모든 제품은 제작문의를 통해 주문 가능합니다."
+    }
+  },
+  "sections": [
+    {
+      "section_type": "hero_section",
+      "title": "Hero",
+      "content": {
+        "media_type": "banner_slider",
+        "autoplay": true,
+        "pagination": true,
+        "items": [
+          {
+            "image_url": "https://example.com/storage/pages/vendor-home/banner-01.png",
+            "alt": "가격은 DOWN 품질은 UP",
+            "link": "/products",
+            "sort_order": 1
+          }
+        ]
+      },
+      "link": "/products",
+      "sort_order": 10,
+      "is_active": true
+    },
+    {
+      "section_type": "product_catalog",
+      "title": "전체상품",
+      "content": {
+        "layout": "grid",
+        "columns": 4,
+        "page_size": 12,
+        "sort_options": [
+          { "value": "popular", "label": "인기순", "endpoint": "popular" },
+          { "value": "latest", "label": "최신등록순", "query": { "sort_by": "created_at", "sort_order": "desc" } },
+          { "value": "price_desc", "label": "높은가격순", "query": { "sort_by": "price", "sort_order": "desc" } },
+          { "value": "name", "label": "상품명 많은순", "query": { "sort_by": "name", "sort_order": "asc" } }
+        ],
+        "card": {
+          "show_badge": true,
+          "badge_label": "BEST",
+          "show_sku": true,
+          "show_tags": true,
+          "show_inquiry_button": true,
+          "inquiry_label": "제작문의"
+        },
+        "endpoints": {
+          "list": "/api/vendor/products",
+          "popular": "/api/vendor/products/popular",
+          "detail": "/api/vendor/products/{slug}",
+          "templates": "/api/vendor/products/{slug}/templates",
+          "reviews": "/api/vendor/products/{slug}/reviews"
+        }
+      },
+      "link": "/products",
+      "sort_order": 20,
+      "is_active": true
+    }
+  ]
+}

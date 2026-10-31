@@ -1,0 +1,16 @@
+{
+  "FIELD_REQUIRED": "This field is required.",
+  "PASSWORD_REQUIRED": "Password is required.",
+  "PASSWORD_INVALID": "8 to 20 characters including English letters, numbers, and special characters.",
+  "LOGIN_FAILED": "Incorrect email or password",
+  "PASSWORD_CONFIRM_INVALID": "Passwords do not match.",
+  "USERNAME_REQUIRED": "Username is required.",
+  "USERNAME_INVALID": "Invalid username format.",
+  "EMAIL_INVALID": "Invalid email format.",
+  "PHONE_INVALID": "Phone number must be 11 digits.",
+  "SPEC_CASE_MAX_LENGTH": "Case must not be greater than 256 characters.",
+  "PRODUCT_IMAGE_MAX_COUNT": "Up to 5 images can be uploaded.",
+  "MAX_QUANTITY_INVALID": "Max quantity must be 0 (unlimited) or greater than min quantity.",
+  "PRICE_MAX_VALUE": "Price is too large.",
+  "SELLING_PRICE_EXCEEDS_SUPPLY": "Selling price must be less than or equal to supply price."
+}

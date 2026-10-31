@@ -1,0 +1,32 @@
+.git
+.github
+.gitlab-ci.yml
+.env
+.env.*
+*.log
+
+# Dependencies
+/vendor
+/node_modules
+
+# Storage and runtime files
+/storage
+/public/storage
+/bootstrap/cache/*.php
+
+# IDE & OS files
+.idea
+.vscode
+.fleet
+.zed
+.DS_Store
+Thumbs.db
+
+# Documentation & AI contexts
+/docs
+/.ai
+/.agents
+GEMINI.md
+AGENTS.md
+.phpunit.cache
+

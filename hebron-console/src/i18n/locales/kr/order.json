@@ -1,0 +1,116 @@
+{
+  "page": {
+    "description": "주문 목록, 작업지시서(PDF) 출력, 시안 파일, 상태 변경 이력을 관리합니다."
+  },
+  "button": {
+    "export_excel": "엑셀 다운로드",
+    "work_order_pdf": "작업지시서 PDF",
+    "batch_output": "일괄 인쇄",
+    "edit_status": "상태 변경",
+    "confirm_manual_payment": "수동 결제 확인",
+    "upload_draft": "시안 업로드",
+    "mark_ready_for_print": "인쇄 준비 완료로 표시",
+    "request_rework": "재작업 요청",
+    "confirm_rework": "재작업 요청 등록",
+    "download_print_pdf": "인쇄용 PDF 다운로드",
+    "download_all_print_pdfs": "전체 다운로드"
+  },
+  "field": {
+    "order_number": "주문번호",
+    "orderer_name": "주문 고객",
+    "member_name": "회원명",
+    "recipient_name": "수령인",
+    "recipient_phone": "수령인 연락처",
+    "order_datetime": "주문일시",
+    "payment_amount": "결제금액",
+    "payment_status": "결제 상태",
+    "shipping_address": "배송지",
+    "payment_method": "결제수단",
+    "status": "상태",
+    "duration": "기간",
+    "item_name": "상품명",
+    "option": "옵션",
+    "quantity": "수량",
+    "unit_price": "단가",
+    "option_price": "옵션 추가 금액",
+    "subtotal_amount": "소계",
+    "tax_amount": "부가세 (10%)",
+    "total_amount": "총 결제 금액",
+    "finishing": "후가공",
+    "size": "사이즈",
+    "material": "소재",
+    "case": "케이스",
+    "comment": "댓글",
+    "design_content_title": "제목",
+    "design_recipient": "받는 사람/단체명",
+    "design_event_date": "일시",
+    "design_main_text": "문안",
+    "design_sender": "주는 사람 (단체명)",
+    "design_attachments": "첨부파일",
+    "draft_status": "시안 상태",
+    "rework_reason": "재작업 사유"
+  },
+  "placeholder": {
+    "enter_order_number": "주문번호 입력",
+    "enter_orderer_name": "고객사명 입력",
+    "all_status": "전체 상태",
+    "select_status": "상태를 선택하세요",
+    "enter_rework_reason": "재작업이 필요한 사유를 입력하세요..."
+  },
+  "confirm": {
+    "manual_payment_title": "입금 확인",
+    "manual_payment_description": "입금이 확인되었습니까? 확인하면 주문 상태가 주문 확정으로 변경됩니다."
+  },
+  "column": {
+    "order_number": "주문번호",
+    "customer": "고객사",
+    "recipient": "수령인",
+    "order_date": "주문일시",
+    "payment_amount": "결제금액",
+    "status": "상태",
+    "item_count": "품목 수",
+    "actions": "작업",
+    "modified_at": "변경일시",
+    "status_change": "상태 변경",
+    "modified_by": "변경자",
+    "reason_notes": "사유 / 비고"
+  },
+  "section": {
+    "basic_information": "기본 정보",
+    "product_information": "상품 정보",
+    "draft_file_management": "시안 파일 관리",
+    "status_history": "상태 변경 이력"
+  },
+  "label": {
+    "design_group_preview": "\ub514\uc790\uc778 \ubbf8\ub9ac\ubcf4\uae30",
+    "design_preview_front": "\uc55e\uba74 \ubbf8\ub9ac\ubcf4\uae30",
+    "design_preview_back": "\ub4b7\uba74 \ubbf8\ub9ac\ubcf4\uae30",
+    "actor": "처리자",
+    "uploaded_by": "업로드자",
+    "updated_at": "수정일시",
+    "batch_selected_count": "{{count}}건 선택됨",
+    "draft_file_help": "PDF, JPG, PNG, AI, EPS, ZIP 파일만 업로드할 수 있습니다.",
+    "draft_file_count_help": "주문 상품별로 파일 {{count}}개를 선택하세요.",
+    "print_pdf_unavailable_help": "인쇄용 PDF가 준비되지 않았습니다. 에디터에서 디자인을 저장하고 PDF를 다시 생성하세요.",
+    "print_pdf_download_help": "주문 상품별로 PDF가 각각 다운로드됩니다. 브라우저에서 요청하면 여러 파일 다운로드를 허용하세요. 차단된 파일은 개별 다운로드 버튼을 이용하세요.",
+    "print_pdf_preparing": "인쇄용 PDF를 확인하고 있습니다...",
+    "print_pdf_direct_help": "전체 다운로드를 위해서는 모든 인쇄 파일이 유효해야 합니다. 아래에서 개별 상품 다운로드를 시도할 수 있습니다. 다시 확인하려면 창을 닫고 다시 여세요.",
+    "print_pdf_item": "주문 상품 #{{id}}",
+    "print_pdf_download_sent": "다운로드를 요청했습니다. 브라우저 다운로드 목록을 확인하세요.",
+    "print_pdf_progress": "파일 {{current}}/{{total}} 다운로드 요청 중..."
+  },
+  "empty": {
+    "no_orders": "주문 내역이 없습니다.",
+    "no_draft_files": "업로드된 시안 파일이 없습니다.",
+    "no_status_history": "상태 변경 이력이 없습니다."
+  },
+  "notify": {
+    "draft_upload_notification_sent": "시안이 업로드되었습니다. 카카오톡/SMS 알림이 고객에게 발송되었습니다 (시뮬레이션).",
+    "draft_file_count_mismatch": "주문 상품별로 파일 {{count}}개를 정확히 선택하세요.",
+    "print_pdf_unavailable": "인쇄용 PDF가 없거나 최신 디자인과 일치하지 않습니다. 에디터에서 디자인을 저장하고 PDF를 다시 생성하세요.",
+    "invalid_print_pdf": "인쇄용 PDF 파일을 확인할 수 없습니다.",
+    "print_pdf_download_failed": "인쇄용 PDF 다운로드에 실패했습니다. 다시 시도해 주세요.",
+    "print_pdf_downloads_sent": "파일 {{count}}개 다운로드를 요청했습니다. 브라우저 다운로드 목록을 확인하세요.",
+    "print_pdf_download_stopped": "{{sent}}/{{total}}개 다운로드를 요청했습니다. 상품 #{{itemId}}에서 중단되었습니다: {{message}}"
+  }
+}

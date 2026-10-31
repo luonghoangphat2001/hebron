@@ -1,0 +1,136 @@
+.everaward-editor {
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  overflow: clip;
+  background: white;
+  color: #111827;
+}
+.everaward-editor-controls {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  background: #f9fafb;
+}
+.everaward-editor-tabs,
+.everaward-editor-toolbar {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 6px;
+  padding: 8px;
+  border-bottom: 1px solid #d1d5db;
+  background: #f9fafb;
+}
+.everaward-editor-tabs button {
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+  padding: 4px 9px;
+  background: white;
+  font-size: 13px;
+  cursor: pointer;
+}
+.everaward-editor-tabs button:disabled,
+.everaward-editor-toolbar select:disabled {
+  opacity: 0.45;
+  cursor: default;
+}
+.everaward-editor-tabs button[aria-selected='true'] {
+  color: #1d4ed8;
+  border-color: #2563eb;
+}
+.everaward-editor-toolbar {
+  gap: 4px;
+  background: color-mix(in srgb, var(--muted) 20%, var(--background));
+}
+.everaward-editor-color {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  cursor: pointer;
+}
+.everaward-editor-color:hover {
+  background: var(--accent);
+}
+.everaward-editor-color:focus-within {
+  outline: 2px solid var(--ring);
+  outline-offset: 2px;
+}
+.everaward-editor-color[data-disabled] {
+  opacity: 0.5;
+  cursor: default;
+}
+.everaward-editor-color input {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: inherit;
+}
+.everaward-editor-font-size {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+}
+.everaward-editor-font-size select {
+  height: 32px;
+  appearance: none;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--background);
+  padding: 0 28px 0 10px;
+  font-size: 13px;
+  cursor: pointer;
+}
+.everaward-editor-font-size select:focus-visible {
+  outline: 2px solid var(--ring);
+  outline-offset: 2px;
+}
+.everaward-editor-font-size > svg {
+  position: absolute;
+  right: 8px;
+  pointer-events: none;
+  color: var(--muted-foreground);
+}
+.everaward-editor-source {
+  display: block;
+  width: 100%;
+  min-height: 500px;
+  padding: 12px;
+  font-family: monospace;
+  font-size: 13px;
+  resize: vertical;
+}
+.everaward-preview {
+  min-height: 200px;
+  isolation: isolate;
+}
+.everaward-preview [data-everaward-editable]:hover {
+  outline: 1px dashed #93c5fd;
+  outline-offset: 2px;
+}
+.everaward-preview [data-everaward-editable]:focus {
+  outline: 2px solid #60a5fa;
+  outline-offset: 2px;
+}
+.everaward-preview [data-everaward-image] {
+  cursor: pointer;
+}
+.everaward-preview [data-everaward-image]:hover,
+.everaward-preview [data-everaward-image]:focus {
+  outline: 3px solid #60a5fa;
+  outline-offset: -3px;
+}
+.everaward-editor > p[role='alert'],
+.everaward-editor > p[role='status'] {
+  padding: 8px 12px;
+  font-size: 13px;
+}
+.everaward-editor > p[role='alert'] {
+  color: #b91c1c;
+}

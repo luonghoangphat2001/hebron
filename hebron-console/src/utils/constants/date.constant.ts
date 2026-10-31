@@ -1,0 +1,13 @@
+export const DATE_FORMAT = 'YYYY-MM-DD';
+export const DATE_FORMAT_DOT = 'YYYY.MM.DD';
+export const DATE_TIME_FORMAT_DOT = 'YYYY.MM.DD hh:mm:ss';
+export const DATE_STRING_FORMAT = 'MMMM DD, YYYY';
+export const DATE_TIME_FORMAT = 'YYYY-MM-DD HH:mm:ss';
+export const DATE_TIME_DOWNLOAD_FORMAT = 'YYYY-MM-DD_hh:mm:ss';
+export const TIME_12H_FORMAT = 'A hh:mm';
+export const TIME_12H_PICKER_FORMAT = 'hh:mm A';
+export const TIME_24H_FORMAT = 'HH:mm:ss';
+export const MONTH_DAY_YEAR_FORMAT = 'MM-DD-YYYY';
+export const DATE_TIME_ISO = 'YYYY-MM-DDTHH:mm:ss';
+export const DATE_HOUR_MINUTE = 'YYYY-MM-DD HH:mm';
+export const DATE_TIME_SHORT_FORMAT = 'MMM DD, YYYY, h:mm A';

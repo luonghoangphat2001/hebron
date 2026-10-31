@@ -1,0 +1,14 @@
+services:
+  hebron-admin:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        VITE_API_ENDPOINT: ${VITE_API_ENDPOINT}
+        VITE_APP_NAME: ${VITE_APP_NAME}
+    image: hebron-admin:latest
+    container_name: hebron-admin
+    restart: unless-stopped
+    ports:
+      - '4000:80'
+

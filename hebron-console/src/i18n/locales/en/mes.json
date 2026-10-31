@@ -1,0 +1,73 @@
+{
+  "page": {
+    "description": "Monitor the MES integration health, inspect request logs, and manage product-level integration settings."
+  },
+  "dashboard": {
+    "title": "Integration Status",
+    "connection_status": "Connection Status",
+    "healthy": "Healthy",
+    "disconnected": "Disconnected",
+    "mes_connected": "MES Connected",
+    "mes_unreachable": "MES Unreachable",
+    "last_sync_time": "Last Sync Time",
+    "response_time": "Response Time",
+    "success_rate": "Success Rate",
+    "failed_requests_today": "Failed Requests Today",
+    "total_requests_today": "Total Requests Today"
+  },
+  "log": {
+    "title": "Integration Log",
+    "view_detail": "View Detail",
+    "empty": "No integration logs found.",
+    "filter": {
+      "date_range": "Date Range",
+      "direction": "Direction",
+      "trigger_type": "Trigger Type",
+      "status": "Status",
+      "keyword": "Keyword",
+      "all_directions": "All directions",
+      "all_triggers": "All triggers",
+      "all_statuses": "All statuses",
+      "keyword_placeholder": "Search reference / endpoint"
+    },
+    "column": {
+      "requested_at": "Requested At",
+      "direction": "Direction",
+      "trigger_type": "Trigger Type",
+      "reference": "Reference",
+      "endpoint": "Endpoint",
+      "method": "Method",
+      "status": "Status",
+      "result": "Result",
+      "duration": "Duration",
+      "action": "Action"
+    }
+  },
+  "detail_modal": {
+    "title": "MES Integration Log",
+    "requested_at": "Requested At",
+    "responded_at": "Responded At",
+    "direction": "Direction",
+    "trigger_type": "Trigger Type",
+    "response_status": "Response Status",
+    "duration": "Duration",
+    "method": "Method",
+    "request": "Request",
+    "response": "Response",
+    "endpoint": "Endpoint",
+    "headers": "Headers",
+    "body": "Body",
+    "status": "Status",
+    "error": "Error"
+  },
+  "connection_settings": {
+    "title": "Connection Settings",
+    "empty": "No products found.",
+    "column": {
+      "product_id": "Product ID",
+      "product_name": "Product Name",
+      "category": "Category",
+      "mes_enabled": "MES Integration Enabled"
+    }
+  }
+}

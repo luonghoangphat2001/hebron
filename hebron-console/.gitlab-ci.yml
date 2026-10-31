@@ -1,0 +1,53 @@
+stages:
+  - build
+  - deploy
+
+variables:
+  CONTAINER_NAME: hebron-admin
+
+default:
+  tags:
+    - hebron
+
+before_script:
+  - docker --version
+  - docker compose version
+
+# =========================
+# Stage 1: Build Docker Image
+# =========================
+build:
+  stage: build
+
+  script:
+    - echo "Preparing environment..."
+    - cp "$ENV_FILE" .env
+
+    - echo "Building Docker image..."
+    - docker compose build
+
+  rules:
+    - if: '$CI_COMMIT_BRANCH == "develop"'
+
+
+# =========================
+# Stage 2: Deploy
+# =========================
+deploy:
+  stage: deploy
+
+  script:
+    - echo "Deploying..."
+
+    - docker compose up -d --force-recreate
+
+    - echo "Waiting service..."
+    - sleep 5
+
+    - docker image prune -f --filter dangling=true
+    - docker builder prune -f
+
+    - echo "Deploy completed."
+
+  rules:
+    - if: '$CI_COMMIT_BRANCH == "develop"'

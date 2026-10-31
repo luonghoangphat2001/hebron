@@ -1,0 +1,156 @@
+{
+  "permission": {
+    "field": {
+      "search": "Search",
+      "status": "Usage Status",
+      "name": "Permission Name",
+      "description": "Description",
+      "copy_from": "Copy From Existing Permission"
+    },
+    "placeholder": {
+      "search": "Search by permission name or registrant",
+      "all_statuses": "All status",
+      "name": "Enter permission name",
+      "description": "Enter permission description",
+      "copy_from": "Select a permission to copy settings from"
+    },
+    "column": {
+      "name": "Permission Name",
+      "description": "Description",
+      "status": "Usage Status",
+      "created_at": "Registration Date",
+      "updated_at": "Last Modified",
+      "registrant": "Registrant"
+    },
+    "button": {
+      "add": "Add Permission"
+    },
+    "modal": {
+      "title_create": "Permission Registration",
+      "title_edit": "Permission Edit",
+      "title_copy": "Copy Permission",
+      "matrix_title": "Permission Settings",
+      "matrix_access": "Access",
+      "matrix_menus_selected": "{{selected}}/{{total}} menus selected",
+      "matrix_select_all": "Select All"
+    },
+    "action": {
+      "view": "View",
+      "register": "Register",
+      "edit": "Edit",
+      "delete": "Delete"
+    },
+    "confirm": {
+      "delete_title": "Delete Permission",
+      "delete_description": "Are you sure you want to delete this permission? This action is irreversible."
+    },
+    "empty": "No permissions found."
+  },
+  "connection_log": {
+    "field": {
+      "user_id_name": "Login ID / User Name",
+      "login_id": "Login ID",
+      "ip_address": "Connection IP",
+      "type": "Detection Result",
+      "status": "Status",
+      "date": "Access Date",
+      "browser_info": "Browser Info",
+      "show_abnormal_only": "Detection Status"
+    },
+    "placeholder": {
+      "search_user": "Search by login ID or name",
+      "search_ip": "Search by IP address",
+      "search_browser": "Search by browser info",
+      "all_types": "All detection results",
+      "all_statuses": "All statuses",
+      "all": "All",
+      "abnormal_only": "Abnormal Attempt Only"
+    },
+    "column": {
+      "no": "No",
+      "login_id": "Login ID",
+      "connection_ip": "Connection IP",
+      "connection_time": "Connection Time",
+      "access_date": "Access Date",
+      "browser_information": "Browser Information",
+      "detection_result": "Detection Result",
+      "user_id": "User ID",
+      "user_name": "User Name",
+      "role": "Role",
+      "ip_address": "IP Address",
+      "type": "Type",
+      "status": "Status",
+      "date_time": "Date / Time",
+      "browser_info": "Browser / OS",
+      "description": "Description"
+    },
+    "empty": "No connection logs found."
+  },
+  "operation_log": {
+    "button": {
+      "download_log": "Download Log"
+    },
+    "field": {
+      "target_menu": "Target Menu",
+      "data_id": "Data ID",
+      "action": "Action",
+      "operator": "Operator",
+      "date": "Date"
+    },
+    "placeholder": {
+      "all_menus": "All menus",
+      "search_data_id": "Search by data ID",
+      "all_actions": "All actions",
+      "search_operator": "Search by operator ID"
+    },
+    "column": {
+      "no": "No",
+      "target_menu": "Target Menu",
+      "data_id": "Data ID",
+      "changes": "Changes",
+      "before_change": "Before Change",
+      "after_change": "After Change",
+      "action": "Action",
+      "operator": "Operator",
+      "date_time": "Date / Time",
+      "field_name": "Field Name"
+    },
+    "detail_modal_title": "Operation Log Details",
+    "no_changed_fields": "No changed fields recorded.",
+    "more_items": "+{{count}} more...",
+    "empty": "No operation logs found."
+  },
+  "email_setting": {
+    "title": "Email Settings",
+    "description": "Configure the sender and recipients used for system emails.",
+    "field": {
+      "sender_email": "Sender Email",
+      "sender_name": "Sender Name",
+      "receiver_emails": "Recipient Emails"
+    },
+    "placeholder": {
+      "sender_email": "notification@example.com",
+      "sender_name": "System Mail",
+      "receiver_emails": "Enter an email address"
+    },
+    "button": {
+      "add_receiver": "Add recipient",
+      "remove_receiver": "Remove {{email}}"
+    },
+    "receiver_hint": "Press Enter, comma, or Add to include another recipient."
+  },
+  "bank_account_setting": {
+    "title": "Bank Account Settings",
+    "description": "Configure the bank account used for bank transfers.",
+    "field": {
+      "bank_name": "Bank Name",
+      "account_number": "Account Number",
+      "account_holder": "Account Holder"
+    },
+    "placeholder": {
+      "bank_name": "Vietcombank",
+      "account_number": "0123456789",
+      "account_holder": "CONG TY ABC"
+    }
+  }
+}

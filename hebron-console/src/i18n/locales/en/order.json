@@ -1,0 +1,116 @@
+{
+  "page": {
+    "description": "Manage orders, work order PDF output, draft files, and status history."
+  },
+  "button": {
+    "export_excel": "Export Excel",
+    "work_order_pdf": "Work Order PDF",
+    "batch_output": "Batch Print",
+    "edit_status": "Edit Status",
+    "confirm_manual_payment": "Confirm Manual Payment",
+    "upload_draft": "Upload Draft",
+    "mark_ready_for_print": "Mark Ready for Print",
+    "request_rework": "Request Rework",
+    "confirm_rework": "Submit Rework Request",
+    "download_print_pdf": "Download Print PDFs",
+    "download_all_print_pdfs": "Download all"
+  },
+  "field": {
+    "order_number": "Order Number",
+    "orderer_name": "Order Customer",
+    "member_name": "Member Name",
+    "recipient_name": "Recipient",
+    "recipient_phone": "Recipient Phone",
+    "order_datetime": "Order Date/Time",
+    "payment_amount": "Payment Amount",
+    "payment_status": "Payment Status",
+    "shipping_address": "Shipping Address",
+    "payment_method": "Payment Method",
+    "status": "Status",
+    "duration": "Duration",
+    "item_name": "Item",
+    "option": "Option",
+    "quantity": "Quantity",
+    "unit_price": "Unit Price",
+    "option_price": "Option Price",
+    "subtotal_amount": "Subtotal",
+    "tax_amount": "Tax (10%)",
+    "total_amount": "Total Amount",
+    "finishing": "Finishing",
+    "size": "Size",
+    "material": "Material",
+    "case": "Case",
+    "comment": "Comment",
+    "design_content_title": "Title",
+    "design_recipient": "Recipient / Organization",
+    "design_event_date": "Date",
+    "design_main_text": "Message",
+    "design_sender": "Sender (Organization)",
+    "design_attachments": "Attachments",
+    "draft_status": "Draft Status",
+    "rework_reason": "Rework Reason"
+  },
+  "placeholder": {
+    "enter_order_number": "Enter order number",
+    "enter_orderer_name": "Enter customer name",
+    "all_status": "All status",
+    "select_status": "Select status",
+    "enter_rework_reason": "Enter the reason rework is needed..."
+  },
+  "confirm": {
+    "manual_payment_title": "Confirm Payment",
+    "manual_payment_description": "Has the bank transfer been received? Confirming will change the order status to Confirmed."
+  },
+  "column": {
+    "order_number": "Order Number",
+    "customer": "Customer",
+    "recipient": "Recipient",
+    "order_date": "Order Date/Time",
+    "payment_amount": "Payment Amount",
+    "status": "Status",
+    "item_count": "Items",
+    "actions": "Actions",
+    "modified_at": "Modified At",
+    "status_change": "Status Change",
+    "modified_by": "Modified By",
+    "reason_notes": "Reason / Notes"
+  },
+  "section": {
+    "basic_information": "Basic Information",
+    "product_information": "Product Information",
+    "draft_file_management": "Draft File Management",
+    "status_history": "Status Change History"
+  },
+  "label": {
+    "design_group_preview": "Design Preview",
+    "design_preview_front": "Front Preview",
+    "design_preview_back": "Back Preview",
+    "actor": "Actor",
+    "uploaded_by": "Uploaded by",
+    "updated_at": "Updated at",
+    "batch_selected_count": "{{count}} selected",
+    "draft_file_help": "Only PDF, JPG, PNG, AI, EPS, and ZIP files can be uploaded.",
+    "draft_file_count_help": "Select {{count}} file(s), one for each order item.",
+    "print_pdf_unavailable_help": "The print PDF is not ready. Save the design and generate the PDF again in the editor.",
+    "print_pdf_download_help": "Each order item downloads as a separate PDF. Allow multiple downloads if your browser asks. If files are blocked, use the individual download buttons.",
+    "print_pdf_preparing": "Checking print PDFs...",
+    "print_pdf_direct_help": "Downloading all files requires a valid manifest. You can still try downloading individual items below. Close and reopen this dialog to check again.",
+    "print_pdf_item": "Order item #{{id}}",
+    "print_pdf_download_sent": "Download request sent; check your browser downloads.",
+    "print_pdf_progress": "Requesting file {{current}}/{{total}}..."
+  },
+  "empty": {
+    "no_orders": "No orders found.",
+    "no_draft_files": "No draft files uploaded yet.",
+    "no_status_history": "No status history yet."
+  },
+  "notify": {
+    "draft_upload_notification_sent": "Draft uploaded. KakaoTalk/SMS notification sent to customer (simulated).",
+    "draft_file_count_mismatch": "Select exactly {{count}} file(s), one for each order item.",
+    "print_pdf_unavailable": "The print PDF is missing or does not match the latest design. Save the design and generate the PDF again in the editor.",
+    "invalid_print_pdf": "The downloaded file is not a valid print PDF.",
+    "print_pdf_download_failed": "Failed to download the print PDF. Please try again.",
+    "print_pdf_downloads_sent": "Sent {{count}} file download request(s). Check your browser downloads.",
+    "print_pdf_download_stopped": "Sent {{sent}}/{{total}} download requests. Stopped at item #{{itemId}}: {{message}}"
+  }
+}

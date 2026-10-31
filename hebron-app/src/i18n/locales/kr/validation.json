@@ -1,0 +1,12 @@
+{
+  "required": "{{field}} 입력해주세요.",
+  "select_required": "{{field}} 선택해주세요.",
+  "file_required": "최소 한 개의 파일을 업로드해주세요.",
+  "invalid_email": "유효한 이메일 주소를 입력해주세요.",
+  "min_length": "{{field}} 최소 {{length}}자 이상이어야 합니다.",
+  "max_length": "{{field}} 최대 {{length}}자 이하이어야 합니다.",
+  "password_not_match": "비밀번호가 일치하지 않습니다",
+  "recaptcha_required": "로봇이 아님을 확인해주세요.",
+  "recaptcha_failed": "캡차 인증에 실패했습니다. 다시 시도해주세요.",
+  "invalid_url": "유효한 URL을 입력해주세요."
+}

@@ -1,0 +1,156 @@
+{
+  "permission": {
+    "field": {
+      "search": "검색",
+      "status": "사용 상태",
+      "name": "권한 이름",
+      "description": "설명",
+      "copy_from": "기존 권한에서 복사"
+    },
+    "placeholder": {
+      "search": "권한 이름 또는 등록자로 검색",
+      "all_statuses": "전체 상태",
+      "name": "권한 이름을 입력하세요",
+      "description": "권한 설명을 입력하세요",
+      "copy_from": "복사할 권한을 선택하세요"
+    },
+    "column": {
+      "name": "권한 이름",
+      "description": "설명",
+      "status": "사용 상태",
+      "created_at": "등록일",
+      "updated_at": "최종 수정일",
+      "registrant": "등록자"
+    },
+    "button": {
+      "add": "권한 추가"
+    },
+    "modal": {
+      "title_create": "권한 등록",
+      "title_edit": "권한 수정",
+      "title_copy": "권한 복사",
+      "matrix_title": "권한 설정",
+      "matrix_access": "접근",
+      "matrix_menus_selected": "{{selected}}/{{total}}개 메뉴 선택됨",
+      "matrix_select_all": "전체 선택"
+    },
+    "action": {
+      "view": "조회",
+      "register": "등록",
+      "edit": "수정",
+      "delete": "삭제"
+    },
+    "confirm": {
+      "delete_title": "권한 삭제",
+      "delete_description": "이 권한을 삭제하시겠습니까? 이 작업은 되돌릴 수 없습니다."
+    },
+    "empty": "권한이 없습니다."
+  },
+  "connection_log": {
+    "field": {
+      "user_id_name": "로그인 ID / 사용자명",
+      "login_id": "로그인 ID",
+      "ip_address": "접속 IP",
+      "type": "감지 결과",
+      "status": "상태",
+      "date": "접속 일자",
+      "browser_info": "브라우저 정보",
+      "show_abnormal_only": "감지 상태"
+    },
+    "placeholder": {
+      "search_user": "로그인 ID 또는 사용자명 검색",
+      "search_ip": "IP 주소 검색",
+      "search_browser": "브라우저 정보 검색",
+      "all_types": "전체 감지 결과",
+      "all_statuses": "전체 상태",
+      "all": "전체",
+      "abnormal_only": "이상 접속만"
+    },
+    "column": {
+      "no": "No",
+      "login_id": "로그인 ID",
+      "connection_ip": "접속 IP",
+      "connection_time": "접속 시간",
+      "access_date": "접속 일자",
+      "browser_information": "브라우저 정보",
+      "detection_result": "감지 결과",
+      "user_id": "사용자 ID",
+      "user_name": "사용자명",
+      "role": "역할",
+      "ip_address": "IP 주소",
+      "type": "유형",
+      "status": "상태",
+      "date_time": "날짜 / 시간",
+      "browser_info": "브라우저 / OS",
+      "description": "상세 설명"
+    },
+    "empty": "접속 로그가 없습니다."
+  },
+  "operation_log": {
+    "button": {
+      "download_log": "로그 다운로드"
+    },
+    "field": {
+      "target_menu": "대상 메뉴",
+      "data_id": "데이터 ID",
+      "action": "작업",
+      "operator": "작업자",
+      "date": "날짜"
+    },
+    "placeholder": {
+      "all_menus": "전체 메뉴",
+      "search_data_id": "데이터 ID로 검색",
+      "all_actions": "전체 작업",
+      "search_operator": "작업자 ID로 검색"
+    },
+    "column": {
+      "no": "No",
+      "target_menu": "대상 메뉴",
+      "data_id": "데이터 ID",
+      "changes": "변경 내역",
+      "before_change": "변경 전",
+      "after_change": "변경 후",
+      "action": "작업",
+      "operator": "작업자",
+      "date_time": "날짜 / 시간",
+      "field_name": "필드명"
+    },
+    "detail_modal_title": "작업 로그 상세",
+    "no_changed_fields": "변경된 항목이 없습니다.",
+    "more_items": "+{{count}}개 더보기",
+    "empty": "작업 로그가 없습니다."
+  },
+  "email_setting": {
+    "title": "이메일 설정",
+    "description": "시스템 이메일에 사용할 발신자와 수신자를 설정합니다.",
+    "field": {
+      "sender_email": "발신 이메일",
+      "sender_name": "발신자 이름",
+      "receiver_emails": "수신 이메일"
+    },
+    "placeholder": {
+      "sender_email": "notification@example.com",
+      "sender_name": "시스템 메일",
+      "receiver_emails": "이메일 주소를 입력하세요"
+    },
+    "button": {
+      "add_receiver": "수신자 추가",
+      "remove_receiver": "{{email}} 제거"
+    },
+    "receiver_hint": "Enter, 쉼표 또는 추가 버튼을 눌러 수신자를 등록하세요."
+  },
+  "bank_account_setting": {
+    "title": "계좌 설정",
+    "description": "무통장 입금에 사용할 계좌 정보를 설정합니다.",
+    "field": {
+      "bank_name": "은행명",
+      "account_number": "계좌번호",
+      "account_holder": "예금주"
+    },
+    "placeholder": {
+      "bank_name": "Vietcombank",
+      "account_number": "0123456789",
+      "account_holder": "CONG TY ABC"
+    }
+  }
+}
